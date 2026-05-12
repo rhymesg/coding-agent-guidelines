@@ -1,6 +1,6 @@
 # Coding Agent Guidelines
 
-## 1. Plan Before Coding
+## 1. Understand Before Coding
 
 ### Keep It Simple and Maintainable
 
