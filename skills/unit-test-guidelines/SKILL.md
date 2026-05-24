@@ -1,6 +1,6 @@
 ---
 name: unit-test-guidelines
-description: Use when writing, updating, or reviewing unit tests. Focus on observable behavior, meaningful edge cases, independent tests, and avoiding brittle assertions against implementation details, constants, magic numbers, or copied literal strings.
+description: Use when writing, updating, or reviewing unit tests.
 ---
 
 # Unit Test Guidelines
