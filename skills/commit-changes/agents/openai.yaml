@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit Changes"
+  short_description: "Format, group, and commit project changes."
+  default_prompt: "Commit the current changes in logical units."

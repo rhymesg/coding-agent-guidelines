@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unit Test Guidelines"
+  short_description: "Write behavior-focused unit tests"
+  default_prompt: "Use this skill when writing or reviewing unit tests."
