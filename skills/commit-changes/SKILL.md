@@ -18,7 +18,7 @@ Use this workflow to create clean project commits from the current working tree.
 
 2. Handle untracked files before committing: add intentional files, delete junk, or update `.gitignore` for recurring generated artifacts.
 
-3. Run formatting and linting before committing if the project supports them.
+3. Run formatting and linting before committing if the project supports them. Use documented or obvious project commands.
 
 4. Re-check `git status --short` and diffs after formatting. Treat formatter-only edits as their own logical unit when they are unrelated to feature changes.
 
@@ -41,4 +41,5 @@ Use this workflow to create clean project commits from the current working tree.
 
 - Never revert or discard user changes to make a commit cleaner.
 - If a file contains mixed unrelated changes, stage only the requested hunks when practical; otherwise ask before committing it.
+- Do not commit secrets, credentials, tokens, private keys, `.env` files, or other security-sensitive local configuration. Add these files to `.gitignore` when they are project-local artifacts that should remain untracked.
 - After each commit, show the commit hash and what remains uncommitted.
