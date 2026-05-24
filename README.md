@@ -16,8 +16,6 @@
 ## 2. Test-Oriented Development
 
 - Split implementation into small, testable functions.
-- Write tests for small functions that contain real logic, not trivial wrappers or pass-through code.
-- Tests should verify that each function fulfills its intended purpose.
 - Bug fix: write a test that reproduces the issue, then fix the code and verify the test passes.
 - Refactoring: ensure relevant tests pass before and after the change.
 
