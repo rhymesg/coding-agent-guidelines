@@ -1,6 +1,6 @@
 ---
 name: commit-changes
-description: "Use when the user asks Codex to commit changes in this project, including requests like 'commit', '커밋해줘', '나머지도 커밋', or when Codex needs to prepare git commits from the current working tree. Formats first, groups changes by logical unit, and creates unsigned one-line commit messages."
+description: "Use when the user asks Codex to commit changes, or when Codex needs to prepare git commits from the current working tree."
 ---
 
 # Commit Changes
@@ -18,19 +18,7 @@ Use this workflow to create clean project commits from the current working tree.
 
 2. Handle untracked files before committing: add intentional files, delete junk, or update `.gitignore` for recurring generated artifacts.
 
-3. Run formatting before committing.
-
-   Try the host command first:
-
-   ```bash
-   make format
-   ```
-
-   If it cannot run on the host, run the project Docker formatter:
-
-   ```bash
-   docker exec mnav_navigation_desktop bash -c "cd /mnav_workspace && make format"
-   ```
+3. Run formatting and linting before committing if the project supports them.
 
 4. Re-check `git status --short` and diffs after formatting. Treat formatter-only edits as their own logical unit when they are unrelated to feature changes.
 
