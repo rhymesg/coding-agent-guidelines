@@ -4,7 +4,7 @@
 
 ### Keep It Simple and Maintainable
 
-- Explore the codebase first to understand the structure and identify reusable code.
+- Explore the codebase first to understand its structure, conventions, and existing patterns.
 - Before creating a new function, check whether existing code can be reused, extended, or slightly modified.
 - Use the simplest solution with the minimum necessary code.
 
@@ -16,6 +16,7 @@
 ## 2. Test-Oriented Development
 
 - Split implementation into small, testable functions.
+- Add or update tests when changing externally observable behavior.
 - Bug fix: write a test that reproduces the issue, then fix the code and verify the test passes.
 - Refactoring: ensure relevant tests pass before and after the change.
 
@@ -28,6 +29,6 @@
 ## 4. Interaction with the User
 
 - After coding, run the formatter, linter, and unit tests when possible.
-- Do not run tests or simulations that require manual UI interaction. Tell the user when such verification is needed.
+- Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
 - Do what you can first. Collect any required user input or actions and ask for them together.
 - After completing and testing a feature or fix, remind the user to commit before moving on. Suggest a one-line commit message.
