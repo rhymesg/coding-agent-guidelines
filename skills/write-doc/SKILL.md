@@ -1,6 +1,6 @@
 ---
 name: write-doc
-description: "Use when writing, adding, updating, or editing any document (.md and other prose files) — sets the style rules for document content. For a README, use write-readme as well."
+description: "Use when writing, adding, updating, or editing any document (.md and other prose files) — sets the style rules for document content, including README-specific rules."
 ---
 
 # Writing a Document
@@ -14,3 +14,8 @@ description: "Use when writing, adding, updating, or editing any document (.md a
 - Add a diagram, table, or graph when a picture states the point faster than text.
 - Write like a technical paper with clear word choice.
 - Do not use casual or conversational words, slang, or figures of speech.
+
+## README
+
+- Put each command the reader should run in its own fenced bash block, ready to copy and paste.
+- State what to do, not why. A README is an outline and a guide.
