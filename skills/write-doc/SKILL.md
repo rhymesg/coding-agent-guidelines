@@ -1,6 +1,6 @@
 ---
 name: write-doc
-description: "Use when writing, adding, updating, or editing any document (.md and other prose files) — sets the style rules for document content, including README-specific rules."
+description: "Use when writing, adding, updating, or editing any document (.md and other prose files) — sets the style rules for document content, including README- and skill-specific rules."
 ---
 
 # Writing a Document
@@ -19,3 +19,9 @@ description: "Use when writing, adding, updating, or editing any document (.md a
 
 - Put each command the reader should run in its own fenced bash block, ready to copy and paste.
 - State what to do, not why. A README is an outline and a guide.
+
+## Skill
+
+- Write the description as the trigger: "Use when <situation>", with the words seen at trigger time.
+- Write rules and guidelines as clear, short bullet points.
+- Write workflows as numbered steps, clear and concise, so no step is overlooked.
