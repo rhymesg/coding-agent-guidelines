@@ -15,6 +15,10 @@ description: "Use when writing, adding, updating, or editing any document (.md a
 - Write like a technical paper with clear word choice.
 - Do not use casual or conversational words, slang, or figures of speech.
 
+## Mermaid Diagram
+
+- Draw a two-way relation as two one-directional edges (`-->`, `-.->`), not as `<-->` or `<-.->`.
+
 ## README
 
 - Put each command the reader should run in its own fenced bash block, ready to copy and paste.
