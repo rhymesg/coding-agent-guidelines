@@ -1,6 +1,6 @@
 ---
 name: commit
-description: "Use when the user asks Coding Agent to commit changes, or when Coding Agent needs to prepare git commits from the current working tree."
+description: Use when committing changes or preparing git commits from the working tree.
 ---
 
 # Commit

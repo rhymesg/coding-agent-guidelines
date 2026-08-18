@@ -1,6 +1,6 @@
 ---
 name: write-doc
-description: "Use when Coding Agent is about to write, add, update, or edit any document (.md and other prose files) — sets the style rules for document content. For a README, use write-readme as well."
+description: "Use when writing, adding, updating, or editing any document (.md and other prose files) — sets the style rules for document content. For a README, use write-readme as well."
 ---
 
 # Writing a Document

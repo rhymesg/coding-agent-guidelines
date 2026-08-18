@@ -1,6 +1,6 @@
 ---
 name: write-readme
-description: "Use when Coding Agent is about to write, add, update, or edit a README file — sets the style rules for README content."
+description: "Use when writing, adding, updating, or editing a README file — sets the style rules for README content."
 ---
 
 # Writing a README
