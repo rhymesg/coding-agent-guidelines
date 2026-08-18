@@ -1,11 +1,13 @@
 ---
 name: commit-changes
-description: "Use when the user asks Codex to commit changes, or when Codex needs to prepare git commits from the current working tree."
+description: "Use when the user asks you to commit changes, or when you need to prepare git commits from the current working tree."
 ---
 
 # Commit Changes
 
 Use this workflow to create clean project commits from the current working tree.
+
+Only start committing when the user explicitly asks for it. If it looks like a good point to commit, suggest it and wait for them to ask.
 
 ## Workflow
 
@@ -24,7 +26,19 @@ Use this workflow to create clean project commits from the current working tree.
 
 5. Split commits by logical change. Stage only files belonging to one unit at a time. Do not stage unrelated dirty files or broad untracked directories unless the user explicitly includes them.
 
-6. For each logical unit, request approval with `git add` and `git commit` in one command line. Keep the command scoped to the files in that unit and use an unsigned, one-line commit message.
+6. Check the index for files you did not stage, immediately before committing. The index belongs to the repository, not to the session, so a commit takes whatever anyone else has staged there.
+
+   ```bash
+   git status --short
+   ```
+
+   Staged entries outside the unit are someone else's work. Unstage them, then commit.
+
+   ```bash
+   git restore --staged <paths>
+   ```
+
+7. For each logical unit, stage and commit with `git add` and `git commit` in one command line. Keep the command scoped to the files in that unit and use an unsigned, one-line commit message.
 
    ```bash
    git add <paths> && git commit --no-gpg-sign -m "Short imperative message"
@@ -41,5 +55,6 @@ Use this workflow to create clean project commits from the current working tree.
 
 - Never revert or discard user changes to make a commit cleaner.
 - If a file contains mixed unrelated changes, stage only the requested hunks when practical; otherwise ask before committing it.
+- Never `git add -A`, `git add .` or `git commit -a`. Name the paths. Another session may be editing the same checkout, and a working tree that was clean at the start of the session may not be clean now.
 - Do not commit secrets, credentials, tokens, private keys, `.env` files, or other security-sensitive local configuration. Add these files to `.gitignore` when they are project-local artifacts that should remain untracked.
 - After each commit, show the commit hash and what remains uncommitted.
