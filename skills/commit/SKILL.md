@@ -1,9 +1,9 @@
 ---
-name: commit-changes
-description: "Use when the user asks you to commit changes, or when you need to prepare git commits from the current working tree."
+name: commit
+description: "Use when the user asks Coding Agent to commit changes, or when Coding Agent needs to prepare git commits from the current working tree."
 ---
 
-# Commit Changes
+# Commit
 
 Use this workflow to create clean project commits from the current working tree.
 
