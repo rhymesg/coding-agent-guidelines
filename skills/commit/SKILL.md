@@ -5,9 +5,7 @@ description: Use when committing changes or preparing git commits from the worki
 
 # Commit
 
-Use this workflow to create clean project commits from the current working tree.
-
-Only start committing when the user explicitly asks for it. If it looks like a good point to commit, suggest it and wait for them to ask.
+Create clean project commits from the current working tree.
 
 ## Workflow
 

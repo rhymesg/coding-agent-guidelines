@@ -11,7 +11,7 @@
 ### Stay Within the Coding Task
 
 - Consult the user before making engineering judgments involving mathematics, algorithms, or domain-specific behavior.
-- Check official documentation for external APIs, libraries, frameworks, or platform behavior. 
+- Check official documentation for external APIs, libraries, frameworks, or platform behavior.
 
 ## 2. Test-Oriented Development
 
@@ -19,16 +19,39 @@
 - Add or update tests when changing externally observable behavior.
 - Bug fix: write a test that reproduces the issue, then fix the code and verify the test passes.
 - Refactoring: ensure relevant tests pass before and after the change.
+- Use the `unit-test-guidelines` skill for guidance.
 
-## 3. Documentation
+## 3. Writing
 
-- Add or update descriptions for files and functions so they explain the current purpose and behavior, not the history of changes.
+- Spend tokens on planning, exploring, and thinking. Save tokens in chat, code, comments, and docs.
+- Prefer the most common word that carries the meaning.
+- Write the shortest possible sentences and paragraphs to deliver your meaning.
+- No technical jargon, no slang, no humor, no metaphor.
+- Do not add rationale clauses like 'so that X' or 'this avoids Y'.
+
+### Comments
+
+- Write comments to describe the current purpose and behavior, not the history of changes.
 - Do not write author information.
 - Do not repeat the current value of a parameter in comments. Explain what the parameter means.
 
+### Documents
+
+- Use the `write-doc` skill.
+
 ## 4. Interaction with the User
 
-- After coding, run the formatter, linter, and unit tests when possible.
+### Do Not Start Without Request
+
+- Do not edit unless asked; a question is not a request to edit.
+- Do not commit unless asked. When asked, use the `commit` skill.
+
+### During Work
+
 - Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
 - Do what you can first. Collect any required user input or actions and ask for them together.
-- After completing and testing a feature or fix, remind the user to commit before moving on. Suggest a one-line commit message.
+
+### After Work Is Done
+
+- Give a concise report organized into sections and bullet points.
+- Remind the user to commit before moving on. Suggest a one-line commit message.
