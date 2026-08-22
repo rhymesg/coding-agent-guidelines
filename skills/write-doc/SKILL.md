@@ -1,6 +1,6 @@
 ---
 name: write-doc
-description: "Use when writing, adding, updating, or editing any document (.md and other prose files) — sets the style rules for document content, including README- and skill-specific rules."
+description: "Use when writing, editing, or reviewing Markdown and other documentation files — sets the style rules for document content, including README- and skill-specific rules."
 ---
 
 # Writing a Document
@@ -12,7 +12,7 @@ description: "Use when writing, adding, updating, or editing any document (.md a
 - Do not write numbers that change often; point to the source instead.
 - Keep paragraphs to two sentences or fewer. One paragraph covers one thing.
 - Add a diagram, table, or graph when a picture states the point faster than text.
-- Write like a technical paper with clear word choice.
+- Use standard technical terms and familiar words.
 - Do not use casual or conversational words, slang, or figures of speech.
 
 ## Mermaid Diagram

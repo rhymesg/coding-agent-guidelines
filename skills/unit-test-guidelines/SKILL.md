@@ -7,7 +7,7 @@ description: Use when writing, updating, or reviewing unit tests.
 
 Use these guidelines when writing, revising, or reviewing unit tests.
 
-- Identify the function's purpose and when it would fail. Explain your understanding before writing.
+- Identify the function's purpose and plausible failure modes before writing tests.
 - Each test should cover one clear behavior under one scenario.
 - Keep tests independent, using fakes or mocks for slow or external dependencies.
 - Keep setup minimal and test data readable, and assert only what proves the behavior under test.

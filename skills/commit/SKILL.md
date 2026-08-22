@@ -18,25 +18,22 @@ Create clean project commits from the current working tree.
 
 2. Handle untracked files before committing: add intentional files, delete junk, or update `.gitignore` for recurring generated artifacts.
 
-3. Run formatting and linting before committing if the project supports them. Use documented or obvious project commands.
+3. Run relevant tests, formatting, and linting before committing if the project supports them. Use documented or obvious project commands.
 
 4. Re-check `git status --short` and diffs after formatting. Treat formatter-only edits as their own logical unit when they are unrelated to feature changes.
 
 5. Split commits by logical change. Stage only files belonging to one unit at a time. Do not stage unrelated dirty files or broad untracked directories unless the user explicitly includes them.
 
-6. Check the index for files you did not stage, immediately before committing. The index belongs to the repository, not to the session, so a commit takes whatever anyone else has staged there.
+6. Check the index immediately before committing. A commit includes all staged changes, including changes staged outside the current session.
 
    ```bash
    git status --short
+   git diff --cached
    ```
 
-   Staged entries outside the unit are someone else's work. Unstage them, then commit.
+   If the index contains changes outside the intended unit, do not commit or modify their staged state. Ask the user how to proceed.
 
-   ```bash
-   git restore --staged <paths>
-   ```
-
-7. For each logical unit, stage and commit with `git add` and `git commit` in one command line. Keep the command scoped to the files in that unit and use an unsigned, one-line commit message.
+7. For each logical unit, stage and commit in one command line. Name only the files in that unit and use an unsigned, one-line commit message.
 
    ```bash
    git add <paths> && git commit --no-gpg-sign -m "Short imperative message"

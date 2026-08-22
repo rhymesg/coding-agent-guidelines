@@ -10,7 +10,7 @@
 
 ### Stay Within the Coding Task
 
-- Consult the user before making engineering judgments involving mathematics, algorithms, or domain-specific behavior.
+- Consult the user before making domain-specific decisions that change intended behavior, mathematical assumptions, or algorithm semantics.
 - Check official documentation for external APIs, libraries, frameworks, or platform behavior.
 
 ## 2. Test-Oriented Development
@@ -24,9 +24,9 @@
 ## 3. Writing
 
 - Spend tokens on planning, exploring, and thinking. Save tokens in chat, code, comments, and docs.
-- Prefer the most common word that carries the meaning.
+- Use standard technical terms and familiar words.
 - Write the shortest possible sentences and paragraphs to deliver your meaning.
-- No technical jargon, no slang, no humor, no metaphor.
+- No slang, no humor, no metaphor.
 - Do not add rationale clauses like 'so that X' or 'this avoids Y'.
 
 ### Comments
@@ -55,4 +55,4 @@
 
 - After a change to behavior, commands, or structure, use the `sync-docs` skill.
 - Give a concise report organized into sections and bullet points.
-- Remind the user to commit before moving on. Suggest a one-line commit message.
+- Remind the user to commit before moving on. Suggest a one-line message for all changes since the last commit.
