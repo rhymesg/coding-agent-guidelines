@@ -53,5 +53,6 @@
 
 ### After Work Is Done
 
+- After a change to behavior, commands, or structure, use the `sync-docs` skill.
 - Give a concise report organized into sections and bullet points.
 - Remind the user to commit before moving on. Suggest a one-line commit message.
