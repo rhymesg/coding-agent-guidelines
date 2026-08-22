@@ -21,7 +21,7 @@
 - Refactoring: ensure relevant tests pass before and after the change.
 - Use the `unit-test-guidelines` skill for guidance.
 
-## 3. Writing
+## 3. General Writing
 
 - Spend tokens on planning, exploring, and thinking. Save tokens in chat, code, comments, and docs.
 - Use standard technical terms and familiar words.
