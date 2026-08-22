@@ -10,7 +10,7 @@
 
 ### Stay Within the Coding Task
 
-- Consult the user before making domain-specific decisions that change intended behavior, mathematical assumptions, or algorithm semantics.
+- Consult the user before making decisions that require domain knowledge, including mathematical, scientific, or algorithmic assumptions, rules, and tradeoffs.
 - Check official documentation for external APIs, libraries, frameworks, or platform behavior.
 
 ## 2. Test-Oriented Development
