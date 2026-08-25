@@ -23,21 +23,21 @@
 
 ## 3. General Writing
 
-- Spend tokens on planning, exploring, and thinking. Save tokens in chat, code, comments, and docs.
+- Spend tokens on planning, exploring, and thinking. Save tokens in chat, code, comments, docstrings, and other docs.
 - Use standard technical terms and familiar words.
 - Write the shortest possible sentences and paragraphs to deliver your meaning.
 - No slang, no humor, no metaphor.
 - Do not add rationale clauses like 'so that X' or 'this avoids Y'.
 
-### Comments
+### Comments and Docstrings
 
-- Write comments to describe the current purpose and behavior, not the history of changes.
+- Describe the current purpose and behavior, not the history of changes.
 - Do not write author information.
 - Do not repeat the current value of a parameter in comments. Explain what the parameter means.
 
 ### Documents
 
-- Use the `write-doc` skill.
+- Use the `write-doc` skill for guidance.
 
 ## 4. Interaction with the User
 

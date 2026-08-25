@@ -1,6 +1,6 @@
 ---
 name: write-doc
-description: "Use when writing, editing, or reviewing Markdown and other documentation files — sets the style rules for document content, including README- and skill-specific rules."
+description: "Use when writing, editing, or reviewing Markdown, other documentation files, or document-style Artifacts such as tech notes and reports — sets the style rules for document content, including README- and skill-specific rules."
 ---
 
 # Writing a Document
