@@ -28,7 +28,3 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Write the description as the trigger: "Use when <situation>", with the words seen at trigger time.
 - Write rules and guidelines as clear, short bullet points.
 - Write workflows as numbered steps, clear and concise, so no step is overlooked.
-
-## Review
-
-- After finishing a document, use the `review-doc` skill.
