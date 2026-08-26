@@ -19,7 +19,8 @@ description: "Use when writing, editing, or reviewing Markdown, other documentat
 
 ## README
 
-- Put each command the reader should run in its own fenced bash block, ready to copy and paste.
+- Put each command the reader should run in its own fenced bash block.
+- Each block must run as-is when copied and pasted.
 - State what to do, not why. A README is an outline and a guide.
 
 ## Skill
