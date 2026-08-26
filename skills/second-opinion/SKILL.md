@@ -5,11 +5,12 @@ description: "Use when your answer contains several options without a clear winn
 
 # Getting a Second Opinion
 
-- Delegate through the `codex:codex-rescue` agent. Codex is the preferred reviewer.
-- Without the codex plugin, delegate to a fresh general-purpose subagent whose prompt contains only the request and the paths. This is a weaker review: same model, fresh context only.
+- Prefer Codex: delegate through the `codex:codex-rescue` agent.
+- Without the codex plugin, delegate to a fresh general-purpose subagent.
 - Pass file paths and the question, not copied file content.
 - Give the reviewer the context it cannot infer: the goal, the constraints, and prior decisions from the conversation.
-- Report the reviewer's answer next to your own view. Note where they differ; do not silently adopt either.
+- Report the reviewer's answer next to your own view.
+- Note where they differ; do not silently adopt either.
 
 ## Options or Uncertain Conclusion
 
