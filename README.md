@@ -46,6 +46,12 @@
 - Do not edit unless asked; a question is not a request to edit.
 - Do not commit unless asked. When asked, use the `commit` skill.
 
+### Answering Questions
+
+- Start with the direct answer or the outcome in one sentence.
+- Answer in under 100 words, in sections and bullets. Elaborate only if asked.
+- Skip background the user already knows.
+
 ### During Work
 
 - Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
@@ -53,6 +59,6 @@
 
 ### After Work Is Done
 
+- Report the result. Follow [Answering Questions](#answering-questions).
 - After a change to behavior, commands, or structure, use the `sync-docs` skill.
-- Give a concise report organized into sections and bullet points.
 - Remind the user to commit before moving on. Suggest a one-line message for all changes since the last commit.
