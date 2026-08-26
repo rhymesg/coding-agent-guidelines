@@ -1,6 +1,6 @@
 ---
 name: write-doc
-description: "Use when writing, editing, or reviewing Markdown, other documentation files, or document-style Artifacts such as tech notes and reports — sets the style rules for document content, including README- and skill-specific rules."
+description: "Use when writing or editing Markdown, other documentation files, or document-style Artifacts such as tech notes and reports — sets the style rules for document content, including README- and skill-specific rules."
 ---
 
 # Writing a Document
@@ -28,3 +28,7 @@ description: "Use when writing, editing, or reviewing Markdown, other documentat
 - Write the description as the trigger: "Use when <situation>", with the words seen at trigger time.
 - Write rules and guidelines as clear, short bullet points.
 - Write workflows as numbered steps, clear and concise, so no step is overlooked.
+
+## Review
+
+- After finishing a document, use the `review-doc` skill.
