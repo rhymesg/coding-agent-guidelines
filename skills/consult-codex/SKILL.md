@@ -6,6 +6,7 @@ description: "Use when your answer contains several options without a clear winn
 # Consulting Codex
 
 - Delegate through the `codex:codex-rescue` agent.
+- Without the codex plugin, delegate to a fresh general-purpose subagent whose prompt contains only the request and the paths.
 - Pass file paths and the question, not copied file content.
 - Give Codex the context it cannot infer: the goal, the constraints, and prior decisions from the conversation.
 - Report Codex's answer next to your own view. Note where they differ; do not silently adopt either.
