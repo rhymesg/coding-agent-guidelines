@@ -1,6 +1,6 @@
 ---
 name: second-opinion
-description: "Use when your answer contains several options without a clear winner, when your conclusion is uncertain or rests on claims you could not verify, or when reviewing a finished document or code change — gets an independent pass from a reviewer agent."
+description: "Use when your answer has no clear winner, your conclusion remains uncertain, or a document or code change modifies more than five non-generated lines."
 ---
 
 # Getting a Second Opinion
@@ -25,9 +25,11 @@ description: "Use when your answer contains several options without a clear winn
 
 ## Reviewing Code
 
-1. Pass the change scope: a diff, a branch, or file paths.
-2. Pass the paths of related documents: the plan or design document the change follows, the coding guidelines, and the README of the touched component.
-3. Ask for these findings:
+1. Pass these to the reviewer:
+   - The goal, expected behavior, constraints, non-goals, and important prior decisions.
+   - The change scope: a diff, branch, or file paths.
+   - The related plan or design, coding guidelines, and component README.
+2. Ask for findings on:
    - Weaknesses in the logic.
    - Unneeded complexity.
    - Behavior not covered by unit tests.
