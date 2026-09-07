@@ -6,6 +6,7 @@ description: "Use when writing or editing Markdown, other documentation files, o
 # Writing a Document
 
 - Order the document as a whole: context first, content next, outcome last. Group content under headings.
+- Keep a document under 1000 words unless the user sets another limit.
 - Prefer bullet points. One point per bullet, one line per bullet.
 - Put parallel items in a list; put compared items in a table.
 - Link to the detailed document or source file instead of repeating its content.
