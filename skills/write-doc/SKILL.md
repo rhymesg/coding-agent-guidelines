@@ -14,6 +14,22 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Keep paragraphs to two sentences or fewer. One paragraph covers one thing.
 - Add a diagram, table, or graph when a picture states the point faster than text.
 
+## Purpose
+
+- State the document's purpose in its first lines. Name another purpose when none below fits.
+- Update the document on the trigger for its purpose. Suggest removing it when it has served its purpose or no longer matches the project.
+
+| Purpose | Content | Update when |
+|---|---|---|
+| Plan | What to do | A decision changes |
+| Architecture | How the current system works | The code changes |
+| Guide | How to use or set up the system | Behavior or a command changes |
+| Progress | What is done and what remains | Work finishes |
+| Report | What was found or measured | A correction is needed |
+| Review | What is wrong or could improve | A finding is added or resolved |
+| Reference | Background knowledge or supporting information | The source changes |
+| Note | A fact to recall later | The fact changes |
+
 ## Mermaid Diagram
 
 - Draw a two-way relation as two one-directional edges (`-->`, `-.->`), not as `<-->` or `<-.->`.
