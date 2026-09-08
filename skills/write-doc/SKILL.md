@@ -22,14 +22,13 @@ description: "Use when writing or editing Markdown, other documentation files, o
 | Purpose | Content | Update when |
 |---|---|---|
 | Plan | What to do | A decision changes |
-| Architecture | How the current system works | The code changes |
 | Design | The chosen approach and the alternatives rejected | A decision changes |
+| Progress | Which tasks are done and which remain | Work finishes |
+| Architecture | How the current system works | The code changes |
 | Guide | How to use or set up the system | Behavior or a command changes |
-| Progress | What is done and what remains | Work finishes |
-| Report | What was found or measured | A correction is needed |
+| Report | What was found or measured, and what is still open | A result is added or a question closes |
 | Review | What is wrong or could improve | A finding is added or resolved |
 | Reference | Background knowledge or supporting information | The source changes |
-| Note | A fact to recall later | The fact changes |
 
 ## Mermaid Diagram
 
