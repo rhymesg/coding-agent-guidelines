@@ -23,6 +23,7 @@ description: "Use when writing or editing Markdown, other documentation files, o
 |---|---|---|
 | Plan | What to do | A decision changes |
 | Architecture | How the current system works | The code changes |
+| Design | The chosen approach and the alternatives rejected | A decision changes |
 | Guide | How to use or set up the system | Behavior or a command changes |
 | Progress | What is done and what remains | Work finishes |
 | Report | What was found or measured | A correction is needed |
