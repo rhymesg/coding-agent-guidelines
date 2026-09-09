@@ -46,6 +46,11 @@
 - Do not edit unless asked; a question is not a request to edit.
 - Do not commit unless asked. When asked, use the `commit` skill.
 
+### Long Tasks
+
+- A task that spans several sessions has a folder `workplans/<topic>/` in the working directory. Before starting on a topic, check for a matching folder and read its `objective.md` first. It states the goal, the guidelines, and where the plan and the findings are.
+- When a request will not finish in one session, use the `workplan` skill to create the folder and plan the work before starting.
+
 ### Answering Questions
 
 - Start with the direct answer or the outcome in one sentence.
