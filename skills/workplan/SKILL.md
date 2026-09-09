@@ -22,7 +22,7 @@ A workplan carries one long task across sessions in three local documents: the i
 |---|---|---|
 | `objective.md` | Goal, guidelines, verification, what the report should answer | The user changes the goal or adds guidance |
 | `tasks.md` | Subtasks in order, with their plan and status | A task starts, finishes, or changes |
-| `report.md` | Findings, analysis, conclusions, verification result | Something relevant is learned |
+| `report.md` | Results and history: findings, attempts, analysis, conclusions, verification | Something relevant is learned |
 
 Templates are in `templates/`. Keep their first lines.
 
@@ -34,4 +34,4 @@ Templates are in `templates/`. Keep their first lines.
 4. Explore the code and data the task touches. Report the findings and ask about decisions that need domain knowledge: algorithms, tradeoffs, priorities, data.
 5. Fill `tasks.md`.
 6. Show `tasks.md`. Ask what to drop, split, reorder, or delegate. Repeat until the user agrees.
-7. Start the first task and follow the guidelines in `objective.md`.
+7. Start the first actionable task and follow the guidelines in `objective.md`.
