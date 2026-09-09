@@ -5,12 +5,12 @@ description: "Use when the user asks for an investigation, implementation, or fi
 
 # Workplan
 
-A workplan carries one long task across sessions in three local documents. The documents hold the intent, the plan, and the findings. A later session enters through `objective.md`, as the coding guidelines direct, and keeps the other two current.
+A workplan carries one long task across sessions in three local documents: the intent, the plan, and the findings. A later session enters through `objective.md`.
 
 ## Location
 
 - `workplans/<topic>/` at the root of the working directory. `<topic>` is lower-case kebab-case, the words the user uses for the task.
-- The folder is local and temporary. Keep it out of git without editing tracked files:
+- The folder is local and temporary. Keep it out of git:
 
   ```bash
   git check-ignore -q workplans || echo 'workplans/' >> "$(git rev-parse --git-dir)/info/exclude"
@@ -18,26 +18,20 @@ A workplan carries one long task across sessions in three local documents. The d
 
 ## Documents
 
-| File | Purpose | Content | Update when |
-|---|---|---|---|
-| `objective.md` | Plan, Guide | Goal, scope, guidelines, verification criteria, report contents | The user changes the goal or adds guidance |
-| `tasks.md` | Plan, Progress | Subtasks in order, with their plan and status | A task starts, finishes, or changes |
-| `report.md` | Report | Findings, analysis, conclusions, verification result | A finding is made or a question closes |
+| File | Content | Update when |
+|---|---|---|
+| `objective.md` | Goal, scope, guidelines, verification, what the report should answer | The user changes the goal or adds guidance |
+| `tasks.md` | Subtasks in order, with their plan and status | A task starts, finishes, or changes |
+| `report.md` | Findings, analysis, conclusions, verification result | Something relevant is learned |
 
-Templates are in `templates/` next to this file. Each template carries its own format rules in its first lines; keep those lines in the created file.
+Templates are in `templates/`. Keep their first lines.
 
 ## Workflow
 
-1. Ask the user what is unclear about the request before writing anything: the goal, the reason behind it, the finished state, what is out of scope, known constraints, and where the relevant code and data are. Collect the questions and ask them together.
-2. Copy the three templates into `workplans/<topic>/`. Fill `objective.md` from the answers. Keep the baseline guidelines. Propose the verification criteria and the procedure.
-3. Show `objective.md` to the user. Ask for corrections and for guidance to add to the Guidelines section. Repeat until the user confirms the goal, the scope, and the verification.
-4. Explore the code and data the task touches. Do not plan from assumptions. Report what was found and ask the user about decisions that need domain knowledge: algorithms, tradeoffs, priorities, data to use.
-5. Fill `tasks.md`. Group the tasks into phases, mark the parallel ones, and keep the verification task last. Adjust the sections of `report.md` to what `objective.md` requires; leave them empty.
-6. Show `tasks.md` to the user. Ask which tasks to drop, split, reorder, or delegate. Repeat until the user agrees to the plan.
-7. Start the first task. During the work, follow the guidelines in `objective.md`.
-
-## Rules
-
-- Follow the `write-doc` skill in all three files.
-- Do not delete the folder. The user removes it when the task is closed.
-- When the work changes behavior, commands, or structure, use the `sync-docs` skill as usual. The workplan does not replace the project documents.
+1. Ask the user what is unclear: the goal, the reason, the finished state, what is out of scope, constraints, where the code and data are. Ask the questions together.
+2. Copy the templates into `workplans/<topic>/`. Fill `objective.md`. Keep the baseline guidelines. Propose the verification.
+3. Show `objective.md`. Ask for corrections and guidance. Repeat until the user confirms it.
+4. Explore the code and data the task touches. Report the findings and ask about decisions that need domain knowledge: algorithms, tradeoffs, priorities, data.
+5. Fill `tasks.md`.
+6. Show `tasks.md`. Ask what to drop, split, reorder, or delegate. Repeat until the user agrees.
+7. Start the first task and follow the guidelines in `objective.md`.

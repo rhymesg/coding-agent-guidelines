@@ -1,6 +1,6 @@
 # <Topic>: Tasks
 
-Plan and progress. One task per checkbox line, verb first, in execution order. Append `(in progress)` or `(blocked: <reason>)` to the line. `Parallel` marks a task that does not depend on an open task and can go to a subagent.
+Plan and progress. One task per checkbox line, verb first, in order. Append `(in progress)` or `(blocked: <reason>)` to the line. `Parallel` marks a task that does not depend on an open task and can go to a subagent.
 
 ## Investigate
 

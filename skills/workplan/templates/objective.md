@@ -17,9 +17,10 @@ Objective of the workplan in this folder. The plan is `tasks.md`, the findings a
 - Read `tasks.md` and continue from the first open task. Read `report.md` for what is already known.
 - Mark a task in `tasks.md` when it starts, finishes, or is blocked. Write to `report.md` as soon as something relevant is learned.
 - Only the main session edits the files in this folder. A subagent gets the path of this file and its task text, and returns its findings in its reply.
-- Work autonomously. Do not ask for permission to run a task, choose an approach within the scope, or fix what a task uncovers.
-- Change the plan in `tasks.md` when the findings call for it: add, drop, split, or reorder tasks. Note the reason under the task.
-- Write anything relevant to `report.md`: findings, hypotheses, assumptions, open questions. Label what is verified and what is not. Point to files, commits, and measurements.
+- Work autonomously. Do not ask permission for a task, an approach within the scope, or a fix for what a task uncovers.
+- Change `tasks.md` when the findings call for it. Note the reason under the task.
+- Add other documents when needed and link them from `report.md` or `tasks.md`.
+- `report.md` is for the user and for the next session. It holds what was tried, what was learned, and where the work stands: findings, hypotheses, assumptions, and open questions, with the verified ones labeled.
 - <User's guidance, one bullet each, appended as it arrives.>
 
 ## Verification
@@ -30,4 +31,4 @@ Objective of the workplan in this folder. The plan is `tasks.md`, the findings a
 
 ## Report
 
-- Sections `report.md` must contain and questions it must answer.
+- What the user wants to learn from `report.md`: questions to answer, decisions to support.
