@@ -50,7 +50,7 @@
 
 - Before starting or resuming work, including after compaction, check `workplans/` for a matching topic.
 - If one exists, read its `objective.md` before continuing.
-- When a request will not finish in one session, use the `workplan` skill to create the folder and plan the work before starting.
+- When a request will not finish in one session, use the `workplan` skill.
 
 ### Answering Questions
 
