@@ -48,7 +48,8 @@
 
 ### Long Tasks
 
-- A task that spans several sessions has a folder `workplans/<topic>/` in the working directory. Before starting on a topic, check for a matching folder and read its `objective.md` first. It states the goal, the guidelines, and where the plan and the findings are.
+- Before starting or resuming work, including after compaction, check `workplans/` for a matching topic.
+- If one exists, read its `objective.md` before continuing.
 - When a request will not finish in one session, use the `workplan` skill to create the folder and plan the work before starting.
 
 ### Answering Questions

@@ -20,7 +20,7 @@ A workplan carries one long task across sessions in three local documents: the i
 
 | File | Content | Update when |
 |---|---|---|
-| `objective.md` | Goal, scope, guidelines, verification, what the report should answer | The user changes the goal or adds guidance |
+| `objective.md` | Goal, guidelines, verification, what the report should answer | The user changes the goal or adds guidance |
 | `tasks.md` | Subtasks in order, with their plan and status | A task starts, finishes, or changes |
 | `report.md` | Findings, analysis, conclusions, verification result | Something relevant is learned |
 
