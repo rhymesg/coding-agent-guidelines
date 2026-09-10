@@ -1,6 +1,8 @@
 # <Topic>: Plan
 
-Approach and decisions for the goal in `objective.md`. Execution status is in `tasks.md`; findings are in `report.md`.
+> Approach and decisions.
+>
+> [Objective](objective.md) · [Tasks](tasks.md) · [Report](report.md)
 
 - Choose sections and detail to fit the task.
 - Describe the approach, phases, dependencies, and reasons for decisions where relevant.

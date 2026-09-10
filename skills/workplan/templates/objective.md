@@ -1,8 +1,10 @@
 # <Topic>
 
-Status: ongoing
-
-Goal and execution rules for this workplan. Start here; the plan is `plan.md`, the progress is `tasks.md`, and the findings are `report.md`.
+> **Status:** ongoing
+>
+> Goal and execution rules. Start here.
+>
+> [Plan](plan.md) · [Tasks](tasks.md) · [Report](report.md)
 
 Keep Goal and Verification below; choose other sections and detail to fit the task.
 
