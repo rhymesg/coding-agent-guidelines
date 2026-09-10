@@ -1,5 +1,7 @@
 # <Topic>
 
+Status: ongoing
+
 Objective of the workplan in this folder. The plan is `tasks.md`, the findings are `report.md`.
 
 ## Goal
@@ -10,6 +12,7 @@ Objective of the workplan in this folder. The plan is `tasks.md`, the findings a
 ## Guidelines
 
 - When the user gives guidance before or during the work, record it as a bullet in this list and follow it. Replace any bullet it contradicts.
+- Check `Status` first: `ongoing`, `paused`, or `finished`. Unless `ongoing`, report it and wait for the user. Set it `finished` when the verification passes with a conclusion in `report.md`.
 - Read and update `tasks.md` as the current plan. Continue from the first actionable task and keep task status current.
 - Read `report.md` for results and history. Record attempts, findings, hypotheses, assumptions, and open questions as they arise. Label verified findings.
 - Only the main session edits the files in this folder. A subagent gets the path of this file and its task text, and returns its findings in its reply.
