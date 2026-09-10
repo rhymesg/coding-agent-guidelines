@@ -30,12 +30,12 @@ Templates are in `templates/`. Keep their purpose statements and the `Goal`, `Ve
 
 ## Workflow
 
-For an existing workplan, start with `objective.md`. If setup is incomplete, finish only the missing steps below. Do not copy templates again or repeat recorded approvals.
+For an existing workplan, start with `objective.md`. For a new or incomplete workplan, follow the steps below.
 
-1. Ask the user what is unclear: the goal, the reason, the finished state, what is out of scope, constraints, where the code and data are. Ask the questions together.
+1. Ask the user what is unclear: the goal, the reason, the finished state, what is out of scope, constraints, where the code and data are.
 2. Create `workplans/<topic>/` with `worktrees/` and `artifacts/`, then copy the templates into it. Fill `objective.md` with the goal, workspace paths, default guidelines, and user guidance. Plan how to verify that the user's desired outcome is achieved, and record the criteria, checks, and evidence to collect in `Verification`.
-3. Show `objective.md` and propose the verification plan to the user. Ask for corrections and guidance until the user approves it. Record the approval in `objective.md`.
+3. Show `objective.md` and propose the verification plan to the user. Ask for corrections and guidance until the user approves it.
 4. Explore the code and data the task touches. Get needed user input before execution, including domain decisions, constraints, and access.
-5. Fill `plan.md` with the approach and any relevant phases, dependencies, or decisions. Ask for corrections until the user approves it. Record the approval in `objective.md`.
+5. Fill `plan.md` with the approach and any relevant phases, dependencies, or decisions. Ask for corrections until the user approves it.
 6. Break the agreed plan into concrete tasks in `tasks.md`. Link tasks to the relevant plan sections and mark dependencies and status.
-7. After both initial approvals, set up the checkouts under the workspace rules in `objective.md`, then follow it for execution.
+7. Start execution following `objective.md`.

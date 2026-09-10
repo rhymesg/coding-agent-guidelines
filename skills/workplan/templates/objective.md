@@ -33,7 +33,6 @@ Keep Goal, Verification, and Guidelines.
 
 ### Workspace
 
-- Reuse this topic folder on resuming. Do not create another `workplans/` inside a task worktree.
 - Create or reuse Git checkouts from the intended base revisions at `worktrees/<repo>/` within this folder, using `<repo>-<purpose>` for additional checkouts.
 - Record absolute workplan, worktree, and artifact paths, source repositories, task branches, and base revisions here. Use the recorded paths when starting or resuming.
 - Store temporary results, analysis, and scratch files in `artifacts/`.
