@@ -1,20 +1,7 @@
 # <Topic>: Tasks
 
-Plan and progress. One task per checkbox line, verb first, in order. Append `(in progress)` or `(blocked: <reason>)` to the line. `Parallel` marks a task that does not depend on an open task and can go to a subagent.
+Execution checklist for `plan.md`. Choose the grouping and detail to fit the task.
 
-## Investigate
-
-- [ ] <Task>
-  - Files: ...
-  - Commands: ...
-  - Expected outcome: ...
-
-## Implement
-
-- [ ] <Task> — Parallel
-  - Files: ...
-  - Expected outcome: ...
-
-## Verify
-
-- [ ] Run the verification in `objective.md` and write the result to `report.md`.
+- Keep concrete tasks in actionable order and their status current.
+- Link to relevant plan sections instead of repeating the plan.
+- Note dependencies or blockers when needed.

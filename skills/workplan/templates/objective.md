@@ -2,42 +2,24 @@
 
 Status: ongoing
 
-Objective of the workplan in this folder. The plan is `tasks.md`, the findings are `report.md`.
+Objective and execution entrypoint for this workplan. The plan is `plan.md`, the progress is `tasks.md`, and the findings are `report.md`.
 
-## Goal
-
-- What the user wants and why.
-- What the finished state looks like.
-
-## Workspace
-
-- Workplan directory: <absolute topic folder path>.
-- Worktrees directory: <absolute workplan directory>/worktrees/.
-- Artifacts directory: <absolute workplan directory>/artifacts/.
-- Repositories: <source repository, task branch, base revision and absolute worktree path for each checkout>.
-- Tool-required output locations: <paths outside artifacts/, if any>.
+Choose sections and detail to describe the goal, scope, constraints, verification, and what the report should answer. Record absolute workplan, worktree, and artifact paths, source repositories, task branches, base revisions, and any tool-required output paths.
 
 ## Guidelines
 
-- When the user gives guidance before or during the work, record it as a bullet in this list and follow it. Replace any bullet it contradicts.
-- Check `Status` first: `ongoing`, `paused`, or `finished`. Unless `ongoing`, report it and wait for the user. Set it `finished` when the verification passes with a conclusion in `report.md`.
-- Read and update `tasks.md` as the current plan. Continue from the first actionable task and keep task status current.
-- Read `report.md` for results and history. Record attempts, findings, hypotheses, assumptions, and open questions as they arise. Label verified findings.
-- Only the main session edits `objective.md`, `tasks.md` and `report.md`. Give each subagent this objective, its task and its assigned worktree/artifact paths; it returns findings in its reply.
-- Use the recorded workspace paths when starting or resuming. Perform repository edits, builds and tests in the assigned worktree under this workplan’s `worktrees/`.
+- Check `Status` first: `ongoing`, `paused`, or `finished`. Unless `ongoing`, report it and wait for the user.
+- Start execution after the user approves the initial objective and plan. Record actual approvals here and retain them on resuming. Then work without user intervention within the approved goal, constraints, and permissions; choose approaches and resolve uncertainties from available evidence.
+- On resuming, read `objective.md`, `plan.md`, and `tasks.md` in order, then relevant findings in `report.md`. Reconcile them with actual files, results, and running work before continuing.
+- Repeat: execute the next actionable task, verify the result, update findings in `report.md` and tasks and status in `tasks.md`, revise `plan.md` when planning decisions change, and continue toward the goal.
+- Record relevant attempts, findings, hypotheses, assumptions, and open questions in `report.md`. Distinguish verified findings from unverified ideas.
+- Only the main session edits `objective.md`, `plan.md`, `tasks.md`, and `report.md`. Give each subagent this objective, its task, and its assigned worktree/artifact paths; it returns findings in its reply.
+- Use the recorded workspace paths when starting or resuming. Perform repository edits, builds, and tests in the assigned worktree under this workplan’s `worktrees/`.
 - Store temporary results in `artifacts/`; record tool-required output paths and preserve needed outputs before removing completed worktrees.
-- Work autonomously within the goal and guidelines. Freely edit and organize `tasks.md` and `report.md`, preserving results, history, and reasons for plan changes.
-- After completing and verifying a unit of work, use the `commit` skill to commit its changes.
-- Add other documents when needed and link them from `report.md` or `tasks.md`.
-- <User's guidance, one bullet each, appended as it arrives.>
-
-## Verification
-
-- Criteria: what the result must meet.
-- Data or tests: what measures the criteria.
-- Procedure: the command or steps.
-
-## Report
-
-- What the user wants to learn from `report.md`: questions to answer, decisions to support.
-- Include a conclusion when the work is complete.
+- When changes accumulate, use the `commit` skill to commit completed, verified units of work and continue. Follow any user-specific commit instructions.
+- When blocked, investigate the cause, try meaningful alternatives, and continue independent work. Do not stop merely because one approach fails or the work is difficult.
+- Before a session boundary, leave the next action, blockers, and relevant commands, result paths, or running job identifiers in `tasks.md`. A session boundary does not end the task.
+- End only when the goal's verification criteria are met or evidence shows no meaningful path forward within the approved constraints. Set `Status` to `finished`. In `report.md`, record verification evidence, conclusions, and limitations for an achieved goal; for an unmet goal, record attempts, evidence, unmet criteria, and why remaining alternatives offer no meaningful path forward.
+- Keep current conclusions easy to find. Condense or separate older details while retaining important failures, evidence, and decision reasons.
+- Add other documents when needed and link them from `plan.md`, `tasks.md`, or `report.md`.
+- Update these defaults and existing guidance when the user gives additional instructions. Replace superseded guidance and avoid duplicates.

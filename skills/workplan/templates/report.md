@@ -1,3 +1,3 @@
 # <Topic>: Report
 
-Findings of the workplan in this folder. Rules in `objective.md`. Organize the content under headings.
+Findings and verification evidence for the workplan in this folder. Follow `objective.md` and choose the organization to fit the task.
