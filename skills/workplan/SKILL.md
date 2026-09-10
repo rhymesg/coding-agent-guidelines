@@ -1,6 +1,6 @@
 ---
 name: workplan
-description: "Use when starting or planning work that requires multiple sessions, such as an investigation, implementation, or fix."
+description: "Use when starting or planning complex work that requires multiple sessions."
 ---
 
 # Workplan
