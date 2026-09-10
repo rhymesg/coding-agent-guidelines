@@ -26,7 +26,7 @@ A workplan tracks one long task across sessions in four local documents: the goa
 | `tasks.md` | Concrete tasks in order, links to the plan, status | A task starts, finishes, or changes |
 | `report.md` | Results and history: findings, attempts, analysis, conclusions, verification | Something relevant is learned |
 
-Templates are in `templates/`. Keep their purpose statements and the `Goal` and `Verification` sections in `objective.md`; choose other sections and detail to fit the task.
+Templates are in `templates/`. Keep their purpose statements and the `Goal`, `Verification`, and `Guidelines` sections in `objective.md`; choose other sections and detail to fit the task.
 
 ## Workflow
 

@@ -4,7 +4,7 @@
 >
 > Goal and execution rules. Start here.
 
-Keep Goal and Verification below; choose other sections and detail to fit the task.
+Keep Goal, Verification, and Guidelines.
 
 ## Goal
 
@@ -26,6 +26,7 @@ Keep Goal and Verification below; choose other sections and detail to fit the ta
 
 ### Execution
 
+- Keep the approved goal and completion criteria unchanged unless the user changes them. Adjust verification methods as needed.
 - Repeat: do the next ready task, verify the result, update `tasks.md` and `report.md`, and adjust `plan.md` as needed.
 - When changes build up, use the `commit` skill to commit completed, verified units of work and continue.
 - When blocked, investigate the cause, try meaningful alternatives, and continue independent work.
