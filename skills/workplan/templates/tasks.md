@@ -1,8 +1,6 @@
 # <Topic>: Tasks
 
 > Execution checklist and progress.
->
-> [Objective](objective.md) · [Plan](plan.md) · [Report](report.md)
 
 Choose the grouping and detail to fit the task.
 
