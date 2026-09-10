@@ -26,6 +26,7 @@
 - Spend tokens on planning, exploring, and thinking. Save tokens in chat, code, comments, docstrings, and other docs.
 - Use standard technical terms and familiar words.
 - Write the shortest possible sentences and paragraphs to deliver your meaning.
+- Do not add sentences that repeat the same meaning.
 - No slang, no humor, no metaphor.
 - Do not add rationale clauses like 'so that X' or 'this avoids Y'.
 
