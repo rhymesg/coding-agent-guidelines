@@ -49,7 +49,6 @@
 ### Long Tasks
 
 - Before starting or resuming work, including after compaction, read the matching `workplans/<topic>/objective.md`.
-- When a request will not finish in one session, use the `workplan` skill.
 
 ### Answering Questions
 

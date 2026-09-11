@@ -1,6 +1,6 @@
 ---
 name: workplan
-description: "Use when starting or planning complex work that requires multiple sessions."
+description: "Set up a workplan for long work spanning multiple sessions. Use when the user asks for a workplan. When the user asks to plan complex work instead, suggest this skill and wait for approval."
 ---
 
 # Workplan
