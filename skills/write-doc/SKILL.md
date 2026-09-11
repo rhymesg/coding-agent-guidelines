@@ -45,3 +45,4 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Write the description as the trigger: "Use when <situation>", with the words seen at trigger time.
 - Write rules and guidelines as clear, short bullet points.
 - Write workflows as numbered steps, clear and concise, so no step is overlooked.
+- Omit instructions the agent already knows or can infer.
