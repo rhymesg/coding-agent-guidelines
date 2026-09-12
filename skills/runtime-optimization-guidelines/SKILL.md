@@ -24,6 +24,7 @@ Optimize measured bottlenecks and report the method and before-and-after results
 
 ### Report
 
+- Create or update `docs/runtime_optimization.md` in the repository being optimized after each optimization attempt. Integrate findings into the relevant sections while retaining useful prior results and comparisons.
 - Describe the bottleneck, measurement method, optimization, and setup needed to reproduce the comparison.
 - Compare baseline and candidate execution time and output quality in a table. Include variability and explain any quality-versus-runtime tradeoff.
 - Report correctness and regression checks, goal attainment, and remaining issues or unverified results.
