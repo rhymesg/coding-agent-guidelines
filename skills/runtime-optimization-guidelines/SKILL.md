@@ -24,7 +24,6 @@ Optimize measured bottlenecks and report the method and before-and-after results
 
 ### Report
 
-- Create or update `docs/runtime_optimization.md` in the repository being optimized after each optimization attempt. Integrate findings into the relevant sections while retaining useful prior results and comparisons.
-- Describe the bottleneck, measurement method, optimization, and setup needed to reproduce the comparison.
-- Compare baseline and candidate execution time and output quality in a table. Include variability and explain any quality-versus-runtime tradeoff.
-- Report correctness and regression checks, goal attainment, and remaining issues or unverified results.
+- Create or update `docs/runtime_optimization.md` in the repository being optimized with a [results table](templates/runtime_optimization.md). Integrate findings into relevant sections while preserving historical comparisons.
+- Reference the measured code commits, not report commits. Keep uncommitted measurements provisional until that exact code is committed; remeasure if it changes.
+- Cover bottlenecks, environment, performance measurement methods, quality tradeoffs, and useful unsuccessful attempts.
