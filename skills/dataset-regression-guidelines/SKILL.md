@@ -1,6 +1,6 @@
 ---
 name: dataset-regression-guidelines
-description: Use when the user requests dataset-based regression tests. Provides design and implementation guidelines.
+description: Use when the user requests regression tests using small input segments extracted from real datasets.
 ---
 
 # Dataset-Based Regression Testing Guidelines
@@ -26,7 +26,7 @@ Detect regressions during feature changes or dataset additions. Preserve represe
 - Include the inputs, configuration, and timestamps needed for initialization and state accumulation. Record the data source and extraction range.
 - Choose tools and implementation methods that fit the project. Make tests repeatable and failures easy to diagnose.
 - Give each test independent state and resources. Tests must not depend on other tests or execution order.
-- Inspect internal state only as needed for verification. Do not change production members from `private` to `public`. If necessary, consider changing them to `protected` and accessing them through accessors defined in a derived test fixture.
+- Inspect internal state only as needed for verification. Preserve production encapsulation.
 - Obtain and verify outputs through the same public functions used by external modules.
 - Changes made for testing must not alter or bypass the actual processing flow or behavior.
 - When updating expected results for an intentional behavior change, confirm the reason for the change and the basis for the new reference results.
