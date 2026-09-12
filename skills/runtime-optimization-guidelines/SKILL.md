@@ -13,7 +13,8 @@ Optimize measured bottlenecks and report the method and before-and-after results
 2. Identify bottlenecks with suitable tools, such as perf for CPU profiling or Cachegrind for instruction counts. Distinguish computation from waiting.
 3. Before changing a bottleneck, review regression coverage for the affected behavior. Reuse existing tests and fill coverage gaps. Verify they pass and record repeated timing baselines.
 4. Optimize one bottleneck at a time. Run regression tests before and after each change; compare execution time and output quality, then re-profile.
-5. Add or update execution-time regression tests without duplication when measurements are stable; otherwise, keep benchmarks and report limitations.
+5. For successful optimizations, add or update execution-time regression tests without duplication when measurements are stable; otherwise, keep benchmarks and report limitations.
+6. Commit each successful optimization and its related tests using the `commit` skill, then update `docs/runtime_optimization.md` with the measured before-and-after code hashes.
 
 ## Guidelines
 
