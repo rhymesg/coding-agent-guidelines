@@ -1,6 +1,6 @@
 ---
 name: clean-up
-description: Use when a task adds 100+ code lines or when preparing a merge request with 200+ added code lines. Count only added lines of non-generated source code.
+description: Use when unmerged changes add more than 100 lines of non-generated source code since the last cleanup or relative to the base branch.
 ---
 
 # Clean Up
