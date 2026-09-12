@@ -9,12 +9,11 @@ Optimize measured bottlenecks and report the method and before-and-after results
 
 ## Workflow
 
-1. Continue an existing workplan for the same optimization. For work spanning multiple sessions without a workplan, use the `workplan` skill to create one.
-2. Inspect the processing flow and existing tests. Define representative workloads, measurement boundaries, and optimization goals.
-3. Identify bottlenecks with suitable tools, such as perf for CPU profiling or Cachegrind for instruction counts. Distinguish computation from waiting.
-4. Before changing a bottleneck, review regression coverage for the affected behavior. Reuse existing tests and fill coverage gaps. Verify they pass and record repeated timing baselines.
-5. Optimize one bottleneck at a time. Run regression tests before and after each change; compare execution time and output quality, then re-profile.
-6. Add or update execution-time regression tests without duplication when measurements are stable; otherwise, keep benchmarks and report limitations.
+1. Inspect the processing flow and existing tests. Define representative workloads, measurement boundaries, and optimization goals.
+2. Identify bottlenecks with suitable tools, such as perf for CPU profiling or Cachegrind for instruction counts. Distinguish computation from waiting.
+3. Before changing a bottleneck, review regression coverage for the affected behavior. Reuse existing tests and fill coverage gaps. Verify they pass and record repeated timing baselines.
+4. Optimize one bottleneck at a time. Run regression tests before and after each change; compare execution time and output quality, then re-profile.
+5. Add or update execution-time regression tests without duplication when measurements are stable; otherwise, keep benchmarks and report limitations.
 
 ## Guidelines
 
