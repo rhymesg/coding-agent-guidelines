@@ -5,8 +5,9 @@
 ### Keep It Simple and Maintainable
 
 - Explore the codebase first to understand its structure, conventions, and existing patterns.
-- Before creating a new function, check whether existing code can be reused, extended, or slightly modified.
-- Before adding code, check whether it is necessary for the user's intended outcome. Do not add it otherwise.
+- Before adding code:
+  - Check whether it is necessary for the user's intended outcome. Do not add it otherwise.
+  - Look for ways to reuse, extend, or slightly modify existing code.
 
 ### Stay Within the Coding Task
 
