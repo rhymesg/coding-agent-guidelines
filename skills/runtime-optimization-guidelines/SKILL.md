@@ -23,7 +23,7 @@ Optimize measured bottlenecks and report the method and before-and-after results
 - Compare on the same machine with only the optimization changed. Repeat measurements and report variability.
 - Measure actual completion time separately from profiling overhead. Treat cycle and instruction counts as supporting metrics.
 
-## Report
+### Report
 
 - Describe the bottleneck, measurement method, optimization, and setup needed to reproduce the comparison.
 - Compare baseline and candidate execution time and output quality in a table. Include variability and explain any quality-versus-runtime tradeoff.
