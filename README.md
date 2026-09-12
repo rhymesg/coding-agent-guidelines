@@ -6,7 +6,7 @@
 
 - Explore the codebase first to understand its structure, conventions, and existing patterns.
 - Before creating a new function, check whether existing code can be reused, extended, or slightly modified.
-- Use the simplest solution with the minimum necessary code.
+- Before adding code, check whether it is necessary for the user's intended outcome. Do not add it otherwise.
 
 ### Stay Within the Coding Task
 

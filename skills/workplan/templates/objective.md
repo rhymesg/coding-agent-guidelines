@@ -51,4 +51,5 @@ Keep Goal, Verification, and Guidelines.
 ### Completion
 
 - End only when the goal's verification criteria are met or evidence shows no meaningful path forward within the approved constraints.
-- Then set `Status` to `completed` and record verification evidence, conclusions, and limitations in `report.md`.
+- Use the `clean-up` skill with this workplan's goal and plan as the cleanup criteria, then recheck the goal's verification criteria.
+- Record verification evidence, conclusions, and limitations in `report.md`, then set `Status` to `completed`.
