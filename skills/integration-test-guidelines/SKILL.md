@@ -21,9 +21,8 @@ Inspect the project structure, component interactions, and existing tests. Keep 
 - Put each integration test in `integration/<test_name>/` under the project's test directory, with its test file and test data together.
 - Start each test file with a header comment summarizing the selected scenarios, component boundary, inputs, and acceptance criteria.
 - Include required data, configuration, and timestamps in the repository. For extracted data, record the source and extraction range.
-- Exercise the same public APIs used by external modules without altering or bypassing the actual processing flow.
+- Exercise production APIs and processing paths while preserving encapsulation.
 - Assert behavior, not implementation details.
-- Preserve production encapsulation.
 - Isolate each test's state and resources; control clocks, randomness, and other nondeterministic inputs. Tests must not depend on execution order.
 - Make failures identify the scenario, expected behavior, and actual result.
 - Include these tests in the project's normal test target, such as `make test`, without manual preparation.
