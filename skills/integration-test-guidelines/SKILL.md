@@ -20,6 +20,8 @@ Test interactions among a small set of real components in normal CI. Verify how 
 ## Implementation
 
 - Choose tools and implementation methods that fit the project.
+- Put each integration test in `integration/<test_name>/` under the project's test directory, with its test file and test data together.
+- Start each test file with a header comment summarizing the approved scenarios, component boundary, inputs, and acceptance criteria.
 - Use the smallest input sequences that reproduce the scenarios. Include any required data in the repository.
 - Include the inputs, configuration, and timing needed for initialization and state accumulation. For extracted data, record the source and extraction range.
 - Give each test independent state and resources. Tests must not depend on other tests or execution order.
@@ -30,5 +32,4 @@ Test interactions among a small set of real components in normal CI. Verify how 
 - Inspect internal state only as needed for verification. Preserve production encapsulation.
 - Obtain and verify outputs through the same public functions used by external modules.
 - Use explicit assertions for success or failure. Make tests repeatable and failures easy to diagnose.
-- Run tests in normal CI without manual preparation. Failed tests must fail the CI job.
-- Before updating expected results, confirm the intended behavior change and the new results' basis.
+- Include these tests in the project's normal test target, such as `make test`, without manual preparation.
