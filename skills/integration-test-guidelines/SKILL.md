@@ -5,31 +5,29 @@ description: Use when the user requests integration tests for component interact
 
 # Integration Testing Guidelines
 
-Test interactions among a small set of real components in normal CI. Verify how input order, timing, repetition, and accumulated history affect internal state and outputs.
+Design focused integration tests that expose failures in component interactions.
 
 ## Design
 
-1. Inspect the project structure, component interactions, and existing tests.
-2. Present the following design choices to the user:
-   - **Test scenarios:** Which existing behaviors to preserve, including representative normal operation.
-   - **Test boundary:** Which real components to connect and which dependencies outside that boundary to replace.
-   - **Input data:** Which synthetic inputs or extracted dataset segments represent the scenarios.
-   - **Acceptance criteria:** Pass/fail criteria, tolerances, and whether reference outputs have been verified as correct.
-3. Obtain the user's approval of the design before implementing the tests.
+Inspect the project structure, component interactions, and existing tests. Keep user-provided choices and select effective options for the rest:
+
+- **Scope:** Use the smallest boundary that exposes the relevant failures. Connect real components within it and replace dependencies outside it as needed.
+- **Scenarios:** Cover normal operation and plausible interaction failures, including ordering, delays, repetition, and recovery where relevant.
+- **Inputs:** Use minimal, representative sequences from synthetic inputs or extracted dataset segments, preserving initialization and accumulated history.
+- **Expected results:** Define independently justified outcomes and tolerances. Verify existing outputs before using them as references.
 
 ## Implementation
 
-- Choose tools and implementation methods that fit the project.
 - Put each integration test in `integration/<test_name>/` under the project's test directory, with its test file and test data together.
-- Start each test file with a header comment summarizing the approved scenarios, component boundary, inputs, and acceptance criteria.
-- Use the smallest input sequences that reproduce the scenarios. Include any required data in the repository.
-- Include the inputs, configuration, and timing needed for initialization and state accumulation. For extracted data, record the source and extraction range.
-- Give each test independent state and resources. Tests must not depend on other tests or execution order.
-- Changes made for testing must not alter or bypass the actual processing flow or behavior.
-
-## Verification
-
-- Inspect internal state only as needed for verification. Preserve production encapsulation.
-- Obtain and verify outputs through the same public functions used by external modules.
-- Use explicit assertions for success or failure. Make tests repeatable and failures easy to diagnose.
+- Start each test file with a header comment summarizing the selected scenarios, component boundary, inputs, and acceptance criteria.
+- Include required data, configuration, and timestamps in the repository. For extracted data, record the source and extraction range.
+- Exercise the same public APIs used by external modules without altering or bypassing the actual processing flow.
+- Assert meaningful behavior and relevant state changes without depending on incidental implementation details. Preserve production encapsulation.
+- Isolate each test's state and resources; control clocks, randomness, and other nondeterministic inputs. Tests must not depend on execution order.
+- Make failures identify the scenario, expected behavior, and actual result.
 - Include these tests in the project's normal test target, such as `make test`, without manual preparation.
+
+## References
+
+- [Google Testing Blog: Just Say No to More End-to-End Tests](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html) — focused integration tests for component interactions.
+- [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — test boundaries, isolation, repeatability, and maintainable assertions.
