@@ -1,9 +1,9 @@
 ---
-name: write-doc
+name: document-writing-guidelines
 description: "Use when writing or editing Markdown, other documentation files, or document-style Artifacts such as tech notes and reports — sets the style rules for document content, including README- and skill-specific rules."
 ---
 
-# Writing a Document
+# Document Writing Guidelines
 
 - Order the document as a whole: context first, content next, outcome last. Group content under headings.
 - Keep a document under 1000 words unless the user sets another limit.
@@ -42,6 +42,7 @@ description: "Use when writing or editing Markdown, other documentation files, o
 
 ## Skill
 
+- Use verb names for skills that perform tasks and `<topic>-guidelines` for skills that provide rules applied during other tasks.
 - Write the description as the trigger: "Use when <situation>", with the words seen at trigger time.
 - Write rules and guidelines as clear, short bullet points.
 - Write workflows as numbered steps, clear and concise, so no step is overlooked.

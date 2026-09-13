@@ -1,9 +1,9 @@
 ---
-name: workplan
+name: create-workplan
 description: "Set up a workplan for long work spanning multiple sessions. Use when the user asks for a workplan. When the user asks to plan complex work instead, suggest this skill and wait for approval."
 ---
 
-# Workplan
+# Create a Workplan
 
 A workplan tracks one long task across sessions in four local documents: the goal, the plan, the progress, and the findings. This skill handles initial setup and approval; execution starts with `objective.md`.
 

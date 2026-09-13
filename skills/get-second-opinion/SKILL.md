@@ -1,9 +1,9 @@
 ---
-name: second-opinion
+name: get-second-opinion
 description: "Use when your answer has no clear winner, your conclusion remains uncertain, or a document or code change modifies more than five non-generated lines."
 ---
 
-# Getting a Second Opinion
+# Get a Second Opinion
 
 - Prefer Codex: delegate through the `codex:codex-rescue` agent.
 - Without the codex plugin, delegate to a fresh general-purpose subagent.
@@ -19,7 +19,7 @@ description: "Use when your answer has no clear winner, your conclusion remains 
 
 ## Reviewing a Document
 
-1. Pass the document path and the rules path `../write-doc/SKILL.md`, relative to this skill's directory.
+1. Pass the document path and the rules path `../document-writing-guidelines/SKILL.md`, relative to this skill's directory.
 2. Ask for findings against the rules.
 3. When the user asks for fixes, have the reviewer apply them. For Codex: resume the same thread with `--resume --write`.
 

@@ -1,9 +1,9 @@
 ---
-name: runtime-optimization-guidelines
+name: optimize-runtime
 description: Use when the user requests execution-time optimization or bottleneck removal.
 ---
 
-# Runtime Optimization Guidelines
+# Optimize Runtime
 
 Optimize measured bottlenecks and report the method and before-and-after results.
 

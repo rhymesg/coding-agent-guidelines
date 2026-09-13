@@ -12,7 +12,7 @@ Bring the documents in line with the current state of the code.
 1. Check the comments in the code changed by the task. Update descriptions that no longer match the behavior.
 2. List the names the task touched: files, functions, commands, and settings. Grep the documents across the project for them.
 3. Compare each matching document against the current code and configuration.
-4. Update the stale parts, using the `write-doc` skill.
+4. Update the stale parts, using the `document-writing-guidelines` skill.
 
 When asked to sync everything, run steps 2 to 4 on every document instead of only the matches.
 
