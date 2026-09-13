@@ -5,7 +5,7 @@ description: Use when the user requests integration tests for component interact
 
 # Integration Testing Guidelines
 
-Design focused integration tests that expose failures in component interactions.
+Design focused integration tests for component interactions and state and output changes over time.
 
 ## Design
 
@@ -22,7 +22,7 @@ Inspect the project structure, component interactions, and existing tests. Keep 
 - Start each test file with a header comment summarizing the selected scenarios, component boundary, inputs, and acceptance criteria.
 - Include required data, configuration, and timestamps in the repository. For extracted data, record the source and extraction range.
 - Exercise the same public APIs used by external modules without altering or bypassing the actual processing flow.
-- Assert meaningful behavior and relevant state changes without depending on incidental implementation details. Preserve production encapsulation.
+- Assert relevant state and output changes throughout the input sequence without depending on incidental implementation details. Preserve production encapsulation.
 - Isolate each test's state and resources; control clocks, randomness, and other nondeterministic inputs. Tests must not depend on execution order.
 - Make failures identify the scenario, expected behavior, and actual result.
 - Include these tests in the project's normal test target, such as `make test`, without manual preparation.
