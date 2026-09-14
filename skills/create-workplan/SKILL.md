@@ -28,6 +28,8 @@ A workplan tracks one long task across sessions in four local documents: the goa
 
 Templates are in `templates/`. Keep their purpose statements and the `Goal`, `Verification`, and `Guidelines` sections in `objective.md`; choose other sections and detail to fit the task.
 
+`Guidelines` holds the template defaults and guidance the user gives for this task. Do not copy rules that already apply from `CLAUDE.md`, `AGENTS.md`, or skills.
+
 ## Workflow
 
 For an existing workplan, start with `objective.md`. For a new or incomplete workplan, follow the steps below.
