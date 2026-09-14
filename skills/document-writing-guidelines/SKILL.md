@@ -6,7 +6,7 @@ description: "Use when writing or editing Markdown, other documentation files, o
 # Document Writing Guidelines
 
 - Order the document as a whole: context first, content next, outcome last. Group content under headings.
-- Keep a document under 1000 words unless the user sets another limit.
+- Keep a document under 1000 words unless the user sets another limit. Treat word limits as ceilings, not targets.
 - Prefer bullet points. One point per bullet, one line per bullet.
 - Put parallel items in a list; put compared items in a table.
 - Link to the detailed document or source file instead of repeating its content.
@@ -47,3 +47,4 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Write rules and guidelines as clear, short bullet points.
 - Write workflows as numbered steps, clear and concise, so no step is overlooked.
 - Omit instructions the agent already knows or can infer.
+- Keep instructions short and outcome-focused; leave execution details to the agent’s judgment.
