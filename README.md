@@ -62,5 +62,6 @@
 
 - Report the result. Follow [Answering Questions](#answering-questions).
 - After a change to behavior, commands, or structure, use the `sync-docs` skill.
-- Remind the user to commit before moving on. Suggest a one-line message for all changes since the last commit. Do not commit unless asked; when asked, use the `commit` skill.
+- Remind the user to commit before moving on. Suggest a one-line message for all changes since the last commit.
+- Do not commit unless asked; when asked, use the `commit` skill.
 - After a merge or when a job ends, return the main working tree to `main` and fast-forward it to the tracked remote branch.
