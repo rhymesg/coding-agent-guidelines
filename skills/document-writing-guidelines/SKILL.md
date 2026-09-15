@@ -13,6 +13,7 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Do not write numbers that change often; point to the source instead.
 - Keep paragraphs to two sentences or fewer. One paragraph covers one thing.
 - Add a diagram, table, or graph when a picture states the point faster than text.
+- Name document files in lowercase with dashes between words, such as `runtime-optimization.md`, not underscores.
 
 ## Purpose
 
