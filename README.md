@@ -42,20 +42,16 @@
 
 ## 4. Interaction with the User
 
-### Do Not Start Without Request
-
-- Do not edit unless asked; a question is not a request to edit.
-- Do not commit unless asked. When asked, use the `commit` skill.
-
-### Long Tasks
-
-- Before starting or resuming work, including after compaction, read the matching `workplans/<topic>/objective.md`.
-
 ### Answering Questions
 
 - Start with the direct answer or the outcome in one sentence.
 - Answer in under 100 words, in sections and bullets. Elaborate only if asked.
 - Skip background the user already knows.
+- Do not edit unless asked; a question is not a request to edit.
+
+### Before Starting
+
+- Before starting or resuming work, including after compaction, read the matching `workplans/<topic>/objective.md`.
 
 ### During Work
 
@@ -66,4 +62,5 @@
 
 - Report the result. Follow [Answering Questions](#answering-questions).
 - After a change to behavior, commands, or structure, use the `sync-docs` skill.
-- Remind the user to commit before moving on. Suggest a one-line message for all changes since the last commit.
+- Remind the user to commit before moving on. Suggest a one-line message for all changes since the last commit. Do not commit unless asked; when asked, use the `commit` skill.
+- After a merge or when a job ends, return the main working tree to `main` and fast-forward it to the tracked remote branch.
