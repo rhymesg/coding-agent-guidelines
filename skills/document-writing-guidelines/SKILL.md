@@ -9,7 +9,7 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Keep a document under 1000 words unless the user sets another limit. Treat word limits as ceilings, not targets.
 - Prefer bullet points. One point per bullet, one line per bullet.
 - Put parallel items in a list; put compared items in a table.
-- Link to the detailed document or source file instead of repeating its content.
+- Link to settings, results, and other details in their source document or file instead of repeating them.
 - Do not write numbers that change often; point to the source instead.
 - Keep paragraphs to two sentences or fewer. One paragraph covers one thing.
 - Add a diagram, table, or graph when a picture states the point faster than text.
@@ -40,6 +40,7 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Put each command the reader should run in its own fenced bash block.
 - Each block must run as-is when copied and pasted.
 - State what to do, not why. A README is an outline and a guide.
+- Omit implementation details, development history, proposed changes, and verification results.
 
 ## Skill
 
