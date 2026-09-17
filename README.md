@@ -1,6 +1,8 @@
 # Coding Agent Guidelines
 
-I use these [guidelines](AGENTS.md) and [skills](skills/) to maintain software quality, keep code maintainable, and make AI-assisted work easy to follow. I value instructions I can read, track in version control, and refine, with clear steps and results I can review.
+This repository contains [guidelines](AGENTS.md) and [skills](skills/) for personal use.
+
+I value instructions I can read and refine, with clear steps and results I can review. These instructions evolve as the models evolve.
 
 ## Setup
 
