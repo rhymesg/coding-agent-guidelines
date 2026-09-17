@@ -6,6 +6,8 @@ I value instructions I can read and refine, with clear steps and results I can r
 
 ## Setup
 
+Symlink the guidelines to follow them as they are. To add your own rules, import them inline instead.
+
 ### All projects
 
 Claude Code:
@@ -46,4 +48,12 @@ Codex:
 mkdir -p "$project/.agents/skills"
 ln -s "$PWD/AGENTS.md" "$project/AGENTS.md"
 ln -s "$PWD"/skills/* "$project/.agents/skills/"
+```
+
+### Import inline
+
+Append this in your `CLAUDE.md` or `AGENTS.md`:
+
+```
+@path/to/coding-agent-guidelines/AGENTS.md
 ```
