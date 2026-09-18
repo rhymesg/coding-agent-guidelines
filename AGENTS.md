@@ -52,12 +52,20 @@
 
 ### Task
 
+#### Working
+
 - Before starting or resuming work, including after compaction, read the matching `workplans/<topic>/objective.md`.
 - Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
 - Do what you can first. Collect any required user input or actions and ask for them together.
+
+#### Finishing
+
 - After a change to behavior, commands, or structure, use the `sync-docs` skill.
 - Do not commit unless asked; when asked, use the `commit` skill.
 - After a merge or when the task ends, return the main working tree to `main` and fast-forward it to the tracked remote branch.
+
+#### Reporting
+
 - Report the result under a heading that names the work.
 - Close the report with a `Left behind` heading: uncommitted files, unpushed commits, unmerged branches and merge requests, and worktrees still in place.
 - Remind the user to commit before moving on. Suggest a one-line message for all changes since the last commit.
