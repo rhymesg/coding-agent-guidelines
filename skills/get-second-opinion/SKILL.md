@@ -5,33 +5,37 @@ description: "Use when your answer has no clear winner, your conclusion remains 
 
 # Get a Second Opinion
 
-- Prefer Codex: delegate through the `codex:codex-rescue` agent.
-- Without the codex plugin, delegate to a fresh general-purpose subagent.
-- Pass file paths and the question, not copied file content.
-- Give the reviewer the context it cannot infer: the goal, constraints, and user-approved decisions.
-- Do not share your recommendation or tentative conclusion, including through inherited conversation history.
-- Report the reviewer's answer next to your own view.
-- Note where they differ; do not silently adopt either.
+- Prefer Codex through the `codex:codex-rescue` agent; without it, a fresh general-purpose subagent.
+- Pass file paths and the question, not file content.
+- Give the context the reviewer cannot infer: the goal, constraints, and user-approved decisions.
+- Do not share your own conclusion, including through inherited conversation history.
+- Report the reviewer's answer next to your own view and name the differences; adopt neither silently.
+
+## Asking the Reviewer
+
+Put these lines in every request, after the question:
+
+```text
+Do not answer "looks good" or "agree".
+List at least one problem, with file and line, for example a wrong result, an unhandled input, a missing test, or a broken rule.
+Name one different approach and state when it would be better than this one.
+If you still agree, write the checks you made and the observation that would change your mind.
+```
+
+A reply without file and line references is not a review; send it back with the missing item named.
 
 ## Options or Uncertain Conclusion
 
-1. State the question, the options, and the paths to the relevant files.
-2. Ask for a recommendation or a verdict with reasons.
+- Give: the question, each option in one line, the paths to the relevant files.
+- Ask for: one case per option where it fails or costs more than the others; a verdict, one of the options or a new one, with the deciding reason; the fact that would settle the question and how to check it.
 
 ## Reviewing a Document
 
-1. Pass the document path and the rules path `../document-writing-guidelines/SKILL.md`, relative to this skill's directory.
-2. Ask for findings against the rules.
-3. When the user asks for fixes, have the reviewer apply them. For Codex: resume the same thread with `--resume --write`.
+- Give: the document path and the rules path `../document-writing-guidelines/SKILL.md`, relative to this skill's directory.
+- Ask for: findings against the rules.
+- Fixes, when the user asks for them: have the reviewer apply them; with Codex, resume the same thread with `--resume --write`.
 
 ## Reviewing Code
 
-1. Pass these to the reviewer:
-   - The goal, expected behavior, constraints, non-goals, and user-approved decisions.
-   - The change scope: a diff, branch, or file paths.
-   - The related plan or design, coding guidelines, and component README.
-2. Ask for findings on:
-   - Weaknesses in the logic.
-   - Unneeded complexity.
-   - Behavior not covered by unit tests.
-   - Deviation from the plan or design document.
+- Give: the goal, expected behavior, constraints, non-goals, and user-approved decisions; the diff, branch, or file paths; the plan or design, coding guidelines, and component README.
+- Ask for: weaknesses in the logic, unneeded complexity, behavior not covered by unit tests, deviation from the plan or design.
