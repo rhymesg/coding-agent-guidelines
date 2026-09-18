@@ -22,8 +22,6 @@ Name one different approach and state when it would be better than this one.
 If you still agree, write the checks you made and the observation that would change your mind.
 ```
 
-A reply without file and line references is not a review; send it back with the missing item named.
-
 ## Options or Uncertain Conclusion
 
 - Give: the question, each option in one line, the paths to the relevant files.
