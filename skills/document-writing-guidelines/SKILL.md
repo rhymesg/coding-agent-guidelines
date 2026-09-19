@@ -23,18 +23,17 @@ description: "Use when writing or editing Markdown, other documentation files, o
 ## Purpose
 
 - State the document's purpose in its first lines. Name another purpose when none below fits.
-- Update the document on the trigger for its purpose. Suggest removing it when it has served its purpose or no longer matches the project.
 
-| Purpose | Content | Update when |
-|---|---|---|
-| Plan | What to do | A decision changes |
-| Design | The chosen approach and the alternatives rejected | A decision changes |
-| Progress | Which tasks are done and which remain | Work finishes |
-| Architecture | How the current system works | The code changes |
-| Guide | How to use or set up the system | Behavior or a command changes |
-| Report | What was found or measured, and what is still open | A result is added or a question closes |
-| Review | What is wrong or could improve | A finding is added or resolved |
-| Reference | Background knowledge or supporting information | The source changes |
+| Purpose | Content |
+|---|---|
+| Plan | What to do |
+| Design | The chosen approach and the alternatives rejected |
+| Progress | Which tasks are done and which remain |
+| Architecture | How the current system works |
+| Guide | How to use or set up the system |
+| Report | What was found or measured, and what is still open |
+| Review | What is wrong or could improve |
+| Reference | Background knowledge or supporting information |
 
 ## Mermaid Diagram
 
