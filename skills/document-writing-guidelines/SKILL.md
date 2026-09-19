@@ -52,5 +52,6 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Write the description as the trigger: "Use when <situation>", with the words seen at trigger time.
 - Write rules and guidelines as clear, short bullet points.
 - Write workflows as numbered steps, clear and concise, so no step is overlooked.
+- Make links work across environments and symlinked skill locations: resolve them from the skill's original directory or explain how to locate the target.
 - Omit instructions the agent already knows or can infer.
 - Keep instructions short and outcome-focused; leave execution details to the agent’s judgment.
