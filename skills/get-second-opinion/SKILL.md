@@ -5,7 +5,7 @@ description: "Use when your answer has no clear winner, your conclusion remains 
 
 # Get a Second Opinion
 
-- Prefer Codex through the `codex:codex-rescue` agent; without it, a fresh general-purpose subagent.
+- Prefer external reviewers, such as `codex:codex-rescue`; otherwise use a fresh general-purpose subagent.
 
 ## Asking the Reviewer
 
