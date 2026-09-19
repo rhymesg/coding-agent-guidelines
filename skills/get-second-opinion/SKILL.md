@@ -27,5 +27,5 @@ description: "Use when your answer has no clear winner, your conclusion remains 
 | Type | Additional input | Review focus |
 |---|---|---|
 | Decisions | Options and supporting evidence | Tradeoffs, failure cases, recommendation, deciding evidence |
-| Documents | Document and applicable [writing rules](../document-writing-guidelines/SKILL.md) | Rule compliance, redundancy, unnecessary content, sentences that can be combined more concisely |
+| Documents | Document and applicable [writing rules](../document-writing-guidelines/SKILL.md) | Rule compliance, sentences that can be combined more concisely |
 | Code | Diff, expected behavior, design, relevant documentation | Correctness, complexity, test coverage, design alignment |
