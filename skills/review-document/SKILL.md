@@ -40,4 +40,4 @@ Review documents and skills for concision, consistency, and readability while pr
 
 - Do not suggest clarifications for conditions a reasonable reader can infer from context.
 - Verify factual statements against relevant source code, configuration, or authoritative sources.
-- Match confidence to evidence: state supported facts directly and identify uncertainty, assumptions, and unresolved claims.
+- Match factual claims to evidence: state supported facts directly and qualify uncertain claims.
