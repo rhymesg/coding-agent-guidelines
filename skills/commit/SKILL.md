@@ -22,7 +22,7 @@ Create clean project commits from the current working tree.
 
 4. Re-check `git status --short` and diffs after formatting. Treat formatter-only edits as their own logical unit when they are unrelated to feature changes.
 
-5. Split commits by logical change. Stage only files belonging to one unit at a time. Do not stage unrelated dirty files or broad untracked directories unless the user explicitly includes them.
+5. Split commits by logical change.
 
 6. Check the index immediately before committing. A commit includes all staged changes, including changes staged outside the current session.
 
@@ -33,7 +33,7 @@ Create clean project commits from the current working tree.
 
    If the index contains changes outside the intended unit, do not commit or modify their staged state. Ask the user how to proceed.
 
-7. For each logical unit, stage and commit in one command line. Name only the files in that unit and use an unsigned, one-line commit message.
+7. For each logical unit, stage and commit in one command line using an unsigned, one-line commit message.
 
    ```bash
    git add <paths> && git commit --no-gpg-sign -m "Short imperative message"
@@ -49,7 +49,7 @@ Create clean project commits from the current working tree.
 ## Safety
 
 - Never revert or discard user changes to make a commit cleaner.
-- If a file contains mixed unrelated changes, stage only the requested hunks when practical; otherwise ask before committing it.
-- Never `git add -A`, `git add .` or `git commit -a`. Name the paths. Another session may be editing the same checkout, and a working tree that was clean at the start of the session may not be clean now.
+- Stage only files or hunks in the intended unit. If a file mixes unrelated changes, stage only the requested hunks when practical; otherwise ask before committing it.
+- Never `git add -A`, `git add .` or `git commit -a`; name paths explicitly. Stage broad untracked directories only when the user explicitly includes them.
 - Do not commit secrets, credentials, tokens, private keys, `.env` files, or other security-sensitive local configuration. Add these files to `.gitignore` when they are project-local artifacts that should remain untracked.
 - After each commit, show the commit hash and what remains uncommitted.

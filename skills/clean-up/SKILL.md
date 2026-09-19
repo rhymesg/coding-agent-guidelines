@@ -16,4 +16,4 @@ Remove unnecessary or unused code and reduce complexity and code volume while pr
 5. When another part of the codebase already does the same thing, call it instead, or extend that code to cover the new case.
 6. Drop wholly unnecessary commits. Remove remaining unnecessary code and simplify the rest.
 7. After cleanup, use the `sync-docs` skill and confirm relevant tests and lint pass. Run broader verification procedures when available and report the results.
-8. Commit remaining verified changes as new commits using the `commit` skill.
+8. When the user requests a commit, commit verified changes using the `commit` skill.
