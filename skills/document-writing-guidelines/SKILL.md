@@ -15,6 +15,11 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Add a diagram, table, or graph when a picture states the point faster than text.
 - Name document files in lowercase with dashes between words, such as `runtime-optimization.md`, not underscores.
 
+## Audience
+
+- For developer- and agent-facing documents, including READMEs, `AGENTS.md`, `CLAUDE.md`, design documents, and skills, use established software engineering terminology rather than everyday substitutes.
+- For nontechnical readers, use everyday language and explain necessary technical terms.
+
 ## Purpose
 
 - State the document's purpose in its first lines. Name another purpose when none below fits.
