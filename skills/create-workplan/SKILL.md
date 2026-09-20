@@ -1,11 +1,11 @@
 ---
 name: create-workplan
-description: "Set up a workplan for long work spanning multiple sessions. Use when the user asks for a workplan. When the user asks to plan complex work instead, suggest this skill and wait for approval."
+description: "Discuss and plan work with the user. Use when the user asks for a workplan. When the user asks to undertake complex work that would span several session windows, suggest this skill."
 ---
 
 # Create a Workplan
 
-A workplan tracks one long task across sessions in four local documents: the goal, the plan, the progress, and the findings. This skill handles initial setup and approval; execution starts with `objective.md`.
+A workplan tracks one long task across sessions in four local documents: the goal, the plan, the progress, and the findings. This skill helps the user make planning decisions and approve the workplan; execution starts with `objective.md`.
 
 ## Location
 
@@ -32,12 +32,22 @@ Templates are in `templates/`. Keep their purpose statements and the `Goal`, `Ve
 
 ## Workflow
 
-For an existing workplan, start with `objective.md`. For a new or incomplete workplan, follow the steps below.
+For an existing workplan, start with `objective.md`. For a new or incomplete workplan, begin with Discuss.
 
-1. Ask the user what is unclear: the goal, the reason, the finished state, what is out of scope, constraints, where the code and data are.
-2. Create `workplans/<topic>/` with `worktrees/` and `artifacts/`, then copy the templates into it. Fill `objective.md` with the goal, workspace paths, default guidelines, and user guidance. Plan how to verify that the user's desired outcome is achieved, and record the criteria, checks, and evidence to collect in `Verification`.
-3. Show `objective.md` and propose the verification plan to the user. Ask for corrections and guidance until the user approves it.
-4. Explore the code and data the task touches. Get needed user input before execution, including domain decisions, constraints, and access.
-5. Fill `plan.md` with the approach and any relevant phases, dependencies, or decisions. Ask for corrections until the user approves it.
-6. Break the agreed plan into concrete tasks in `tasks.md`. Link tasks to the relevant plan sections and mark dependencies and status.
-7. Start execution following `objective.md`.
+### Discuss
+
+A request for a plan starts discussion. Do not create workplan documents until the user explicitly agrees to enter Create.
+
+1. Explore the code, data, and existing checks; clarify the goal, scope, constraints, and success criteria, and challenge assumptions.
+2. Compare viable architectures, including simpler approaches, for benefits, drawbacks, uncertainties, and adaptability to likely changes.
+3. Compare verification methods against success criteria: coverage, blind spots, costs, and independently justified expected results.
+4. Recommend options with reasons, evidence that could change your view, and small tests or prototypes to check uncertain assumptions.
+5. Ask focused questions about consequential tradeoffs; wait for the user's answers and refine the proposals together, keeping unresolved decisions visible.
+6. Once consequential questions are resolved or explicitly deferred, ask whether the user is ready to create the plan and wait for agreement.
+
+### Create
+
+1. Create the workplan from the templates using the structure above, and draft `objective.md`.
+2. Record agreed verification in `objective.md` and the approach, alternatives, and decision reasons in `plan.md`; revise until the user approves both.
+3. Break the approved plan into `tasks.md`, linking plan sections and recording dependencies and status.
+4. Start execution following `objective.md`.
