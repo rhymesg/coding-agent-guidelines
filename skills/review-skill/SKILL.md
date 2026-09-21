@@ -5,7 +5,7 @@ description: "Use when developing a new skill or when the user asks to review or
 
 # Review Skill
 
-Develop and refine skills by testing their output against the user's intent. Follow [skill-writing-guidelines](../skill-writing-guidelines/SKILL.md) when writing or revising instructions.
+Review skill instructions and test their output against the user's intent. Follow [skill-writing-guidelines](../skill-writing-guidelines/SKILL.md) for writing and apply the text-review checks from [review-document](../review-document/SKILL.md).
 
 ## Test-driven skill development
 
@@ -16,7 +16,7 @@ Develop and refine skills by testing their output against the user's intent. Fol
 
 **Repeat until the user confirms that the output matches their intent:**
 
-1. Revise the skill as needed for the task: add missing guidance, clarify or shorten instructions, or remove unnecessary content.
+1. Apply the review checks and revise as needed: add missing guidance, clarify or shorten instructions, or remove unnecessary content.
 2. Perform a representative task using the skill.
 3. Check the result against the user's intent and any agreed reference outputs.
 4. Show the result and differences. Ask for the user's feedback and clarify it.

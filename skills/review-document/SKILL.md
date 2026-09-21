@@ -1,6 +1,6 @@
 ---
 name: review-document
-description: "Use when finishing a new document or when the user asks to review a document. For skills, use review-skill."
+description: "Use when finishing a new document or when the user asks to review a document."
 ---
 
 # Review Document
