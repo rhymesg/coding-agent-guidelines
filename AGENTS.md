@@ -39,6 +39,7 @@
 ### Documents
 
 - Use the `document-writing-guidelines` skill for guidance.
+- For skills, use `skill-writing-guidelines`.
 
 ## 4. Interaction with the User
 

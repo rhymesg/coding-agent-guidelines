@@ -1,11 +1,11 @@
 ---
 name: review-document
-description: "Use when finishing a new document or skill, or when the user asks to review a document or skill."
+description: "Use when finishing a new document or when the user asks to review a document. For skills, use review-skill."
 ---
 
 # Review Document
 
-Review documents and skills for concision, consistency, and readability while preserving meaning and accuracy.
+Review documents for concision, consistency, and readability while preserving meaning and accuracy.
 
 ## Modes
 
@@ -14,7 +14,7 @@ Review documents and skills for concision, consistency, and readability while pr
 
 ## Workflow
 
-1. Read the document, [document-writing-guidelines](../document-writing-guidelines/SKILL.md), and other relevant project or format guidelines.
+1. Read the document, [document-writing-guidelines](../document-writing-guidelines/SKILL.md), and relevant project rules.
 2. Review the document as a whole before checking individual passages, using those guidelines and the checks below.
 3. Use [sync-docs](../sync-docs/SKILL.md) to identify stale related documents.
 4. Apply corrections or report findings according to the mode.

@@ -1,6 +1,6 @@
 ---
 name: document-writing-guidelines
-description: "Use when writing or editing Markdown, other documentation files, or document-style Artifacts such as tech notes and reports — sets the style rules for document content, including README- and skill-specific rules."
+description: "Use when writing or editing documentation, including READMEs, technical notes, reports, and document-style artifacts."
 ---
 
 # Document Writing Guidelines
@@ -17,7 +17,7 @@ description: "Use when writing or editing Markdown, other documentation files, o
 
 ## Audience
 
-- For developer- and agent-facing documents, including READMEs, `AGENTS.md`, `CLAUDE.md`, design documents, and skills, use established software engineering terminology rather than everyday substitutes.
+- For developer- and agent-facing documents, including READMEs, `AGENTS.md`, `CLAUDE.md`, and design documents, use established software engineering terminology rather than everyday substitutes.
 - For nontechnical readers, use everyday language and explain necessary technical terms.
 
 ## Purpose
@@ -45,13 +45,3 @@ description: "Use when writing or editing Markdown, other documentation files, o
 - Each block must run as-is when copied and pasted.
 - State what to do, not why. A README is an outline and a guide.
 - Omit implementation details, development history, proposed changes, and verification results.
-
-## Skill
-
-- Use verb names for skills that perform tasks and `<topic>-guidelines` for skills that provide rules applied during other tasks.
-- Write the description as the trigger: "Use when <situation>", with the words seen at trigger time.
-- Write rules and guidelines as clear, short bullet points.
-- Write workflows as numbered steps, clear and concise, so no step is overlooked.
-- Make links work across environments and symlinked skill locations: resolve them from the skill's original directory or explain how to locate the target.
-- Omit instructions the agent already knows or can infer.
-- Keep instructions short and outcome-focused; leave execution details to the agent’s judgment.
