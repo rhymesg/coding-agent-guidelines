@@ -5,12 +5,13 @@ description: "Use when creating, editing, testing, refining, or reviewing skills
 
 # Skill Writing Guidelines
 
-Write concise skills that people can read and refine. Follow [document-writing-guidelines](../document-writing-guidelines/SKILL.md) for general writing rules.
+Write concise skills that people can read and refine. Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill for general writing rules.
 
 ## General guidelines
 
 - Refer to other skills for applicable instructions and writing conventions.
 - Look for ways to work with existing skills. Merge overlapping guidance or refer to its owner instead of duplicating it.
+- To apply another skill, write `Use the [skill-name](path/to/SKILL.md) skill for <purpose>.` Keep the instruction in one relevant place.
 - Check interactions with other skills and instructions: overlapping triggers, conflicting rules, unclear responsibilities, and repeated or recursive workflows.
 - Use verb names for skills that perform tasks and `<topic>-guidelines` for rules applied during other tasks.
 - Write the description as the trigger: "Use when <situation>", with the words seen at trigger time.
@@ -21,7 +22,7 @@ Write concise skills that people can read and refine. Follow [document-writing-g
 ## New skills
 
 - Start with the shortest skill that meets the user's intent and goal.
-- Use [review-skill](../review-skill/SKILL.md) for test-driven skill development.
+- Use the [review-skill](../review-skill/SKILL.md) skill for test-driven skill development.
 
 ## Editing skills
 

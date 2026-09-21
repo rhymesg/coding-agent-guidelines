@@ -47,7 +47,7 @@ A request for a plan starts discussion. Do not create workplan documents until t
 
 ### Create
 
-1. Create the workplan from the templates using the structure above, and draft `objective.md`.
+1. Create the workplan from the templates using the structure above, and draft `objective.md`. Resolve template skill links relative to the generated documents.
 2. Record agreed verification in `objective.md` and the approach, alternatives, and decision reasons in `plan.md`; revise until the user approves both.
 3. Break the approved plan into `tasks.md`, linking plan sections and recording dependencies and status.
 4. Start execution following `objective.md`.

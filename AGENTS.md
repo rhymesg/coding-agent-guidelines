@@ -20,7 +20,7 @@
 - Add or update tests when changing externally observable behavior.
 - Bug fix: write a test that reproduces the issue, then fix the code and verify the test passes.
 - Refactoring: ensure relevant tests pass before and after the change.
-- Use the `unit-test-guidelines` skill for guidance.
+- Use the [unit-test-guidelines](skills/unit-test-guidelines/SKILL.md) skill for test guidance.
 
 ## 3. General Writing
 
@@ -38,8 +38,8 @@
 
 ### Documents
 
-- Use the `document-writing-guidelines` skill for guidance.
-- For skills, use `skill-writing-guidelines`.
+- Use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill for document writing.
+- Use the [skill-writing-guidelines](skills/skill-writing-guidelines/SKILL.md) skill for skill writing.
 
 ## 4. Interaction with the User
 
@@ -61,8 +61,8 @@
 
 #### Finishing
 
-- After a change to behavior, commands, or structure, use the `sync-docs` skill.
-- Do not commit unless asked; when asked, use the `commit` skill.
+- After a change to behavior, commands, or structure, use the [sync-docs](skills/sync-docs/SKILL.md) skill for related documentation updates.
+- Do not commit unless asked; when asked, use the [commit](skills/commit/SKILL.md) skill for committing changes.
 - After a merge or when the task ends, return the main working tree to `main` and fast-forward it to the tracked remote branch.
 
 #### Reporting

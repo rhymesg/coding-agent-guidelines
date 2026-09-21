@@ -5,7 +5,7 @@ description: "Use when developing a new skill or when the user asks to review or
 
 # Review Skill
 
-Review skill instructions and test their output against the user's intent. Follow [skill-writing-guidelines](../skill-writing-guidelines/SKILL.md) for writing and apply the text-review checks from [review-document](../review-document/SKILL.md).
+Review skill instructions and test their output against the user's intent. Use the [skill-writing-guidelines](../skill-writing-guidelines/SKILL.md) skill for writing; use the [review-document](../review-document/SKILL.md) skill for its text-review checks.
 
 ## Test-driven skill development
 

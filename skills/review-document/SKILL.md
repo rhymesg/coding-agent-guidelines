@@ -14,9 +14,9 @@ Review documents for concision, consistency, and readability while preserving me
 
 ## Workflow
 
-1. Read the document, [document-writing-guidelines](../document-writing-guidelines/SKILL.md), and relevant project rules.
+1. Read the document and relevant project rules. Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill for writing rules.
 2. Review the document as a whole before checking individual passages, using those guidelines and the checks below.
-3. Use [sync-docs](../sync-docs/SKILL.md) to identify stale related documents.
+3. Use the [sync-docs](../sync-docs/SKILL.md) skill to identify stale related documents.
 4. Apply corrections or report findings according to the mode.
 
 ## Concision

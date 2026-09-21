@@ -28,7 +28,7 @@ Keep Goal, Verification, and Guidelines.
 
 - Keep the approved goal and completion criteria unchanged unless the user changes them. Adjust verification methods as needed.
 - Repeat: do the next ready task, verify the result, update `tasks.md` and `report.md`, and adjust `plan.md` as needed.
-- When changes build up, use the `commit` skill to commit completed, verified units of work and continue.
+- When changes build up, use the [commit](../../commit/SKILL.md) skill to commit completed, verified units of work and continue.
 - When blocked, investigate the cause, try meaningful alternatives, and continue independent work.
 
 ### Workspace
