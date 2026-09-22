@@ -39,6 +39,9 @@
 ### Documents
 
 - Use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill for document writing.
+
+### Skills
+
 - Use the [skill-writing-guidelines](skills/skill-writing-guidelines/SKILL.md) skill for skill writing.
 
 ## 4. Interaction with the User
