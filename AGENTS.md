@@ -34,7 +34,7 @@
 
 - A document is written content that explains, guides, or reports, in any format: Markdown, HTML, PDF, or another artifact. Use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill.
 - For a README, use the [readme-writing-guidelines](skills/readme-writing-guidelines/SKILL.md) skill.
-- For skills, `AGENTS.md`, and `CLAUDE.md`, use the [skill-writing-guidelines](skills/skill-writing-guidelines/SKILL.md) skill.
+- For skills, use the [skill-writing-guidelines](skills/skill-writing-guidelines/SKILL.md) skill.
 
 ## 4. Interaction with the User
 

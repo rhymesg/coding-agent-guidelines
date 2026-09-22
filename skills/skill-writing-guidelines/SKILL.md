@@ -1,13 +1,11 @@
 ---
 name: skill-writing-guidelines
-description: "Helps write concise, reusable skill instructions. Use when creating, editing, or reviewing skills, AGENTS.md, or CLAUDE.md."
+description: "Helps write concise, reusable skill instructions. Use when creating, editing, or reviewing skills."
 ---
 
 # Skill Writing Guidelines
 
 ## General guidelines
-
-- The rules for a skill body also apply to `AGENTS.md` and `CLAUDE.md`.
 
 ### Scope and reuse
 
