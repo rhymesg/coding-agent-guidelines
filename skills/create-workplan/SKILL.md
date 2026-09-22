@@ -1,11 +1,18 @@
 ---
 name: create-workplan
-description: "Discuss and plan work with the user. Use when the user asks for a workplan. When the user asks to undertake complex work that would span several session windows, suggest this skill."
+description: "Plans long tasks with the user across sessions. Use when the user asks for a workplan; suggest this skill for complex work spanning several session windows."
 ---
 
 # Create a Workplan
 
-A workplan tracks one long task across sessions in four local documents: the goal, the plan, the progress, and the findings. This skill helps the user make planning decisions and approve the workplan; execution starts with `objective.md`.
+```mermaid
+flowchart LR
+    session[New session] --> agents[AGENTS.md]
+    agents --> objective[objective.md]
+    objective --> documents[plan.md / tasks.md / report.md]
+    documents --> work[Work]
+    work -.->|update| documents
+```
 
 ## Location
 
@@ -50,4 +57,5 @@ A request for a plan starts discussion. Do not create workplan documents until t
 1. Create the workplan from the templates using the structure above, and draft `objective.md`. Resolve template skill links relative to the generated documents.
 2. Record agreed verification in `objective.md` and the approach, alternatives, and decision reasons in `plan.md`; revise until the user approves both.
 3. Break the approved plan into `tasks.md`, linking plan sections and recording dependencies and status.
-4. Start execution following `objective.md`.
+4. Ensure the applicable `AGENTS.md` directs each new or resumed session to the matching `workplans/<topic>/objective.md`; reuse an existing rule when present.
+5. Start execution following `objective.md`.

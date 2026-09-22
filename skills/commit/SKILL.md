@@ -1,11 +1,9 @@
 ---
 name: commit
-description: Use when committing changes or preparing git commits from the working tree.
+description: "Prepares clean, focused Git commits. Use when committing changes or preparing git commits from the working tree."
 ---
 
 # Commit
-
-Create clean project commits from the current working tree.
 
 ## Workflow
 

@@ -1,11 +1,9 @@
 ---
 name: integration-test-guidelines
-description: Use when the user requests integration tests for component interactions.
+description: "Designs focused tests across component boundaries. Use when the user requests integration tests for component interactions."
 ---
 
 # Integration Testing Guidelines
-
-Design focused integration tests for component interactions.
 
 ## Design
 

@@ -1,11 +1,9 @@
 ---
 name: review-document
-description: "Use when finishing a new document or when the user asks to review a document."
+description: "Checks documents for clarity, consistency, and accuracy. Use when finishing a new document or when the user asks to review a document."
 ---
 
 # Review Document
-
-Review documents for concision, consistency, and readability while preserving meaning and accuracy.
 
 ## Modes
 

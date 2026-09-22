@@ -1,11 +1,9 @@
 ---
 name: clean-up
-description: Use when unmerged changes add more than 100 lines of non-generated source code since the last cleanup or relative to the base branch.
+description: "Simplifies code while preserving required behavior. Use when unmerged changes add more than 100 lines of non-generated source code since the last cleanup or relative to the base branch."
 ---
 
 # Clean Up
-
-Remove unnecessary or unused code and reduce complexity and code volume while preserving required behavior.
 
 ## Workflow
 

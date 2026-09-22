@@ -1,11 +1,9 @@
 ---
 name: sync-docs
-description: "Use when a finished task changed behavior, commands, or structure — checks the comments and documents touched by the change and updates the stale ones."
+description: "Updates comments and documents to match the code. Use when a finished task changed behavior, commands, or structure."
 ---
 
 # Sync Docs
-
-Bring the documents in line with the current state of the code.
 
 ## Workflow
 
