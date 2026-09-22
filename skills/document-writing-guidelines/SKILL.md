@@ -43,5 +43,5 @@ description: "Keeps documentation concise and easy to navigate. Use when writing
 
 - Put each command the reader should run in its own fenced bash block.
 - Each block must run as-is when copied and pasted.
-- State what to do, not why. A README is an outline and a guide.
-- Omit implementation details, development history, proposed changes, and verification results.
+- State what the reader runs, sets, or edits, not why. Name the file, parameter, or constant they change.
+- Omit background, implementation details, development history, proposed changes, and verification results.
