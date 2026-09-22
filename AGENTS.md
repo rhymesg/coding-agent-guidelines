@@ -22,13 +22,7 @@
 - Refactoring: ensure relevant tests pass before and after the change.
 - Use the [unit-test-guidelines](skills/unit-test-guidelines/SKILL.md) skill for test guidance.
 
-## 3. General Writing
-
-- Spend tokens on planning, exploring, and thinking. Save tokens in chat, code, comments, docstrings, and other docs.
-- Use standard technical terms and familiar words.
-- Write the shortest possible sentences and paragraphs to deliver your meaning.
-- Do not add sentences that repeat the same meaning.
-- Do not add rationale clauses like 'so that X' or 'this avoids Y'.
+## 3. Writing Guidelines
 
 ### Comments and Docstrings
 
@@ -36,13 +30,11 @@
 - Do not write author information.
 - Do not repeat the current value of a parameter in comments. Explain what the parameter means.
 
-### Documents
+### Documents and Instructions
 
-- Use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill for document writing.
-
-### Skills
-
-- Use the [skill-writing-guidelines](skills/skill-writing-guidelines/SKILL.md) skill for skill writing.
+- A document is written content that explains, guides, or reports, in any format: Markdown, HTML, PDF, or another artifact. Use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill.
+- For a README, use the [readme-writing-guidelines](skills/readme-writing-guidelines/SKILL.md) skill.
+- For skills, `AGENTS.md`, and `CLAUDE.md`, use the [skill-writing-guidelines](skills/skill-writing-guidelines/SKILL.md) skill.
 
 ## 4. Interaction with the User
 

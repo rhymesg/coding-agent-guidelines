@@ -1,6 +1,6 @@
 ---
 name: document-writing-guidelines
-description: "Keeps documentation concise and easy to navigate. Use when writing or editing documentation, including READMEs, technical notes, reports, and document-style artifacts."
+description: "Keeps documentation concise and easy to navigate. Use when writing or editing documents, including technical notes, reports, and document-style artifacts."
 ---
 
 # Document Writing Guidelines
@@ -12,12 +12,14 @@ description: "Keeps documentation concise and easy to navigate. Use when writing
 - Link to settings, results, and other details in their source document or file instead of repeating them.
 - Do not write numbers that change often; point to the source instead.
 - Keep paragraphs to two sentences or fewer. One paragraph covers one thing.
+- Do not add sentences that repeat the same meaning.
+- Do not add rationale clauses like 'so that X' or 'this avoids Y'.
 - Add a diagram, table, or graph when a picture states the point faster than text.
 - Name document files in lowercase with dashes between words, such as `runtime-optimization.md`, not underscores.
 
 ## Audience
 
-- For developer- and agent-facing documents, including READMEs, `AGENTS.md`, `CLAUDE.md`, and design documents, use established software engineering terminology rather than everyday substitutes.
+- For developer-facing documents, including READMEs and design documents, use established software engineering terminology rather than everyday substitutes.
 - For nontechnical readers, use everyday language and explain necessary technical terms.
 
 ## Purpose
@@ -38,10 +40,3 @@ description: "Keeps documentation concise and easy to navigate. Use when writing
 ## Mermaid Diagram
 
 - Draw a two-way relation as two one-directional edges (`-->`, `-.->`), not as `<-->` or `<-.->`.
-
-## README
-
-- Put each command the reader should run in its own fenced bash block.
-- Each block must run as-is when copied and pasted.
-- State what the reader runs, sets, or edits, not why. Name the file, parameter, or constant they change.
-- Omit background, implementation details, development history, proposed changes, and verification results.
