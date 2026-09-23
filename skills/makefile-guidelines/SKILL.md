@@ -5,9 +5,11 @@ description: "Keeps a Makefile a small, self-documenting task runner with one ta
 
 # Makefile Guidelines
 
+- Read the Makefiles of neighboring projects first and keep their conventions where they agree with the rules below.
+
 ## Targets
 
-- One target per scenario, named after it: `make test`, `make run-sim`. Not `make run MODE=sim`.
+- Use the common names `help`, `build`, `test`, `run`; add one target per further scenario, named after it: `make run-sim`. Not `make run MODE=sim`.
 - A target takes at most one command-line variable, for the input that changes between runs: `make play BAG=flight1`. Every other setting lives in the configuration file.
 - Declare every non-file target in `.PHONY`; default to `help`.
 - Document each user-facing target with a `## target: description` comment and a `help` target that prints them.
@@ -21,5 +23,4 @@ description: "Keeps a Makefile a small, self-documenting task runner with one ta
 ## Build Systems
 
 - The Makefile is a task runner. Build with CMake, or colcon for ROS packages, and keep compile rules out of the Makefile.
-- When the repository has a Docker image, run builds and tools inside it, as the calling user.
-- Start a new Makefile from [templates/Makefile](templates/Makefile).
+- Run builds and tools in the repository's environment: its Docker image, as the calling user, or its Python virtual environment.
