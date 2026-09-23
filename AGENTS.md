@@ -26,7 +26,8 @@
 
 ### Comments and Docstrings
 
-- Describe the current purpose and behavior, not the history of changes.
+- Keep each file header and in-line comment to two lines at most. This does not apply to Doxygen comments.
+- Put design, algorithm, and background details in a separate document, and link it from the comment if needed.
 - Do not write author information.
 - Do not repeat the current value of a parameter in comments. Explain what the parameter means.
 
