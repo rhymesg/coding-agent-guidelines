@@ -5,6 +5,7 @@ description: "Keeps documentation concise and easy to navigate. Use when writing
 
 # Document Writing Guidelines
 
+- Read neighboring documents first and follow their writing style and conventions.
 - Order the document as a whole: context first, content next, outcome last. Group content under headings.
 - Keep a document under 1000 words unless the user sets another limit. Treat word limits as ceilings, not targets.
 - Prefer bullet points. One point per bullet, one line per bullet.
