@@ -1,6 +1,7 @@
 ---
 name: create-workplan
-description: "Plans long tasks with the user across sessions. Use when the user asks for a workplan; suggest this skill for complex work spanning several session windows."
+description: "Sets up workplan documents for tasks spanning several sessions and starts the work. Use only when the user invokes it explicitly; a request to plan or discuss goes to the brainstorm skill."
+disable-model-invocation: true
 ---
 
 # Create a Workplan
@@ -39,20 +40,7 @@ Templates are in `templates/`. Keep their purpose statements and the `Goal`, `Ve
 
 ## Workflow
 
-For an existing workplan, start with `objective.md`. For a new or incomplete workplan, begin with Discuss.
-
-### Discuss
-
-A request for a plan starts discussion. Do not create workplan documents until the user explicitly agrees to enter Create.
-
-1. Explore the code, data, and existing checks; clarify the goal, scope, constraints, and success criteria, and challenge assumptions.
-2. Compare viable architectures, including simpler approaches, for benefits, drawbacks, uncertainties, and adaptability to likely changes.
-3. Compare verification methods against success criteria: coverage, blind spots, costs, and independently justified expected results.
-4. Recommend options with reasons, evidence that could change your view, and small tests or prototypes to check uncertain assumptions.
-5. Ask focused questions about consequential tradeoffs; wait for the user's answers and refine the proposals together, keeping unresolved decisions visible.
-6. Once consequential questions are resolved or explicitly deferred, ask whether the user is ready to create the plan and wait for agreement.
-
-### Create
+Use the [brainstorm](../brainstorm/SKILL.md) skill's results from the current context. When there are none, use that skill first. For an existing workplan, start with `objective.md`.
 
 1. Create the workplan from the templates using the structure above, and draft `objective.md`. Resolve template skill links relative to the generated documents.
 2. Record agreed verification in `objective.md` and the approach, alternatives, and decision reasons in `plan.md`; revise until the user approves both.
