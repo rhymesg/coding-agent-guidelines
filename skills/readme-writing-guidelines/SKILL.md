@@ -1,6 +1,6 @@
 ---
 name: readme-writing-guidelines
-description: "Structures a README so the reader quickly grasps the project and can easily work with it. Use when writing or editing a README."
+description: "Structures a README so the reader quickly grasps the project and can easily work with it. Use when planning, writing, or editing a README."
 ---
 
 # README Writing Guidelines

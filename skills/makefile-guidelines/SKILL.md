@@ -1,6 +1,6 @@
 ---
 name: makefile-guidelines
-description: "Keeps a Makefile a small, self-documenting task runner with one target per scenario. Use when creating or editing a Makefile."
+description: "Keeps a Makefile a small, self-documenting task runner with one target per scenario. Use when planning, creating, or editing a Makefile."
 ---
 
 # Makefile Guidelines

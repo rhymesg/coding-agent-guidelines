@@ -1,6 +1,6 @@
 ---
 name: document-writing-guidelines
-description: "Keeps documentation concise and easy to navigate. Use when writing or editing documents, including technical notes, reports, and document-style artifacts."
+description: "Keeps documentation concise and easy to navigate. Use when planning, writing, or editing documents, including technical notes, reports, and document-style artifacts."
 ---
 
 # Document Writing Guidelines
