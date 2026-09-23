@@ -5,7 +5,7 @@ description: "Keeps a Makefile a small, self-documenting task runner with one ta
 
 # Makefile Guidelines
 
-- Read the Makefiles of neighboring projects first and keep their conventions where they agree with the rules below.
+- When creating a new Makefile, read the Makefiles of neighboring projects first and keep their conventions where they agree with the rules below.
 
 ## Targets
 

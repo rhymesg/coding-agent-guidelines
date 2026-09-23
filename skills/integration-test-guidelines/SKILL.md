@@ -7,7 +7,7 @@ description: "Designs focused tests across component boundaries. Use when planni
 
 ## Design
 
-Inspect the project structure, component interactions, and existing tests. Keep user-provided choices and select effective options for the rest:
+Keep user-provided choices and select effective options for the rest:
 
 - **Scope:** Use the smallest boundary that exposes the relevant failures. Connect real components within it and replace dependencies outside it as needed.
 - **Scenarios:** Cover normal operation and plausible interaction failures, including ordering, delays, repetition, and recovery where relevant.
