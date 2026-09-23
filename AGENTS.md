@@ -8,7 +8,6 @@
 - Before adding code:
   - Check whether it is necessary for the user's intended outcome. Do not add it otherwise.
   - Look for ways to reuse, extend, or slightly modify existing code.
-- For a Makefile, use the [makefile-guidelines](skills/makefile-guidelines/SKILL.md) skill.
 
 ### Stay Within the Coding Task
 
