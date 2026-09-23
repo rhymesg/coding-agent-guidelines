@@ -8,7 +8,7 @@ description: "Keeps a Makefile a small, self-documenting task runner with one ta
 ## Targets
 
 - One target per scenario, named after it: `make test`, `make run-sim`. Not `make run MODE=sim`.
-- A target takes at most one command-line variable, for the input that changes between runs: `make run DATASET=euroc`. Every other setting lives in the configuration file.
+- A target takes at most one command-line variable, for the input that changes between runs: `make run CONFIG=config/sim.yaml`. Every other setting lives in the configuration file.
 - Declare every non-file target in `.PHONY`; default to `help`.
 - Document each user-facing target with a `## target: description` comment and a `help` target that prints them.
 - Keep a recipe to a few lines. Move longer logic into a script the target calls.
