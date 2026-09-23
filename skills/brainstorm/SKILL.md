@@ -7,14 +7,14 @@ description: "Clarifies what the user wants and how to build and verify it befor
 
 Do not edit code or create workplan documents while brainstorming.
 
-## Plan message
+## Proposal
 
-Reply with one plan message each turn, up to about 300 words including tables:
+Reply with one proposal each turn, up to about 300 words including tables:
 
-- `Intent`: what you understand the user wants: outcome, scope, constraints, and success criteria.
+- `Intent`: what you understand the user wants: goal, scope, constraints, and success criteria, as applicable.
 - Following sections as appropriate, such as approach and open decisions.
 - `Suggestions`, until the user picks an option or persuades you, and again when the intent changes:
-  - Viable alternatives for anything with a choice, such as architecture or method, weighed on simplicity, maintainability, readability, expandability, and best practice. Present them as a table, labelling each option `(recommended)`, `(your proposal)`, or `(existing)` where applicable:
+  - Viable alternatives for anything with a choice, such as architecture or method, weighed on simplicity, maintainability, readability, expandability, and best practice. Present them as a table, labelling each option `(recommended)`, `(yours)`, or `(existing)` where applicable:
 
     | Option | Trade-offs |
     |---|---|
@@ -38,9 +38,9 @@ Reply with one plan message each turn, up to about 300 words including tables:
 
 ## Workflow
 
-1. Show the plan message and wait for the user's answers.
+1. Show the proposal and wait for the user's answers.
 2. Refine it with each answer until consequential questions are resolved or explicitly deferred.
-3. Once the intent is clear, use the [get-second-opinion](../get-second-opinion/SKILL.md) skill on the plan message.
+3. Once the intent is clear, use the [get-second-opinion](../get-second-opinion/SKILL.md) skill on the proposal.
 4. Suggest which plan to write next. The next step is always a plan, never implementation:
    - Work that fits one session: a plan file in the current session.
    - Work spanning several session windows: an explicit `/create-workplan` call.
