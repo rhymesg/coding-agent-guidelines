@@ -2,9 +2,9 @@
 
 ## 1. Understand Before Coding
 
-### Keep It Simple and Maintainable
+### Keep It Simple and Consistent
 
-- Explore the codebase and its documents first to understand its structure, conventions, and existing patterns.
+- Explore the codebase, its documents, and neighboring projects of the same kind first. Follow their conventions.
 - Before adding code:
   - Check whether it is necessary for the user's intended outcome. Do not add it otherwise.
   - Look for ways to reuse, extend, or slightly modify existing code.
