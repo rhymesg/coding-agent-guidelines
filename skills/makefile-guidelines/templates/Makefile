@@ -23,11 +23,11 @@ build:
 test: build
 	$(RUN) ctest --test-dir build --output-on-failure
 
-# CONFIG is the one per-run setting; everything else lives in the file.
-CONFIG ?= config/default.yaml
-## run: Run the application with CONFIG, default config/default.yaml.
+# INPUT is the one value that changes per run; settings live in the configuration file.
+INPUT ?= data/sample.bag
+## run: Run the application on INPUT, default data/sample.bag.
 run: build
-	$(RUN) build/<name> --config $(CONFIG)
+	$(RUN) build/<name> $(INPUT)
 
 ## shell: Interactive shell in the image.
 shell:
