@@ -29,7 +29,7 @@ Reply with one plan message each turn, up to about 300 words including tables:
     | Document | Content |
     |---|---|
     | Path of the file | What it gains or how it changes |
-  - Where applicable, the Makefile targets the user needs to follow and run the work:
+  - Where applicable, the Makefile targets the user needs to follow and run the work, following the [makefile-guidelines](../makefile-guidelines/SKILL.md) skill:
 
     | Target | Script | What it does |
     |---|---|---|
