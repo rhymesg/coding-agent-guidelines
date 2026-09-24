@@ -9,7 +9,7 @@ description: "Keeps documentation concise and easy to navigate. Use when plannin
 - Keep a document under 1000 words unless the user sets another limit. Treat word limits as ceilings, not targets.
 - Prefer bullet points. One point per bullet, one line per bullet.
 - Put parallel items in a list; put compared items in a table.
-- Link to settings, results, and other details in their source document or file instead of repeating them.
+- Keep each piece of information in one place and link to it instead of repeating it.
 - Do not write numbers that change often; point to the source instead.
 - Keep paragraphs to two sentences or fewer. One paragraph covers one thing.
 - Do not add sentences that repeat the same meaning.
