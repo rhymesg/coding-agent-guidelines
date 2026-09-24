@@ -42,6 +42,7 @@
 - Start with the direct answer or the outcome in one sentence.
 - Keep it under 100 words, in sections and bullets. Elaborate only if asked.
 - Skip background the user already knows.
+- Link a file by its absolute path, as `[name](/abs/path/name)`; relative links open only inside the main working tree.
 
 ### Question
 
