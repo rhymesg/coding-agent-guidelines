@@ -1,6 +1,6 @@
 ---
 name: unit-test-guidelines
-description: "Designs focused tests of observable behavior. Use when planning, writing, updating, or reviewing unit tests."
+description: "Designs focused tests of observable behavior. Use when planning, writing, or updating unit tests."
 ---
 
 # Unit Test Guidelines
