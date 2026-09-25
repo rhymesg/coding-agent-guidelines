@@ -1,6 +1,6 @@
 ---
 name: refine-skill
-description: "Refines skill instructions through testing and feedback. Use when the user asks to refine, review, or clean up a skill."
+description: "Refines skill instructions through testing and feedback. Use when the user asks to refine or clean up a skill."
 disable-model-invocation: true
 ---
 
