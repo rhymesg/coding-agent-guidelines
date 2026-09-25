@@ -13,7 +13,8 @@ description: "Checks consistency across skills and agent instructions. Use when 
    - If the sets contain the same files, review them only once.
 2. Check each set for:
    - conflicting rules: two rules that cannot both be followed. An explicit instruction in a skill satisfies an "unless asked" exception.
-   - overlapping triggers
+   - overlapping triggers: multiple skills activate for the same request, with unclear responsibility or redundant work
+   - excessive activation: triggers or workflow calls that invoke a skill more often, or for smaller tasks, than needed
    - gaps: work the instructions call for that no skill or rule covers, and references to a missing skill or step
    - duplicated rules: the same instruction repeated in multiple places
 3. Use the [skill-writing-guidelines](../skill-writing-guidelines/SKILL.md) skill to develop fixes that resolve the findings across both sets together, accounting for shared files and checking that each set remains consistent.

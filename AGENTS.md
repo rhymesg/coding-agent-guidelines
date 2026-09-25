@@ -43,6 +43,7 @@
 - Keep it under 100 words, in sections and bullets. Elaborate only if asked.
 - Skip background the user already knows.
 - Link a file by its absolute path, as `[name](/abs/path/name)`; relative links open only inside the main working tree.
+- When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill for repeatable results.
 
 ### Question
 

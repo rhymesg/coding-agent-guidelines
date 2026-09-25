@@ -9,10 +9,11 @@ description: "Helps write concise, reusable skill instructions. Use when creatin
 
 ### Scope and reuse
 
+- A skill’s instructions apply when the skill is used and its instructions are loaded into context.
 - Refer to other skills for applicable instructions and writing conventions.
 - Look for ways to work with existing skills. Merge overlapping guidance or refer to its owner instead of duplicating it.
 - To apply another skill, write `Use the [skill-name](path/to/SKILL.md) skill for <purpose>.` Keep the instruction in one relevant place.
-- Check interactions with other skills and instructions: overlapping triggers, conflicting rules, unclear responsibilities, and repeated or recursive workflows.
+- Check how the edited skill interacts with other skills and agent instructions.
 
 ### Naming and placement
 
@@ -34,4 +35,3 @@ description: "Helps write concise, reusable skill instructions. Use when creatin
 ## Editing skills
 
 - Before editing, review the whole structure and workflow. Remove duplicate or unnecessary instructions, combine related points, and reorganize for concision and clarity.
-- When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill for repeatable results.
