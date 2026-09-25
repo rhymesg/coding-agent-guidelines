@@ -5,10 +5,12 @@ description: "Designs focused tests of observable behavior. Use when planning, w
 
 # Unit Test Guidelines
 
-- Identify the function's purpose and plausible failure modes before writing tests.
-- Each test should cover one clear behavior under one scenario.
+- Identify the function's purpose, then name the bug each test would catch. Skip tests where you cannot name one, including tests of framework behavior and trivial getters.
+- Cover inputs that could plausibly break the function — typical, boundary, empty, duplicate, malformed, extreme, repeated.
+- Cover one behavior under one scenario per test.
 - Keep tests independent, using fakes or mocks for slow or external dependencies.
-- Keep setup minimal and test data readable, and assert only what proves the behavior under test.
-- Do not derive expected results using the same logic as the code.
+- Keep setup minimal and test data readable.
+- Keep test-only methods out of production classes.
+- Assert only what proves the behavior under test, and derive expected results without the code's own logic.
 - Do not assert text, labels, styles, or values that the code states literally; they fail on edits, not on faults. Assert the behavior they depend on instead.
-- Cover various inputs that could plausibly break it — typical, boundary, empty, duplicate, malformed, extreme, repeated.
+- Before finishing, imagine small bugs in the code and confirm a test would catch each one.
