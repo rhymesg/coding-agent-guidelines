@@ -8,8 +8,7 @@ description: "Finds and fixes unit tests that give false confidence or cost upke
 ## Workflow
 
 1. Check each test against the rules of the [unit-test-guidelines](../unit-test-guidelines/SKILL.md) skill, the [xUnit test smells](references/xunit-test-smells.md), and the [additional anti-patterns](references/additional-anti-patterns.md).
-2. When the user asks for a review, report the findings without editing.
-3. When the user asks for a fix, fix the tests. If a fixed test fails, report the failure as a possible bug.
+2. Fix the wrong tests. If a fixed test fails, report the failure as a possible bug.
 
 ## Report
 
