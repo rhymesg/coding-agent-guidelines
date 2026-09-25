@@ -39,7 +39,6 @@
 
 ## 4. Interaction with the User
 
-- Start with the direct answer or the outcome in one sentence.
 - Keep it under 100 words, in sections and bullets. Elaborate only if asked.
 - Skip background the user already knows.
 - In messages to the user, link files by their absolute paths, as `[name](/abs/path/name)`.
@@ -52,7 +51,7 @@
 
 #### Working
 
-- Before starting or resuming work, including after compaction, read the matching `workplans/<topic>/objective.md`.
+- When continuing an active workplan, including after compaction, read its `workplans/<topic>/objective.md`.
 - Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
 - Do what you can first. Collect any required user input or actions and ask for them together.
 
