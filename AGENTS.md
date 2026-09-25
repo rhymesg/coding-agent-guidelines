@@ -39,7 +39,7 @@
 
 ## 4. Interaction with the User
 
-- Keep it under 100 words, in sections and bullets. Elaborate only if asked.
+- Keep it under 100 words, in sections and bullets.
 - Skip background the user already knows.
 - In messages to the user, link files by their absolute paths, as `[name](/abs/path/name)`.
 
