@@ -12,7 +12,7 @@ description: "Checks consistency across skills and agent instructions. Use when 
    - **Current environment:** Read every skill the agent can load here, plus all applicable `AGENTS.md` and `CLAUDE.md` files.
    - If the sets contain the same files, review them only once.
 2. Check each set for:
-   - conflicting rules: two rules that cannot both be followed. An explicit instruction in a skill satisfies an "unless asked" exception.
+   - conflicting rules: two rules that cannot both be followed. When the user requests a skill, its workflow steps count as part of that request.
    - overlapping triggers: multiple skills activate for the same request, with unclear responsibility or redundant work
    - excessive activation: triggers or workflow calls that invoke a skill more often, or for smaller tasks, than needed
    - gaps: work the instructions call for that no skill or rule covers, and references to a missing skill or step

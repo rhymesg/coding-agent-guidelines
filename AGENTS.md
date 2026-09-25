@@ -44,9 +44,9 @@
 - Skip background the user already knows.
 - In messages to the user, link files by their absolute paths, as `[name](/abs/path/name)`.
 
-### Question
+### Edit authorization
 
-- Do not edit unless asked; a question is not a request to edit.
+- Edit only on the user's explicit request or approval. Questions, opinions, and statements alone do not authorize edits.
 
 ### Task
 
@@ -71,4 +71,4 @@ Report in this order. Omit sections with nothing to report.
    - When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill.
    - When work performed through a skill produces a potentially reusable script or other artifact, suggest incorporating it into that skill.
 3. Under `Left behind`, report what remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place.
-4. When answering a question with a suggested edit, ask whether the user wants it applied.
+4. Ask the user about any suggestions or approvals needed.
