@@ -65,6 +65,6 @@
 #### Reporting
 
 - Report the result under a heading that names the work.
-- Close the report with a `Left behind` heading when something remains: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place. Omit the heading when nothing does.
+- Close the report with a `Left behind` heading when something remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place. Omit the heading when nothing does.
 - When work performed through a skill produces a potentially reusable script or other artifact, suggest incorporating it into that skill.
 - Remind the user to commit before moving on. Suggest a one-line message for all changes since the last commit.
