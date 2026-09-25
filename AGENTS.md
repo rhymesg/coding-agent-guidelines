@@ -42,8 +42,7 @@
 - Start with the direct answer or the outcome in one sentence.
 - Keep it under 100 words, in sections and bullets. Elaborate only if asked.
 - Skip background the user already knows.
-- Link a file by its absolute path, as `[name](/abs/path/name)`; relative links open only inside the main working tree.
-- When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill for repeatable results.
+- In messages to the user, link files by their absolute paths, as `[name](/abs/path/name)`.
 
 ### Question
 
@@ -65,7 +64,11 @@
 
 #### Reporting
 
-- Report the result under a heading that names the work.
-- Close the report with a `Left behind` heading when something remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place. Omit the heading when nothing does.
-- When work performed through a skill produces a potentially reusable script or other artifact, suggest incorporating it into that skill.
-- Remind the user to commit before moving on. Suggest a one-line message for all changes since the last commit.
+Report in this order. Omit sections with nothing to report.
+
+1. Report the result under headings that name the work.
+2. Under `Skill improvements`:
+   - When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill.
+   - When work performed through a skill produces a potentially reusable script or other artifact, suggest incorporating it into that skill.
+3. Under `Left behind`, report what remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place.
+4. When answering a question with a suggested edit, ask whether the user wants it applied.
