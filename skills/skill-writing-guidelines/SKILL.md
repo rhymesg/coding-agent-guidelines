@@ -29,7 +29,7 @@ description: "Helps write concise, reusable skill instructions. Use when creatin
 ## New skills
 
 - Start with the shortest skill that meets the user's intent and goal.
-- After creating a skill, use the [review-skills](../review-skills/SKILL.md) skill to check it against the other skills and the agent instructions.
+- After creating a skill, use the [review-skill-consistency](../review-skill-consistency/SKILL.md) skill to check it against the other skills and the agent instructions.
 
 ## Editing skills
 
