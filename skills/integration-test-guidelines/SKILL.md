@@ -16,8 +16,8 @@ Keep user-provided choices and select effective options for the rest:
 
 ## Implementation
 
-- Put each integration test in `integration/<test_name>/` under the project's test directory, with its test file and test data together.
-- Start each test file with a header comment summarizing the selected scenarios, component boundary, inputs, and acceptance criteria.
+- Put each integration test in `integration/<test_name>/` under the project's test directory, with its test file, test data, and a `README.md` together.
+- Summarize the selected scenarios, component boundary, inputs, and acceptance criteria in that `README.md`.
 - Include required data, configuration, and timestamps in the repository. For extracted data, record the source and extraction range.
 - Exercise production APIs and processing paths while preserving encapsulation.
 - Assert behavior, not implementation details.
