@@ -33,7 +33,7 @@
 
 ### Documents and Instructions
 
-- A document is written content that explains, guides, or reports, in any format: Markdown, HTML, PDF, or another artifact. Use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill.
+- For documents in any format, use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill.
 - For a README, use the [readme-writing-guidelines](skills/readme-writing-guidelines/SKILL.md) skill.
 - For skills, use the [skill-writing-guidelines](skills/skill-writing-guidelines/SKILL.md) skill.
 
@@ -41,7 +41,7 @@
 
 - Keep it under 100 words, in sections and bullets.
 - Skip background the user already knows.
-- In messages to the user, link files by their absolute paths, as `[name](/abs/path/name)`.
+- Link files by their absolute paths, as `[name](/abs/path/name)`.
 
 ### Edit authorization
 
