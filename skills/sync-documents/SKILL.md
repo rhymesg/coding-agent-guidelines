@@ -1,9 +1,9 @@
 ---
-name: sync-docs
+name: sync-documents
 description: "Updates comments and documents to match the code. Use when a finished task changed behavior, commands, or structure."
 ---
 
-# Sync Docs
+# Sync Documents
 
 ## Workflow
 
@@ -11,8 +11,6 @@ description: "Updates comments and documents to match the code. Use when a finis
 2. List the names the task touched: files, functions, commands, and settings. Grep the documents across the project for them.
 3. Compare each matching document against the current code and configuration.
 4. Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill to update stale documentation.
-
-When asked to sync everything, run steps 2 to 4 on every document instead of only the matches.
 
 ## Rules
 

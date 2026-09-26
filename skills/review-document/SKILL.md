@@ -14,7 +14,7 @@ description: "Checks documents for clarity, consistency, and accuracy. Use when 
 
 1. Read the document and relevant project rules. Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill for writing rules.
 2. Review the document as a whole before checking individual passages, using those guidelines and the checks below.
-3. Use the [sync-docs](../sync-docs/SKILL.md) skill to identify stale related documents.
+3. Use the [sync-documents](../sync-documents/SKILL.md) skill to identify stale related documents.
 4. Apply corrections or report findings according to the mode.
 5. Use the [get-second-opinion](../get-second-opinion/SKILL.md) skill on the corrections or findings.
 
