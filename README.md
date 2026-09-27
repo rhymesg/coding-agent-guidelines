@@ -1,6 +1,6 @@
 # Coding Agent Guidelines
 
-This repository contains [guidelines](AGENTS.md) and [skills](skills/) for personal use.
+This repository contains general-purpose [guidelines](AGENTS.md) and [skills](skills/) for my personal use.
 
 I value instructions I can read and refine, with clear steps and results I can review. These instructions evolve as the models evolve.
 
