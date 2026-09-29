@@ -11,7 +11,7 @@ description: "Keeps documentation concise and easy to navigate. Use when plannin
 - Prefer bullet points. One point per bullet, one line per bullet.
 - Put parallel items in a list; put compared items in a table.
 - Keep each piece of information in one place and link to it instead of repeating it.
-- Do not write numbers that change often; point to the source instead.
+- Do not copy details that change with the code or over time, such as values, counts, signatures, or file lists; point to the source instead.
 - Keep paragraphs to two sentences or fewer. One paragraph covers one thing.
 - Do not add sentences that repeat the same meaning.
 - Do not add rationale clauses like 'so that X' or 'this avoids Y'.
