@@ -1,6 +1,6 @@
 ---
 name: clean-up
-description: "Simplifies code while preserving required behavior. Use when unmerged changes add more than 100 lines of non-generated source code since the last `Clean up` commit or relative to the base branch."
+description: "Simplifies code and documents while preserving required behavior. Use when the user asks to clean up code or documents."
 ---
 
 # Clean Up
@@ -13,5 +13,5 @@ description: "Simplifies code while preserving required behavior. Use when unmer
 4. Among the unused code, separate the options the public API offers to a library user from the stale code no caller reaches. Keep the options, remove the stale code.
 5. When another part of the codebase already does the same thing, call it instead, or extend that code to cover the new case.
 6. Drop wholly unnecessary commits. Remove remaining unnecessary code and simplify the rest.
-7. After cleanup, use the [sync-documents](../sync-documents/SKILL.md) skill and confirm relevant tests and lint pass. Run broader verification procedures when available and report the results.
-8. When the user requests a commit, use the [commit](../commit/SKILL.md) skill to commit verified changes, starting the message with `Clean up`.
+7. In tracked documents, remove documents and sections that duplicate other documents or the code, hold temporary information, or record design history or a replaced design. Move still-useful content into the document that owns it first.
+8. After cleanup, use the [sync-documents](../sync-documents/SKILL.md) skill and confirm relevant tests and lint pass. Run broader verification procedures when available and report the results.
