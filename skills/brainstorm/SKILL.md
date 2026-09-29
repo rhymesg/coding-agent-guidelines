@@ -42,5 +42,5 @@ Reply with one proposal each turn, up to about 300 words including tables:
 2. Refine it with each answer until consequential questions are resolved or explicitly deferred.
 3. Once the intent is clear, use the [get-second-opinion](../get-second-opinion/SKILL.md) skill on the proposal.
 4. Suggest which plan to write next. The next step is always a plan, never implementation:
-   - Work that fits one session: a plan file in the current session.
+   - Work that fits one session: the agent's plan mode in the current session.
    - Work spanning several session windows: an explicit `/create-workplan` call.
