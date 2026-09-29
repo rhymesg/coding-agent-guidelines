@@ -24,6 +24,8 @@
 
 ## 3. Writing Guidelines
 
+- Write code, configuration files, and folder structure that explain themselves; when existing ones need explaining, suggest changes that make them clear before documenting them.
+
 ### Comments and Docstrings
 
 - Keep each file header and in-line comment to two lines at most. This does not apply to Doxygen comments.
