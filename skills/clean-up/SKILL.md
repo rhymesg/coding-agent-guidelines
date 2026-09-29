@@ -5,6 +5,8 @@ description: "Simplifies code and documents while preserving required behavior. 
 
 # Clean Up
 
+- Cover the tracked files the project owns; leave out vendored code and data files.
+
 ## Workflow
 
 1. Read available plans, design documents, and other relevant project documents alongside the user's requirements, and use them as the basis for cleanup decisions.
@@ -13,5 +15,5 @@ description: "Simplifies code and documents while preserving required behavior. 
 4. Among the unused code, separate the options the public API offers to a library user from the stale code no caller reaches. Keep the options, remove the stale code.
 5. When another part of the codebase already does the same thing, call it instead, or extend that code to cover the new case.
 6. Drop wholly unnecessary commits. Remove remaining unnecessary code and simplify the rest.
-7. In tracked documents, remove documents and sections that duplicate other documents or the code, hold temporary information, or record design history or a replaced design. Move still-useful content into the document that owns it first.
+7. Remove documents and sections that duplicate other documents or the code, hold temporary information, or record design history or a replaced design. Move still-useful content into the document that owns it first.
 8. After cleanup, use the [sync-documents](../sync-documents/SKILL.md) skill and confirm relevant tests and lint pass. Run broader verification procedures when available and report the results.
