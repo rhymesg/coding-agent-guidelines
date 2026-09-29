@@ -16,6 +16,7 @@ description: "Structures a README so the reader quickly grasps the project and c
 | Development | Build, test, lint, and CI commands |
 
 - Give a folder its own README when it holds several items of one kind, such as datasets or profiles. A README covers what is common at its level and links each sub-folder's README instead of repeating its details.
+- When a folder's data is not tracked, its README lists the files the documented commands need, where to download them or how to regenerate them, and the source's version or configuration.
 - Put each command the reader should run in its own fenced bash block. Each block must run as-is when copied and pasted.
 - State what the reader runs, sets, or edits, not why, and name the file, parameter, or constant.
 - Move detailed settings, background, implementation details, development history, proposed changes, and verification results to a separate section after the main ones or to a separate file. Link to them where they matter.
