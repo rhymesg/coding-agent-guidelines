@@ -12,7 +12,7 @@ description: "Simplifies code and documents while preserving required behavior. 
 1. Read available plans, design documents, and other relevant project documents alongside the user's requirements, and use them as the basis for cleanup decisions.
 2. Before refactoring, ensure tests verify the required behavior across normal cases, edge cases, and failure conditions, and confirm they pass.
 3. Review code and commits for abandoned attempts, unused code, duplication, and unnecessary abstractions against the requirements and available documents.
-4. Among the unused code, separate the options the public API offers to a library user from the stale code no caller reaches. Keep the options, remove the stale code.
+4. Keep every option a user can set, such as public API, parameters, flags, and arguments, even when nothing uses it. Remove code that nothing calls.
 5. When another part of the codebase already does the same thing, call it instead, or extend that code to cover the new case.
 6. Drop wholly unnecessary commits. Remove remaining unnecessary code and simplify the rest.
 7. Remove documents and sections that duplicate other documents or the code, hold temporary information, or record design history or a replaced design. Move still-useful content into the document that owns it first.
