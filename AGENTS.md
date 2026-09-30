@@ -64,13 +64,13 @@
 - Do not commit unless asked; when asked, use the [commit](skills/commit/SKILL.md) skill for committing changes.
 - After a merge or when the task ends, return the main working tree to `main` and fast-forward it to the tracked remote branch.
 
-#### Reporting
+#### Answering
 
-Report in this order. Omit sections with nothing to report.
+Answer in this order. Omit sections with nothing to say.
 
-1. Report the result under headings that name the work.
+1. State the result under headings that name the work.
 2. Under `Skill improvements`:
    - When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill.
    - When work performed through a skill produces a potentially reusable script or other artifact, suggest incorporating it into that skill.
-3. Under `Left behind`, report what remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place.
+3. Under `Left behind`, list what remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place.
 4. Ask the user about any suggestions or approvals needed.
