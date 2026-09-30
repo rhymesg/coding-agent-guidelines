@@ -22,7 +22,8 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 
 - Show results as graphs and methods or structures as diagrams.
 - In a diagram, show where each input and processing step acts.
-- Give each figure a caption that says what it shows and how to read it.
+- Give every diagram and graph a caption. Its first line names what the figure is; the rest states the conclusion the figure supports.
+- Explain colours, markers, and lines with axis labels and legends in the figure, not in the caption.
 
 ## Terminology
 
