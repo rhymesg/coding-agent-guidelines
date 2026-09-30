@@ -18,11 +18,16 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 - Make the first screen deliver the result by itself: a one-sentence finding, one or two representative figures, and the key numbers.
 - Put the details below, under their own headings, for readers who want them: method, full tables, other cases, and limits. The document word limit applies to the part above them.
 
-## Figures
+## Sections
+
+- Give each detail section one topic, such as one quantity or one question.
+- Open each section with a sentence or two on what it covers.
+
+## Figures and Tables
 
 - Show results as graphs and methods or structures as diagrams.
 - In a diagram, show where each input and processing step acts.
-- Give every diagram and graph a caption. Its first line names what the figure is; the rest states the conclusion the figure supports.
+- Number and caption every figure and table: "Figure 1." for diagrams and graphs, "Table 1." for tables. The caption's first line names what it is; the rest states the conclusion it supports.
 - Explain colours, markers, and lines with axis labels and legends in the figure, not in the caption.
 
 ## Terminology
