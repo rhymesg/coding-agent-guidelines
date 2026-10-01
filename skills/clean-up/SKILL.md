@@ -16,4 +16,5 @@ description: "Simplifies code and documents while preserving required behavior. 
 5. When another part of the codebase already does the same thing, call it instead, or extend that code to cover the new case.
 6. Drop wholly unnecessary commits. Remove remaining unnecessary code and simplify the rest.
 7. Remove documents and sections that duplicate other documents or the code, hold temporary information, or record design history or a replaced design. Move still-useful content into the document that owns it first.
-8. After cleanup, use the [sync-documents](../sync-documents/SKILL.md) skill and confirm relevant tests and lint pass. Run broader verification procedures when available and report the results.
+8. Remove only what is clearly unneeded. Keep anything that needs a judgment call, and list it in the final report.
+9. After cleanup, use the [sync-documents](../sync-documents/SKILL.md) skill and confirm relevant tests and lint pass. Run broader verification procedures when available and report the results.
