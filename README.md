@@ -62,7 +62,7 @@ ln -s "$PWD"/skills/* "$project/.agents/skills/"
 
 ### Import inline
 
-Append this in your `CLAUDE.md` or `AGENTS.md`:
+Append this in your `CLAUDE.md`. Codex has no import syntax; symlink or copy `AGENTS.md` instead.
 
 ```
 @path/to/coding-agent-guidelines/AGENTS.md
