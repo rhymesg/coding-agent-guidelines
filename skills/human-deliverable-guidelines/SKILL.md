@@ -25,9 +25,9 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 The One Pager is the part the reader is interested in: the points themselves, not a summary of the Body.
 
 - Keep the One Pager on the first screen, with the central message in the title, worded with a verb.
+- Start it with the most representative diagram, graph, or table, if any, with the points below.
 - Write it as a list of points: the conclusion first, then three to five points that carry it, each with its key number, then the recommendation or decision needed.
 - Bold the phrase in each point that a scanning reader must catch; bold nothing else.
-- Include one representative figure where it states a point faster than text.
 - Add nothing that the Body does not contain.
 - Apply the document word limit to the One Pager.
 
