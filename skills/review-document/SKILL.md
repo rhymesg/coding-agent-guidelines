@@ -1,13 +1,13 @@
 ---
 name: review-document
-description: "Checks documents for clarity, consistency, and accuracy. Use when finishing a new document or when the user asks to review a document."
+description: "Checks documents for clarity, consistency, and accuracy. Use when finishing a new standalone document for human readers or when the user asks to review a document."
 ---
 
 # Review Document
 
 ## Modes
 
-- Automatic final review after writing: apply corrections.
+- Automatic final review of a new standalone document: apply corrections.
 - User-requested review: report findings without editing. Wait for editing instructions unless already provided.
 
 ## Workflow

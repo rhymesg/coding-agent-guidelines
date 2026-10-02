@@ -1,6 +1,6 @@
 ---
 name: get-second-opinion
-description: "Checks decisions and changes with an independent reviewer. Use when your answer has no clear winner, your conclusion remains uncertain, or a document or code change modifies more than five non-generated lines."
+description: "Checks decisions and changes with an independent reviewer. Use when your answer has no clear winner, your conclusion remains uncertain, or a code change is about to go into a merge request."
 ---
 
 # Get a Second Opinion

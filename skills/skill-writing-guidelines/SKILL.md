@@ -32,4 +32,4 @@ description: "Helps write concise, reusable skill instructions. Use when creatin
 
 - Start a new skill with the shortest version that meets the user's intent and goal.
 - Before editing, review the whole structure and workflow. Remove duplicate or unnecessary instructions, combine related points, and reorganize for concision and clarity.
-- After creating a skill, use the [review-skill-consistency](../review-skill-consistency/SKILL.md) skill to check it against the other skills and the agent instructions.
+- After creating a skill, check it against the skills it names or whose triggers overlap, for the problems the [review-skill-consistency](../review-skill-consistency/SKILL.md) skill lists.
