@@ -17,16 +17,19 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 
 ## Structure
 
-- Start with a Summary followed by a Body with sections suited to the document.
+- Start with a One Pager followed by a Body with sections suited to the document.
 - Write the Body for readers who study the details.
 
-## Summary
+## One Pager
 
-- Keep the Summary on the first screen, with the central message in the title and the Summary's first sentence.
-- Lead with the conclusion or main point, then the key arguments and supporting evidence; include representative figures and key numbers where relevant.
-- Give only the principal points: the purpose, the outcome, and any recommendation.
+The One Pager is the part the reader is interested in: the points themselves, not a summary of the Body.
+
+- Keep the One Pager on the first screen, with the central message in the title, worded with a verb.
+- Write it as a list of points: the conclusion first, then three to five points that carry it, each with its key number, then the recommendation or decision needed.
+- Bold the phrase in each point that a scanning reader must catch; bold nothing else.
+- Include one representative figure where it states a point faster than text.
 - Add nothing that the Body does not contain.
-- Apply the document word limit to the Summary.
+- Apply the document word limit to the One Pager.
 
 ## Visuals
 
@@ -37,4 +40,7 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 
 ## References
 
-- Summary: [Minto pyramid principle](https://untools.co/minto-pyramid/), [USC executive summary guide](https://libguides.usc.edu/writingguide/executivesummary), [NPS executive summaries](https://nps.edu/web/gwc/executive-summaries-and-abstracts).
+- One Pager, conclusion first: [Minto pyramid principle](https://untools.co/minto-pyramid/), [USC executive summary guide](https://libguides.usc.edu/writingguide/executivesummary), [NPS executive summaries](https://nps.edu/web/gwc/executive-summaries-and-abstracts).
+- Title with a verb, first sentence the key finding: [one-page research brief guidelines](https://popresearchcenters.org/guidelines-for-writing-a-one-page-research-or-policy-brief-for-nontechnical-audiences/).
+- Three to five proof points with their numbers, then the decision needed: [executive one-pager template](https://deckary.com/blog/executive-one-pager-template).
+- Bold keywords and bulleted points for scanning readers: [NN/g: concise, scannable, objective](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/).
