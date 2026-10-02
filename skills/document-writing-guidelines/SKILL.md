@@ -25,7 +25,8 @@ description: "Keeps documentation concise and easy to navigate. Use when plannin
 
 ## Purpose
 
-- State the document's purpose in its first lines. Name another purpose when none below fits.
+- Before writing, decide the document's purpose from the table below. Name another purpose when none fits.
+- State the purpose in the document's first lines, then write only what serves it.
 
 | Purpose | Content |
 |---|---|
