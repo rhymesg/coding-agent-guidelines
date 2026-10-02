@@ -1,13 +1,13 @@
 ---
 name: report-writing-guidelines
-description: "Makes technical findings and evidence clear to readers. Use when writing or editing a report on engineering work, including workplan reports and reports maintained in a repository."
+description: "Makes technical findings and evidence clear to readers. Use when writing or editing a report on engineering work that is not tracked in a repository, such as a workplan or run report."
 ---
 
 # Report Writing Guidelines
 
 Use the [human-deliverable-guidelines](../human-deliverable-guidelines/SKILL.md) skill for document structure, presentation, and delivery.
 
-For reports maintained in a repository, follow its format and tracking conventions.
+A report tracked in a repository follows the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill, with the purpose Report.
 
 ## Layout
 

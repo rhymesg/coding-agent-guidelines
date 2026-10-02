@@ -38,7 +38,7 @@
 - For documents in any format, use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill.
 - For a README, use the [readme-writing-guidelines](skills/readme-writing-guidelines/SKILL.md) skill.
 - For standalone documents for human readers, use the [human-deliverable-guidelines](skills/human-deliverable-guidelines/SKILL.md) skill.
-- For report documents for human readers, use the [report-writing-guidelines](skills/report-writing-guidelines/SKILL.md) skill.
+- For untracked report documents for human readers, use the [report-writing-guidelines](skills/report-writing-guidelines/SKILL.md) skill.
 - For skills, use the [skill-writing-guidelines](skills/skill-writing-guidelines/SKILL.md) skill.
 
 ## 4. Interaction with the User
