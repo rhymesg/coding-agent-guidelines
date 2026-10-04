@@ -12,10 +12,14 @@ description: "Keeps documentation concise and easy to navigate. Use when plannin
 - Keep each piece of information in one place and link to it instead of repeating it.
 - Do not copy details that change with the code or over time, such as values, counts, signatures, or file lists; point to the source instead.
 - One paragraph or bullet covers one thing.
-- Do not add sentences that repeat the same meaning.
-- Omit rationale that restates the obvious, such as 'so that X' after a self-explanatory instruction.
 - Add a diagram, table, or graph when a picture states the point faster than text.
 - Name document files in lowercase with dashes between words, such as `runtime-optimization.md`, not underscores.
+
+## Sentences
+
+- Do not add sentences that repeat the same meaning.
+- Omit rationale that restates the obvious, such as 'so that X' after a self-explanatory instruction.
+- Prefer one clause, written so that no example needs appending to explain it.
 
 ## Audience
 
