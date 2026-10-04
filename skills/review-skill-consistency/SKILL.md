@@ -19,4 +19,5 @@ description: "Checks consistency across skills and agent instructions. Use when 
    - duplicated rules: the same instruction repeated in multiple places
    - over-constraint: a rule that forbids or mandates more than the owner's style needs
 3. Use the [skill-writing-guidelines](../skill-writing-guidelines/SKILL.md) skill to develop fixes that resolve the findings across both sets together, accounting for shared files and checking that each set remains consistent.
+   - For a conflict, prefer dropping a rule over adding conditions and specifics.
 4. Report the findings without editing, in a table with columns for number, skill/file name, problem, and suggested fix candidates. Order by importance and urgency, and report only the top ten. Report only findings that change what an agent does.
