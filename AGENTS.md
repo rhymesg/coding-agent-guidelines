@@ -65,7 +65,7 @@
 - After a change to behavior, commands, or structure, use the [sync-documents](skills/sync-documents/SKILL.md) skill for related documentation updates.
 - Before finishing new repository documentation, use the [review-document](skills/review-document/SKILL.md) skill.
 - Do not commit unless asked; when asked, use the [commit](skills/commit/SKILL.md) skill for committing changes.
-- After a merge or when the task ends, return the main working tree to `main` and fast-forward it to the tracked remote branch.
+- After Git work in a repository, return its main working tree to its tracked branch and fast-forward it to the remote.
 
 #### Answering
 

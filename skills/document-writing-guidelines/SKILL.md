@@ -13,7 +13,7 @@ description: "Keeps documentation concise and easy to navigate. Use when plannin
 - Do not copy details that change with the code or over time, such as values, counts, signatures, or file lists; point to the source instead.
 - One paragraph or bullet covers one thing.
 - Do not add sentences that repeat the same meaning.
-- Do not add rationale clauses like 'so that X' or 'this avoids Y'.
+- Omit rationale that restates the obvious, such as 'so that X' after a self-explanatory instruction.
 - Add a diagram, table, or graph when a picture states the point faster than text.
 - Name document files in lowercase with dashes between words, such as `runtime-optimization.md`, not underscores.
 

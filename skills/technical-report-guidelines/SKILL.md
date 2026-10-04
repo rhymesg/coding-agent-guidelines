@@ -1,11 +1,13 @@
 ---
 name: technical-report-guidelines
-description: "Makes technical findings and evidence clear to readers. Use when the user requests a technical report or details about engineering work."
+description: "Makes technical findings and evidence clear to readers. Use when the user requests a technical report."
 ---
 
 # Technical Report Guidelines
 
 Use the [human-deliverable-guidelines](../human-deliverable-guidelines/SKILL.md) skill for document structure, presentation, and delivery.
+
+A report tracked in a repository follows the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill, with the purpose Report.
 
 ## Layout
 
