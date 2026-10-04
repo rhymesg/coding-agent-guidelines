@@ -16,7 +16,6 @@ description: "Checks repository documents for clarity, consistency, and accuracy
 2. Review the document as a whole before checking individual passages, using those guidelines and the checks below.
 3. Check related documents for information the reviewed document makes stale.
 4. Apply corrections or report findings according to the mode.
-5. Use the [get-second-opinion](../get-second-opinion/SKILL.md) skill when a correction or finding is consequential or uncertain.
 
 ## Concision
 

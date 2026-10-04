@@ -22,5 +22,5 @@ description: "Keeps a Makefile a small, self-documenting task runner with one ta
 
 ## Build Systems
 
-- The Makefile is a task runner. In a new project, build with CMake, or colcon for ROS packages, and keep compile rules out of the Makefile. Leave an existing firmware build in place.
+- The Makefile is a task runner. In a new project, build with CMake, or colcon for ROS packages, and keep compile rules out of the Makefile.
 - Run builds and tools in the repository's environment: its Docker image, as the calling user, or its Python virtual environment.

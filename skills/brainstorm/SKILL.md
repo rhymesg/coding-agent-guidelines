@@ -40,7 +40,6 @@ Reply with one proposal each turn, up to about 300 words including tables:
 
 1. Show the proposal and wait for the user's answers.
 2. Refine it with each answer until consequential questions are resolved or explicitly deferred.
-3. Once the intent is clear, use the [get-second-opinion](../get-second-opinion/SKILL.md) skill on the proposal when a consequential decision remains uncertain.
-4. Suggest the next step. When the proposal already defines the work and the user approves it, implementation may start; otherwise suggest which plan to write:
+3. Suggest the next step:
    - Work that fits one session: the agent's plan mode in the current session.
    - Work spanning several session windows: an explicit `/create-workplan` call.

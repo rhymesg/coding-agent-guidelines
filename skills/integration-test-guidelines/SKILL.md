@@ -16,9 +16,9 @@ Keep user-provided choices and select effective options for the rest:
 
 ## Implementation
 
-- Follow the repository's existing integration test layout. Otherwise put each integration test in `integration/<test_name>/` under the project's test directory, with its test file, test data, and a `README.md` together.
+- Put each integration test in `integration/<test_name>/` under the project's test directory, with its test file, test data, and a `README.md` together.
 - Summarize the selected scenarios, component boundary, inputs, and acceptance criteria in that `README.md`.
-- Include required data, configuration, and timestamps in the repository. For a file git cannot hold, document where to download or how to regenerate it in the test's `README.md`. For extracted data, record the source and extraction range.
+- Include required data, configuration, and timestamps in the repository. For extracted data, record the source and extraction range.
 - Exercise production APIs and processing paths while preserving encapsulation.
 - Assert behavior, not implementation details.
 - Isolate each test's state and resources; control clocks, randomness, and other nondeterministic inputs. Tests must not depend on execution order.

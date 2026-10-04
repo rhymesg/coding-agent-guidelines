@@ -18,7 +18,7 @@ description: "Keeps documentation concise and easy to navigate. Use when plannin
 ## Sentences
 
 - Do not add sentences that repeat the same meaning.
-- Omit rationale that restates the obvious, such as 'so that X' after a self-explanatory instruction.
+- Omit rationale that restates the obvious.
 - Prefer one clause, written so that no example needs appending to explain it.
 
 ## Audience
@@ -29,7 +29,7 @@ description: "Keeps documentation concise and easy to navigate. Use when plannin
 ## Purpose
 
 - Before writing, decide the document's purpose from the table below. Name another purpose when none fits.
-- State the purpose in the document's first lines, then write only what serves it.
+- Write only what serves the purpose.
 
 | Purpose | Content |
 |---|---|

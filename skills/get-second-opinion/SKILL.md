@@ -5,7 +5,7 @@ description: "Checks decisions and changes with an independent reviewer. Use whe
 
 # Get a Second Opinion
 
-- Use a reviewer that runs a different model. Prefer an external tool such as `codex:codex-rescue`; otherwise use a fresh subagent with a different model set explicitly.
+- Use a reviewer that runs a different model. Prefer an external reviewer such as the Codex CLI, `codex exec --sandbox read-only -o <file>`; otherwise use a fresh subagent with a different model set explicitly.
 - When neither is available, skip the review.
 
 ## Asking the Reviewer
