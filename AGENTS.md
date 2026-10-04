@@ -20,7 +20,8 @@
 - Add or update tests when changing externally observable behavior.
 - Bug fix: write a test that reproduces the issue, then fix the code and verify the test passes.
 - Refactoring: ensure relevant tests pass before and after the change.
-- Use the [unit-test-guidelines](skills/unit-test-guidelines/SKILL.md) skill for test guidance.
+- Use the [unit-test-guidelines](skills/unit-test-guidelines/SKILL.md) skill for unit tests.
+- Use the [integration-test-guidelines](skills/integration-test-guidelines/SKILL.md) skill for tests across component boundaries.
 
 ## 3. Writing Guidelines
 
@@ -33,13 +34,11 @@
 - Do not write author information.
 - Do not repeat the current value of a parameter in comments. Explain what the parameter means.
 
-### Documents and Instructions
+### Documentation and Deliverables
 
+- Keep reusable project knowledge, such as guides, architecture, and decisions, in tracked Markdown files alongside the code for agents and human readers.
+- Deliver task-specific findings to human readers, generally as untracked HTML files. Use the [human-deliverable-guidelines](skills/human-deliverable-guidelines/SKILL.md) skill.
 - For documents in any format, use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill.
-- For a README, use the [readme-writing-guidelines](skills/readme-writing-guidelines/SKILL.md) skill.
-- For standalone documents for human readers, use the [human-deliverable-guidelines](skills/human-deliverable-guidelines/SKILL.md) skill.
-- For untracked report documents for human readers, use the [report-writing-guidelines](skills/report-writing-guidelines/SKILL.md) skill.
-- For skills, use the [skill-writing-guidelines](skills/skill-writing-guidelines/SKILL.md) skill.
 
 ## 4. Interaction with the User
 
@@ -64,6 +63,7 @@
 #### Finishing
 
 - After a change to behavior, commands, or structure, use the [sync-documents](skills/sync-documents/SKILL.md) skill for related documentation updates.
+- Before finishing new repository documentation, use the [review-document](skills/review-document/SKILL.md) skill.
 - Do not commit unless asked; when asked, use the [commit](skills/commit/SKILL.md) skill for committing changes.
 - After a merge or when the task ends, return the main working tree to `main` and fast-forward it to the tracked remote branch.
 

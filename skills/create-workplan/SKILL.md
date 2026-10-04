@@ -10,7 +10,7 @@ disable-model-invocation: true
 flowchart LR
     session[New session] --> agents[AGENTS.md]
     agents --> objective[objective.md]
-    objective --> documents[plan.md / tasks.md / report.html]
+    objective --> documents[plan.md / tasks.md / report.md]
     documents --> work[Work]
     work -.->|update| documents
 ```
@@ -32,7 +32,7 @@ flowchart LR
 | `objective.md` | Goal, scope, constraints, workspace paths, guidelines, verification, what the report should answer | The user changes the goal or adds guidance |
 | `plan.md` | Approach, phases, dependencies, key decisions and reasons | A planning decision changes |
 | `tasks.md` | Concrete tasks in order, links to the plan, status | A task starts, finishes, or changes |
-| `report.html` | Results and history: findings, attempts, analysis, conclusions, verification | Something relevant is learned |
+| `report.md` | Results and history: findings, attempts, analysis, conclusions, verification | Something relevant is learned |
 
 Templates are in `templates/`. Keep their purpose statements and the `Goal`, `Verification`, and `Guidelines` sections in `objective.md`; choose other sections and detail to fit the task.
 

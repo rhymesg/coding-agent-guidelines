@@ -1,46 +1,38 @@
 ---
 name: human-deliverable-guidelines
-description: "Makes standalone documents easy to read and share. Use when creating or editing a standalone document for human readers, such as a report, guide, or proposal."
+description: "Makes standalone documents clear at a glance through figures, diagrams, tables, brief text, and bold keywords. Use when creating or editing a standalone document for human readers, such as a report, guide, or proposal."
 ---
 
 # Human Deliverable Guidelines
 
-Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill for writing rules.
+Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill for shared writing rules. The prose and length rules below override its defaults.
 
 ## Format and Delivery
 
 - Default to self-contained HTML; use another format when the user or destination requires it.
 - Embed images and fonts as data URIs. Keep videos as separate files linked from the document.
-- Link other documents, code, and repositories by global URLs, such as a file's GitHub or GitLab page at a commit.
-- Default to `outputs/<topic>/` under the working folder, outside Git. Follow another location or tracking convention when specified by the user, repository, or calling skill.
+- Link other documents, code, and repositories only by global URLs, such as a file's GitHub or GitLab page at a commit. Do not use local file paths.
+- Default to `outputs/<topic>/` under the working folder, outside Git. Follow another location when specified by the user, repository, or calling skill.
 - Check the rendered document in a browser screenshot before delivery.
 
 ## Structure
 
-- Start with a One Pager followed by a Body with sections suited to the document.
-- Write the Body for readers who study the details.
+- Default to one readable page with a Summary section. Add a detailed Body only when the user asks.
+- Keep the Summary well below 400 words whenever possible. Shorten the content to fit the page; do not shrink the text.
+- When a Body is requested, use it for supporting detail and keep the Summary consistent with it.
 
-## One Pager
+## Presentation
 
-The One Pager is the part the reader is interested in: the points themselves, not a summary of the Body.
-
-- Keep the One Pager on the first screen, with the central message in the title, worded with a verb.
-- Start it with the most representative diagram, graph, or table, if any, with the points below.
-- Write it as a list of points: the conclusion first, then three to five points that carry it, each with its key number, then the recommendation or decision needed.
-- Bold the phrase in each point that a scanning reader must catch; bold nothing else.
-- Add nothing that the Body does not contain.
-- Apply the document word limit to the One Pager.
-
-## Visuals
-
-- Use figures, diagrams, and tables where they explain the content more clearly than prose.
+- State the central message in the title, worded with a verb, and lead with the conclusion or main point.
+- Make the message clear at a glance through figures, diagrams, and tables, with only the text needed to interpret them.
+- Use headings such as Summary, Key finding, and Conclusion where useful.
+- Bold the keywords and short phrases that carry the message; avoid bolding whole paragraphs.
+- Show the key evidence and numbers in the visuals, then state the recommendation or decision needed. Do not repeat what the visuals already show.
 - Show results as graphs and methods or structures as diagrams.
 - In diagrams, show where inputs and processing steps act.
 - Explain colours, markers, and lines with labels and legends in the figure.
 
 ## References
 
-- One Pager, conclusion first: [Minto pyramid principle](https://untools.co/minto-pyramid/), [USC executive summary guide](https://libguides.usc.edu/writingguide/executivesummary), [NPS executive summaries](https://nps.edu/web/gwc/executive-summaries-and-abstracts).
-- Title with a verb, first sentence the key finding: [one-page research brief guidelines](https://popresearchcenters.org/guidelines-for-writing-a-one-page-research-or-policy-brief-for-nontechnical-audiences/).
-- Three to five proof points with their numbers, then the decision needed: [executive one-pager template](https://deckary.com/blog/executive-one-pager-template).
-- Bold keywords and bulleted points for scanning readers: [NN/g: concise, scannable, objective](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/).
+- Conclusion first: [Minto pyramid principle](https://untools.co/minto-pyramid/), [USC executive summary guide](https://libguides.usc.edu/writingguide/executivesummary), [NPS executive summaries](https://nps.edu/web/gwc/executive-summaries-and-abstracts).
+- Title with a verb and key finding first: [one-page research brief guidelines](https://popresearchcenters.org/guidelines-for-writing-a-one-page-research-or-policy-brief-for-nontechnical-audiences/).

@@ -8,11 +8,10 @@ description: "Keeps documentation concise and easy to navigate. Use when plannin
 - Read neighboring documents with a similar purpose first and follow their writing style and conventions.
 - Order the document as a whole: overview first, details next. Group content under headings.
 - Keep a document under 1000 words unless the user sets another limit. Treat word limits as ceilings, not targets.
-- Prefer bullet points. One point per bullet, one line per bullet.
 - Put parallel items in a list; put compared items in a table.
 - Keep each piece of information in one place and link to it instead of repeating it.
 - Do not copy details that change with the code or over time, such as values, counts, signatures, or file lists; point to the source instead.
-- Keep paragraphs to two sentences or fewer. One paragraph covers one thing.
+- One paragraph or bullet covers one thing.
 - Do not add sentences that repeat the same meaning.
 - Do not add rationale clauses like 'so that X' or 'this avoids Y'.
 - Add a diagram, table, or graph when a picture states the point faster than text.

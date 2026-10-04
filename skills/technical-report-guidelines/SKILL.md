@@ -1,32 +1,32 @@
 ---
-name: report-writing-guidelines
-description: "Makes technical findings and evidence clear to readers. Use when writing or editing a report on engineering work that is not tracked in a repository, such as a workplan or run report."
+name: technical-report-guidelines
+description: "Makes technical findings and evidence clear to readers. Use when the user requests a technical report or details about engineering work."
 ---
 
-# Report Writing Guidelines
+# Technical Report Guidelines
 
 Use the [human-deliverable-guidelines](../human-deliverable-guidelines/SKILL.md) skill for document structure, presentation, and delivery.
 
-A report tracked in a repository follows the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill, with the purpose Report.
-
 ## Layout
 
+- Include a Summary and a detailed Body instead of the one-page default.
 - Default the Body to Introduction, Method, Results, and Conclusion, as in a technical paper. Adapt the sections when the work needs another structure.
+
+## Evidence
+
+Apply these rules throughout the report.
+
+- Claims: Support claims with measurements or code references. Distinguish verified findings from estimates, assumptions, and open questions.
+- Measurements: Give quantities their units and statistics their sample sizes.
+- Reproducibility: Identify the data, code revision, and commands needed to reproduce results in the Method section or an appendix.
 
 ## Body
 
-- Write for engineers unfamiliar with the work.
-- State the data, the code branch or commit, and the command that reproduces each result.
-- Give every number its unit, and every statistic its sample, such as the number of runs or seeds.
-- State measured or code-backed facts; mark estimates and open points as such.
-- Give each section one topic, such as one quantity or one question.
-- Open each section with its context, give the content, and end with its conclusion.
-- When presenting results, pose the question, show the evidence, and state the answer.
-- Keep the argument moving in one direction, and word headings at the same level in parallel.
-- Use at most three heading levels, and give each subsection at least one sibling.
-- Number the body sections, and refer to them by number.
-- End the body by answering the goal from the results, then stating the limits and open points.
-- Put non-essential material, such as raw data or derivations, in appendices referenced from the text.
+- Audience: Write for engineers unfamiliar with the work.
+- Sections: Give each section one topic and a descriptive heading. Keep headings at the same level parallel.
+- Findings: Lead with the finding, support it with evidence, and explain what it means.
+- Conclusion: Answer the goal from the results, then state limitations and open points.
+- Supporting detail: Put raw data and derivations in referenced appendices.
 
 ## Captions
 
