@@ -16,7 +16,7 @@ I value instructions I can read and refine, with clear steps and results I can r
 
 ## Setup
 
-Symlink the guidelines to follow them as they are. To add your own rules, import them inline instead.
+Symlink the guidelines to follow them as they are. To add your own rules, see [Additional instructions](#additional-instructions).
 
 ### All projects
 
@@ -60,10 +60,18 @@ ln -s "$PWD/AGENTS.md" "$project/AGENTS.md"
 ln -s "$PWD"/skills/* "$project/.agents/skills/"
 ```
 
-### Import inline
+### Additional instructions
 
-Append this in your `CLAUDE.md`. Codex has no import syntax; symlink or copy `AGENTS.md` instead.
+Keep your own rules and add the shared guidelines:
 
+Claude Code (`CLAUDE.md`):
+
+```markdown
+@/path/to/coding-agent-guidelines/AGENTS.md
 ```
-@path/to/coding-agent-guidelines/AGENTS.md
+
+Codex (`AGENTS.md`):
+
+```markdown
+Read and follow /path/to/coding-agent-guidelines/AGENTS.md before starting work.
 ```
