@@ -15,6 +15,7 @@ description: "Checks consistency across skills and agent instructions. Use when 
    - loading: each agent, such as Claude Code or Codex, loads the intended instructions and skills through imports, symlinks, and copies
    - conflicting rules: two rules that cannot both be followed. A skill's rules and workflow steps take precedence over the `AGENTS.md` defaults while it runs; this is not a conflict.
    - overlapping triggers: multiple skills activate for the same request, with unclear responsibility or redundant work
+   - trigger type: the description says whether the agent applies the skill during work or the user invokes it
    - gaps: work the instructions call for that no skill or rule covers, and references to a missing skill or step
    - duplicated rules: the same instruction repeated in multiple places
    - over-constraint: a rule that forbids or mandates more than the owner's style needs

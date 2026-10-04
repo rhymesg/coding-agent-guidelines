@@ -8,7 +8,7 @@ description: "Helps write concise, reusable skill instructions. Use when creatin
 ## Scope and triggers
 
 - A skill’s instructions apply when the skill is used and its instructions are loaded into context.
-- Match triggers to the skill's intended use, such as everyday work or deliberate review and maintenance. Give review and maintenance skills specific triggers that avoid activation for routine minor steps.
+- A skill is either applied by the agent during work or invoked by the user. State which in the "Use when" sentence.
 
 ## Reuse and interaction
 
