@@ -76,4 +76,4 @@ Answer in this order. Omit sections with nothing to say.
    - When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill.
    - When work performed through a skill produces a potentially reusable script or other artifact, suggest incorporating it into that skill.
 3. Under `Left behind`, list what remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place.
-4. Ask the user about any suggestions or approvals needed.
+4. Ask the user about any suggestions or approvals needed. List more than one question as a numbered list.
