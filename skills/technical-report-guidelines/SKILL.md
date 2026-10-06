@@ -12,7 +12,9 @@ A report tracked in a repository follows the [document-writing-guidelines](../do
 ## Layout
 
 - Include a Summary and a detailed Body instead of the one-page default.
+- State the sample in the Summary, such as runs and configurations, and compare the key metric in numbers, with one chart of it.
 - Default the Body to Introduction, Method, Results, and Conclusion, as in a technical paper. Adapt the sections when the work needs another structure.
+- Keep each Body section to a few bullets or lines; put detail in figures, tables, and appendices.
 
 ## Evidence
 
@@ -20,6 +22,7 @@ Apply these rules throughout the report.
 
 - Claims: Support claims with measurements or code references. Distinguish verified findings from estimates, assumptions, and open questions.
 - Measurements: Give quantities their units and statistics their sample sizes.
+- Tables: Carry the decision metric and its worst case; put secondary measures in an appendix.
 - Reproducibility: Identify the data, code revision, and commands needed to reproduce results in the Method section or an appendix.
 
 ## Body
