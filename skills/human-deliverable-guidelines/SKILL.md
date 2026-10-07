@@ -23,8 +23,8 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 
 ## Presentation
 
-- State the central message in the title, worded with a verb, and lead with the conclusion or main point.
-- Make the message clear at a glance through figures, diagrams, and tables, with only the text needed to interpret them.
+- Title: name the subject in at most eight words.
+- Open the Summary with the central figure, diagram, or table, and let the text follow it. Make the message clear at a glance through visuals, with only the text needed to interpret them.
 - Use headings such as Summary, Key finding, and Conclusion where useful.
 - Bold the keywords and short phrases that carry the message; avoid bolding whole paragraphs.
 - Show the key evidence and numbers in the visuals, then state the recommendation or decision needed. Do not repeat what the visuals already show.
@@ -35,4 +35,3 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 ## References
 
 - Conclusion first: [Minto pyramid principle](https://untools.co/minto-pyramid/), [USC executive summary guide](https://libguides.usc.edu/writingguide/executivesummary), [NPS executive summaries](https://nps.edu/web/gwc/executive-summaries-and-abstracts).
-- Title with a verb and key finding first: [one-page research brief guidelines](https://popresearchcenters.org/guidelines-for-writing-a-one-page-research-or-policy-brief-for-nontechnical-audiences/).
