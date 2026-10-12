@@ -1,6 +1,6 @@
 ---
 name: brainstorm
-description: "Clarifies what the user wants and how to build and verify it before any work starts. Use when the user wants to make a plan, discuss how to implement something, or mentions a workplan, including 'do it with workplan'."
+description: "Clarifies what the user wants and how to build and verify it before any work starts. Use when the user wants to make a plan, discuss how to implement something, or start a workplan, including 'do it with workplan'."
 ---
 
 # Brainstorm
