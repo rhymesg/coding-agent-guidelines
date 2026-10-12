@@ -7,8 +7,6 @@ description: "Makes technical findings and evidence clear to readers. Use when t
 
 Use the [human-deliverable-guidelines](../human-deliverable-guidelines/SKILL.md) skill for document structure, presentation, and delivery.
 
-A report tracked in a repository follows the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill, with the purpose Report.
-
 ## Layout
 
 - Include a Summary and a detailed Body instead of the one-page default.
