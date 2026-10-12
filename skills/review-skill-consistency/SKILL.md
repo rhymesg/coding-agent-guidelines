@@ -12,7 +12,7 @@ description: "Checks consistency across skills and agent instructions. Use when 
    - **Current environment:** Read every skill the agent can load here, plus all applicable `AGENTS.md` and `CLAUDE.md` files.
    - If the sets contain the same files, review them only once.
 2. Check each set for:
-   - loading: each agent, such as Claude Code or Codex, loads the intended instructions and skills through imports, symlinks, and copies
+   - loading: each agent, such as Claude Code or Codex, loads the intended instructions and skills through imports, symlinks, and copies. Compare the skills listed in the current session with the skill directories it should load.
    - conflicting rules: two rules that cannot both be followed. A skill's rules and workflow steps take precedence over the `AGENTS.md` defaults while it runs; this is not a conflict.
    - overlapping triggers: multiple skills activate for the same request, with unclear responsibility or redundant work
    - trigger type: the description says whether the agent applies the skill during work or the user invokes it
