@@ -36,7 +36,6 @@
 
 ### Documentation and Deliverables
 
-- Keep reusable project knowledge, such as guides, architecture, and decisions, in tracked Markdown files alongside the code for agents and human readers.
 - Deliver task-specific findings to human readers, generally as untracked HTML files. Use the [human-deliverable-guidelines](skills/human-deliverable-guidelines/SKILL.md) skill.
 - For documents in any format, use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill.
 
