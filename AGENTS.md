@@ -8,6 +8,7 @@
 - Before adding code:
   - Check whether it is necessary for the user's intended outcome. Do not add it otherwise.
   - Look for ways to reuse, extend, or slightly modify existing code.
+- Implement a single approach. Do not add a parameter, flag, or branch to choose between approaches unless the plan calls for it.
 
 ### Stay Within the Coding Task
 
