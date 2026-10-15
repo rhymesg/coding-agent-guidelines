@@ -11,7 +11,10 @@ description: "Simplifies code and documents while preserving required behavior. 
 
 1. Read available plans, design documents, and other relevant project documents alongside the user's requirements, and use them as the basis for cleanup decisions.
 2. Before refactoring, ensure tests cover the behavior the cleanup touches and pass.
-3. Review code and commits for abandoned attempts, unused code, duplication, and unnecessary abstractions against the requirements and available documents.
+3. Review code and commits against the requirements and available documents for:
+   - Leftovers: abandoned attempts and unused code.
+   - Duplication and unnecessary abstractions.
+   - Growth: over-configurability, conditional complexity, and feature creep.
 4. Keep every option a user can set, such as public API, parameters, flags, and arguments, even when nothing uses it. Remove code that nothing calls.
 5. When another part of the codebase already does the same thing, call it instead, or extend that code to cover the new case.
 6. Revert a commit whose whole change is unnecessary instead of editing its content out. Remove remaining unnecessary code and simplify the rest.
