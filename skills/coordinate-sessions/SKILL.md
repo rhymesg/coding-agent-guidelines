@@ -5,30 +5,33 @@ description: "Keeps the agent sessions on a machine informed of each other's pro
 
 # Coordinate Sessions
 
-## Status
+Report in the four sections below, redrawn on an idle notice only when something changed. Link merge requests and files; omit an empty section.
 
-- Announce yourself as the coordinator in the first message to each session. Ask for its task, what is done, what it waits on, and its unpushed work; subscribe to its idle notice.
-- Verify what the plan depends on, such as merge request state or machine load, before relying on it.
+## Progress
+
+- Announce yourself as the coordinator in the first message to each session. Ask for its task, what it runs, when that ends, what it waits on, and its unpushed work; subscribe to its idle notice.
+- Verify what the plan depends on, such as merge request state or machine load.
 - Re-list a session missing from the listing before its turn. When it is still gone, spawn a subagent in its place with its scratchpad paths and the current order.
 
-## Arranging
+  | Session | Running | Expected end | Waiting on |
+  |---|---|---|---|
+  | **Session A** | step, resource held | time | **Your decision** on a question |
+  | **Session B** | — | — | **Machine free** or [!number](url) **Merged** |
+
+## Hand-overs
 
 - Treat the machine as one resource and grant its windows: one real-time run, such as a SITL flight or a dataset replay, at a time, and no many-core build or test run beside it.
-- Sequence sessions that share files, data, or a merge target; let the rest run in parallel.
+- Order steps, not sessions: find what each step needs, a merge, data, or the machine, and let a session's independent steps run early.
+- Start with the step that unblocks the most others; queue real-time runs back to back and put builds and tests in the gaps.
 - Tell each session only what concerns it; the session that frees a resource or produces data notifies the next one directly.
 - Keep messages short: a dependency, a result, a question, or a user request, marked as coming from the user.
 
-## Reporting
+  **Session A** →(what passes)→ **Session B**
 
-- Keep one picture in this form, redrawn on an idle notice only when something changed. Link merge requests and files inside the cells.
+## Suggestions
 
-  **Order:**
+- A model tier for a session whose task calls for a different one, or a better work order.
 
-  **Session A** →(hand-over)→ **Session B**
+## Your decisions
 
-  | Session | Running | Expected end | Waiting on | Next |
-  |---|---|---|---|---|
-  | **Session A** | step, resource held | time | **Your decision** on a question | steps |
-  | **Session B** | — | — | **Machine free** or [!number](url) **Merged** | steps |
-
-- Recommend a model tier for a session when its current task calls for a different one.
+- Questions from the coordinator: its suggestions or the arrangement, with the evidence. A session's own question is only noted: **Session A** needs your decision on the question.
