@@ -20,5 +20,15 @@ description: "Keeps the agent sessions on a machine informed of each other's pro
 
 ## Reporting
 
-- Keep one picture: a text diagram of the sessions with each step marked done, running, or waiting, and an arrow for each dependency or resource hand-over.
-- On an idle notice, redraw the picture only when something changed.
+- Keep one picture in this form, redrawn on an idle notice only when something changed. Link merge requests and files inside the cells.
+
+  **Order:**
+
+  **Session A** →(hand-over)→ **Session B**
+
+  | Session | Running | Expected end | Waiting on | Next |
+  |---|---|---|---|---|
+  | **Session A** | step, resource held | time | **Your decision** on a question | steps |
+  | **Session B** | — | — | **Machine free** or [!number](url) **Merged** | steps |
+
+- Recommend a model tier for a session when its current task calls for a different one.
