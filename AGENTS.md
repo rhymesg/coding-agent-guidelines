@@ -9,7 +9,6 @@
   - Check whether it is necessary for the user's intended outcome. Do not add it otherwise.
   - Look for ways to reuse, extend, or slightly modify existing code.
 - Do not add a parameter, mode, or branch that chooses between behaviors unless the user asks for it.
-- Give each input, setting, and job one form.
 
 ### Stay Within the Coding Task
 
