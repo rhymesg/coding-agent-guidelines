@@ -35,7 +35,7 @@ description: "Keeps the agent sessions on a machine informed of each other's pro
 
 ## Reporting
 
-Report in this form, redrawn on an idle notice only when something changed. Link merge requests and files; omit an empty section.
+Re-list the sessions before each report. Report in this form, redrawn on an idle notice only when something changed. Link merge requests and files; omit an empty section.
 
   ## Progress
 
