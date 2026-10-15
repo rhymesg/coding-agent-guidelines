@@ -5,13 +5,39 @@ description: "Keeps the agent sessions on a machine informed of each other's pro
 
 # Coordinate Sessions
 
-Report in the four sections below, redrawn on an idle notice only when something changed. Link merge requests and files; omit an empty section.
+## Collecting
 
-## Progress
+- Send each session this request and subscribe to its idle notice:
 
-- Announce yourself as the coordinator in the first message to each session. Ask for its task, what it runs, when that ends, what it waits on, and its unpushed work; subscribe to its idle notice.
+  Status request from the coordinating session <name>: reply with your task, its remaining steps with what each needs, a merge, data, or the machine with its length, the repositories and files you change, your open merge requests, what you run and when it ends, questions for the user, and your uncommitted or unpushed work.
+
 - Verify what the plan depends on, such as merge request state or machine load.
-- Re-list a session missing from the listing before its turn. When it is still gone, spawn a subagent in its place with its scratchpad paths and the current order.
+- Ping a session that is idle past its expected end, silent when its turn comes, or missing from the listing. Ask the user to ping it in its chat only when your ping fails.
+
+## Arranging
+
+### Order
+
+- Order steps, not sessions: a step needs a merge, data, or the machine, and a session's independent steps run early.
+- Start with the step that unblocks the most others.
+
+### Machine
+
+- One load-sensitive run at a time; no many-core run beside it.
+- Queue load-sensitive runs back to back; put many-core runs in the gaps.
+- Grant each window; the session that frees the machine notifies the next one directly.
+
+### Messages
+
+- Tell each session only what concerns it.
+- Hand a finding, such as a bug or an unowned merge request, to the session working on its area.
+- Keep messages short: a dependency, a result, a question, or a user request, marked as coming from the user.
+
+## Reporting
+
+Report in this form, redrawn on an idle notice only when something changed. Link merge requests and files; omit an empty section.
+
+  ## Progress
 
   - **Session A**: what it finished since the last report.
 
@@ -20,20 +46,18 @@ Report in the four sections below, redrawn on an idle notice only when something
   | **Session A** | step, resource held | time | **Your decision** on a question |
   | **Session B** | — | — | **Machine free** or [!number](url) **Merged** |
 
-## Hand-overs
-
-- Treat the machine as one resource and grant its windows: one real-time run, such as a SITL flight or a dataset replay, at a time, and no many-core build or test run beside it.
-- Order steps, not sessions: find what each step needs, a merge, data, or the machine, and let a session's independent steps run early.
-- Start with the step that unblocks the most others; queue real-time runs back to back and put builds and tests in the gaps.
-- Tell each session only what concerns it; the session that frees a resource or produces data notifies the next one directly.
-- Keep messages short: a dependency, a result, a question, or a user request, marked as coming from the user.
+  ## Work order
 
   **Session A** →(what passes)→ **Session B**
 
-## Suggestions
+  ## Suggestions
 
-1. A model tier for a session whose task calls for a different one, or a better work order across sessions. A session's own next step is its question, not a suggestion here.
+  1. A model tier for a session whose task calls for a different one.
+  2. A work order or conflict that needs the user's decision.
+  3. A session the user should open for a finding no session covers, or ping in its chat when your ping failed.
 
-## Your decisions
+  ## Your decisions
 
-1. Questions from the coordinator: its suggestions or the arrangement, with the evidence. A session's own question is only noted: **Session A** needs your decision on the question.
+  A question a session asked the user appears only in its Waiting on cell.
+
+  1. Questions from the coordinator on its suggestions or the arrangement, with the evidence.
