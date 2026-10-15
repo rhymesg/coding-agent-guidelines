@@ -30,6 +30,7 @@ description: "Keeps the agent sessions on a machine informed of each other's pro
 ### Messages
 
 - Tell each session only what concerns it.
+- Tell a waiting session to keep a background wait running, then send the hand-over as a message.
 - Hand a finding, such as a bug or an unowned merge request, to the session working on its area.
 - Keep messages short: a dependency, a result, a question, or a user request, marked as coming from the user.
 
