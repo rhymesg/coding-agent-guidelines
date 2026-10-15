@@ -2,7 +2,7 @@
 
 This repository contains general-purpose [guidelines](AGENTS.md) and [skills](skills/) for my personal use.
 
-I value instructions I can read and refine, with clear steps and results I can review. These instructions evolve as the models evolve.
+I value instructions I can read and refine, with clear steps and results I can review. I put particular care into human–agent collaboration, with clear reports, concise documentation, and agent autonomy. These instructions evolve as the models evolve.
 
 ## Quotes
 
