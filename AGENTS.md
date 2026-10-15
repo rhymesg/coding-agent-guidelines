@@ -58,7 +58,7 @@
 - A skill's rules and workflow steps take precedence over these defaults while it runs.
 - When continuing an active workplan, including after compaction, read its `workplans/<topic>/objective.md`.
 - Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
-- Before a load-sensitive or long, many-core run, check the machine load and agree on a time window with the other agent sessions on the machine.
+- Before a load-sensitive or long, many-core run, get a time window from the coordinating session when one has announced itself; otherwise check the machine load and agree with the other sessions.
 - Do what you can first. Collect any required user input or actions and ask for them together.
 
 #### Finishing
