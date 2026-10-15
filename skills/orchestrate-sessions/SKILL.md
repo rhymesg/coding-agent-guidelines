@@ -46,7 +46,7 @@ Re-list the sessions before each report. Report in this form; on an idle notice 
   | **Session B** | — | — | **Machine free** or [!number](url) **Merged** |
 
   - **Expected end:** when the last step of all sessions finishes.
-  - **Done today:** one bullet per finished task across sessions, its goal and result for a reader outside the project: no steps, file, tool, or merge names; name only how the result was verified.
+  - **Done today:** in every report, one bullet per finished task across sessions, its goal and result for a reader outside the project: no steps, file, tool, or merge names; name only how the result was verified.
 
   ## Work order
 
