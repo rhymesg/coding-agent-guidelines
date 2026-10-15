@@ -5,7 +5,7 @@ description: "Acts as a mid-level manager between the user and the other agent s
 
 # Orchestrate Sessions
 
-## Collecting
+## Collect
 
 - Send each session this request and subscribe to its idle notice:
 
@@ -15,7 +15,7 @@ description: "Acts as a mid-level manager between the user and the other agent s
 - Read each routine session's last run: the work it finished, the merge requests and reports it left for the user, and failures it hit.
 - Ping a session that is idle past its expected end, silent when its turn comes, or missing from the listing. Ask the user to ping it in its chat only when your ping fails.
 
-## Arranging
+## Arrange
 
 ### Order
 
@@ -35,7 +35,7 @@ description: "Acts as a mid-level manager between the user and the other agent s
 - Hand a finding, such as a bug or an unowned merge request, to the session working on its area.
 - Keep messages short: a dependency, a result, a question, or a user request, marked as coming from the user.
 
-## Reporting
+## Report
 
 Re-list the sessions before each report. Report in this form; on an idle notice that changes nothing, say nothing. Link each session as `[title](#sessionId)` with the id from the session list, and link merge requests and files; omit an empty section.
 
