@@ -13,6 +13,8 @@ Report in the four sections below, redrawn on an idle notice only when something
 - Verify what the plan depends on, such as merge request state or machine load.
 - Re-list a session missing from the listing before its turn. When it is still gone, spawn a subagent in its place with its scratchpad paths and the current order.
 
+  - **Session A**: what it finished since the last report.
+
   | Session | Running | Expected end | Waiting on |
   |---|---|---|---|
   | **Session A** | step, resource held | time | **Your decision** on a question |
@@ -30,8 +32,8 @@ Report in the four sections below, redrawn on an idle notice only when something
 
 ## Suggestions
 
-- A model tier for a session whose task calls for a different one, or a better work order.
+1. A model tier for a session whose task calls for a different one, or a better work order.
 
 ## Your decisions
 
-- Questions from the coordinator: its suggestions or the arrangement, with the evidence. A session's own question is only noted: **Session A** needs your decision on the question.
+1. Questions from the coordinator: its suggestions or the arrangement, with the evidence. A session's own question is only noted: **Session A** needs your decision on the question.
