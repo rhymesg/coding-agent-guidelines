@@ -12,7 +12,7 @@ description: "Acts as a mid-level manager between the user and the other agent s
   Status request from the orchestrator session <name>: reply with your task, its remaining steps with what each needs, a merge, data, or the machine with its length, the repositories and files you change, your open merge requests, what you run and when it ends, questions for the user, and your uncommitted or unpushed work.
 
 - Verify what the plan depends on, such as merge request state or machine load.
-- Read each routine session's last run: the work it finished, the merge requests and reports it left for the user, and failures it hit.
+- Read each routine session's last run to identify what it left unfinished: an open merge request, a question or approval waiting on the user, or a failure.
 - Ping a session that is idle past its expected end, silent when its turn comes, or missing from the listing. Ask the user to ping it in its chat only when your ping fails.
 
 ## Arrange
@@ -45,9 +45,10 @@ Re-list the sessions before each report. Report in this form; on an idle notice 
   |---|---|---|---|
   | **[Session A](#sessionId)** | step, resource held | time | **Your decision** on a question |
   | **[Session B](#sessionId)** | — | — | **Machine free** or [!number](url) **Merged** |
-  | **[Routine C](#sessionId)** | — | next run | **Your review** of [!number](url) or [report](path) |
+  | **[Routine C](#sessionId)** | — | next run | **Your review** of [!number](url) |
 
   - **Expected end:** when the last step of all sessions finishes.
+  - **Waiting on:** a routine's unfinished item goes in its cell.
   - **Done today:** in every report, one bullet per finished task across sessions, routine runs since the last report included, its goal and result for a reader outside the project: no steps, file, tool, or merge names; name only how the result was verified.
 
   ## Work order
