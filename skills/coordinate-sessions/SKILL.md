@@ -46,6 +46,8 @@ Re-list the sessions before each report. Report in this form, redrawn on an idle
   | **Session A** | step, resource held | time | **Your decision** on a question |
   | **Session B** | — | — | **Machine free** or [!number](url) **Merged** |
 
+  - **Expected end:** when the last step of all sessions finishes.
+
   ## Work order
 
   **Session A** →(what passes)→ **Session B**
