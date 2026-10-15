@@ -32,7 +32,7 @@ Report in the four sections below, redrawn on an idle notice only when something
 
 ## Suggestions
 
-1. A model tier for a session whose task calls for a different one, or a better work order.
+1. A model tier for a session whose task calls for a different one, or a better work order across sessions. A session's own next step is its question, not a suggestion here.
 
 ## Your decisions
 
