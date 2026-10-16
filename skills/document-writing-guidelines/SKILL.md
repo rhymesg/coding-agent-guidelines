@@ -41,6 +41,7 @@ description: "Keeps documentation concise and easy to navigate. Use when plannin
 | Report | What was found or measured, and what is still open |
 | Review | What is wrong or could improve |
 | Reference | Background knowledge or supporting information |
+| Contract | The rules each side of an interface follows; the code follows the document |
 
 ## Mermaid Diagram
 
