@@ -57,9 +57,14 @@
 - A skill's rules and workflow steps take precedence over these defaults while it runs.
 - When continuing an active workplan, including after compaction, read its `workplans/<topic>/objective.md`.
 - Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
-- Before a load-sensitive or long, many-core run, get a time window from the orchestrator session when one has announced itself; otherwise check the machine load and agree with the other sessions.
-- When waiting for a window, a merge, or another session's result, keep a background wait running so messages reach you; do not end the turn.
 - Do what you can first. Collect any required user input or actions and ask for them together.
+
+##### With Other Sessions
+
+- Get a time window before a load-sensitive or long, many-core run.
+- Announce when such a run ends, which frees the machine, and when you merge, which may require dependent work to rebase before its heavy tests.
+- While waiting for a time window, a merge, or another session's result, keep a background wait running so messages reach you.
+- Talk to the orchestrator session when one has announced itself; it arranges the work centrally through the [orchestrate-sessions](skills/orchestrate-sessions/SKILL.md) skill. Otherwise, talk to the other sessions directly; when many are running, suggest that the user open an orchestrator session.
 
 #### Finishing
 
