@@ -8,7 +8,7 @@ description: "Finds unit tests that give false confidence or cost upkeep without
 ## Modes
 
 - User-requested fix: apply fixes.
-- User-requested review: report findings without editing. Wait for editing instructions unless already provided.
+- User-requested review: report findings in chat without editing. Wait for editing instructions unless already provided.
 
 ## Workflow
 

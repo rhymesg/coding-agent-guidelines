@@ -8,7 +8,7 @@ description: "Checks repository documents for clarity, consistency, and accuracy
 ## Modes
 
 - Automatic final review of a new repository document: apply corrections.
-- User-requested review: report findings without editing. Wait for editing instructions unless already provided.
+- User-requested review: report findings in chat without editing. Wait for editing instructions unless already provided.
 
 ## Workflow
 
