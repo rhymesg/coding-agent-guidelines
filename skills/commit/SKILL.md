@@ -14,7 +14,7 @@ description: "Prepares clean, focused Git commits. Use when the user asks to com
    git diff -- <paths>
    ```
 
-2. Handle untracked files before committing: add intentional files, delete junk, or update `.gitignore` for recurring generated artifacts.
+2. Handle untracked files before committing: add intentional files and update `.gitignore` for recurring generated artifacts. Leave other untracked files in place.
 
 3. Run relevant tests, formatting, and linting before committing if the project supports them. Use documented or obvious project commands.
 
