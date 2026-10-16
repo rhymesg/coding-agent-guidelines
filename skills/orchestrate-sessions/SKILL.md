@@ -28,7 +28,7 @@ description: "Acts as a mid-level manager between the user and the other agent s
 
 - One load-sensitive run at a time; no many-core run beside it.
 - Queue load-sensitive runs back to back; put many-core runs in the gaps.
-- Grant each window; the session that frees the machine notifies the next one directly.
+- Grant each window when the previous run ends.
 
 ### Messages
 
