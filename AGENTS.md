@@ -64,6 +64,7 @@
 - Get a time window before a load-sensitive or long, many-core run.
 - Announce when such a run ends, which frees the machine, and when you merge, which may require dependent work to rebase before its heavy tests.
 - While waiting for a time window, a merge, or another session's result, keep a background wait running so messages reach you.
+- In a worktree, give its containers their own name, for example `COMPOSE_PROJECT_NAME=<repo>-<topic>`, so they do not replace those of another checkout of the same repository.
 - Talk to the orchestrator session when one has announced itself; it arranges the work centrally through the [orchestrate-sessions](skills/orchestrate-sessions/SKILL.md) skill. Otherwise, talk to the other sessions directly; when many are running, suggest that the user open an orchestrator session.
 
 #### Finishing
