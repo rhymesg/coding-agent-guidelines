@@ -59,7 +59,7 @@
 - Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
 - Do what you can first. Collect any required user input or actions and ask for them together.
 
-##### With Other Sessions
+##### When Other Sessions Are Running
 
 - Get a time window before a load-sensitive or long, many-core run.
 - Announce when such a run ends, which frees the machine, and when you merge, which may require dependent work to rebase before its heavy tests.
