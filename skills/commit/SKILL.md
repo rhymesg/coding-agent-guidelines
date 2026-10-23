@@ -40,7 +40,7 @@ description: "Prepares clean, focused Git commits. Use when the user asks to com
 ## Commit Message Rules
 
 - Use exactly one `-m` argument.
-- Do not add a body, trailers, signatures, or co-author lines.
+- Do not add a body or trailers.
 - Prefer short imperative English messages, for example `Add ground altitude store`.
 - Keep formatting-only commits explicit, for example `Format map tile selector files`.
 

@@ -72,6 +72,7 @@
 - After a change to behavior, commands, or structure, use the [sync-documents](skills/sync-documents/SKILL.md) skill for related documentation updates.
 - Before finishing new repository documentation, use the [review-document](skills/review-document/SKILL.md) skill.
 - Do not commit unless asked; when asked, use the [commit](skills/commit/SKILL.md) skill for committing changes.
+- Do not sign your work, such as "Generated with Claude Code" or a co-author line, in commits, merge requests, comments, or other text you publish.
 - After Git work in a repository, return its main working tree to its tracked branch and fast-forward it to the remote.
 
 #### Answering
