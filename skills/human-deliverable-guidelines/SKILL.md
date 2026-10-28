@@ -12,7 +12,7 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 - Default to self-contained HTML; use another format when the user or destination requires it.
 - Embed images and fonts as data URIs. Keep videos as separate files linked from the document.
 - Link other documents, code, and repositories only by global URLs, such as a file's GitHub or GitLab page at a commit. Do not use local file paths.
-- Default to `outputs/<topic>/` under the working folder. When Git does not ignore it, add `outputs/` to `.git/info/exclude`. Follow another location when specified by the user, repository, or calling skill.
+- Default to `outputs/<group>/<topic>/` under the working folder, where `<group>` is `reports` for measured findings, `briefs` for explanations, `plans`, `reviews`, or `videos`. When Git does not ignore it, add `outputs/` to `.git/info/exclude`. Follow another location when specified by the user, repository, or calling skill.
 - Check the rendered document in a browser screenshot before delivery.
 
 ## Structure
