@@ -58,6 +58,7 @@
 - When continuing an active workplan, including after compaction, read its `workplans/<topic>/objective.md`.
 - Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
 - Do what you can first. Collect any required user input or actions and ask for them together.
+- When the user asks about something independent of the current session's work, suggest handling it in a separate session, and offer to start one.
 
 ##### When Other Sessions Are Running
 
