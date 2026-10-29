@@ -1,6 +1,6 @@
 ---
 name: get-second-opinion
-description: "Checks decisions and changes with an independent reviewer. Use when your answer has no clear winner or your conclusion remains uncertain."
+description: "Checks decisions and changes with an independent reviewer. Use when your answer has no clear winner, your conclusion remains uncertain, or the user doubts your answer, for example by asking whether you are sure, disagreeing, or repeating the question."
 ---
 
 # Get a Second Opinion
@@ -14,6 +14,7 @@ description: "Checks decisions and changes with an independent reviewer. Use whe
 
 - Pass file paths and the question, not file content.
 - Give the user's intent or the goal of the work, relevant constraints, and user-approved decisions.
+- When the user doubts your answer, pass their objection as given and your answer as one option.
 - Include the additional input for the applicable review type in the table below.
 - Present the work neutrally. Do not include your assessment of its quality or suggest a preferred verdict.
 
