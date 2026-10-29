@@ -36,6 +36,7 @@ description: "Acts as a mid-level manager between the user and the other agent s
 - Send each hand-over to the waiting session as a message.
 - Hand a finding, such as a bug or an unowned merge request, to the session working on its area.
 - Keep messages short: a dependency, a result, a question, or a user request, marked as coming from the user.
+- Do not relay the user's approval of a session's question, such as a merge or a push; ask the user to answer in that session's chat.
 
 ## Report
 
