@@ -25,10 +25,10 @@ description: "Helps write concise, reusable skill instructions. Use when creatin
 
 - Start the description with a short sentence describing what the skill helps achieve; avoid merely restating its name. Use a second sentence beginning "Use when" to state the trigger.
 - Start the body directly with guidelines or workflow; omit an opening sentence explaining the skill.
-- Write rules as short bullet points and workflows as numbered steps with clear actions and expected results.
+- Write rules as short bullet points and workflows as numbered top-level steps with expected results.
 - Write a rule as one clause.
 - When rules conflict, prefer dropping one over adding conditions.
-- Omit instructions the agent already knows or can infer. Focus on outcomes and leave execution details to the agent's judgment.
+- Include only the intent or goal, top-level instructions, rules, and information the agent would not know. Omit detailed commands and steps.
 
 ## Creating and editing
 
