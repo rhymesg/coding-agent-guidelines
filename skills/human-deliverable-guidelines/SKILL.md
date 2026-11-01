@@ -10,6 +10,8 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 ## Format and Delivery
 
 - Default to self-contained HTML; use another format when the user or destination requires it.
+- Publish the document as an artifact as well as saving the HTML file.
+- Display the last update's date, time, and time zone on the page.
 - Embed images and fonts as data URIs. Keep videos as separate files linked from the document.
 - Link other documents, code, and repositories only by global URLs, such as a file's GitHub or GitLab page at a commit. Do not use local file paths.
 - Default to `outputs/<group>/<topic>/` under the working folder, where `<group>` is `reports` for measured findings, `briefs` for explanations, `plans`, `reviews`, or `videos`. When Git does not ignore it, add `outputs/` to `.git/info/exclude`. Follow another location when specified by the user, repository, or calling skill.
@@ -17,8 +19,10 @@ Use the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) s
 
 ## Structure
 
-- Default to one readable page with a Summary section. Add a detailed Body only when the user asks.
-- Keep the Summary well below 400 words whenever possible. Shorten the content to fit the page; do not shrink the text.
+- Default to one readable page with a Summary section.
+- Limit the first draft's prose to a few lines of information the visuals do not contain.
+- Elaborate and add supporting detail only when the user asks.
+- Shorten the content to fit the page; do not shrink the text.
 - When a Body is requested, use it for supporting detail and keep the Summary consistent with it.
 
 ## Presentation
