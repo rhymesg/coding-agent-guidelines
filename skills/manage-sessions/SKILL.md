@@ -1,16 +1,17 @@
 ---
-name: orchestrate-sessions
-description: "Acts as a mid-level manager between the user and the other agent sessions on a machine: collects their status, arranges their order and machine use, and reports to the user. Use when the user asks to orchestrate, monitor, report, check, or arrange the work of other sessions."
+name: manage-sessions
+description: "Acts as a mid-level manager between the user and the other agent sessions on a machine: collects their status, arranges their order and machine use, and reports to the user. Use when the user asks to manage, monitor, report, check, or arrange the work of other sessions."
 ---
 
-# Orchestrate Sessions
+# Manage Sessions
 
 ## Collect
 
 - Send each session this request and subscribe to its idle notice:
 
-  Status request from the orchestrator session <name>: reply with your task, its remaining steps with what each needs, a merge, data, or the machine with its length, the repositories and files you change, your open merge requests, what you run and when it ends, questions for the user, and your uncommitted or unpushed work.
+  Status request from the manager session <name>: reply with your task, its remaining steps with what each needs, a merge, data, or the machine with its length, the repositories and files you change, your open merge requests, what you run and when it ends, questions for the user, and your uncommitted or unpushed work.
 
+- Treat a team lead as one session that reports for its teammates.
 - Rearrange when a session reports a finished run or a merge.
 - Verify what the plan depends on, such as merge request state or machine load.
 - Read each routine session's last run to identify what it left unfinished: an open merge request, a question or approval waiting on the user, or a failure.
@@ -67,4 +68,4 @@ Re-list the sessions before each report. Report in this form; on an idle notice 
 
   A question a session asked the user appears only in its Waiting on cell.
 
-  1. Questions from the orchestrator on its suggestions or the arrangement, with the evidence.
+  1. Questions from the manager on its suggestions or the arrangement, with the evidence.
