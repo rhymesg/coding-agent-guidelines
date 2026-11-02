@@ -2,6 +2,8 @@
 
 This repository contains general-purpose [guidelines](AGENTS.md) and [skills](skills/) for my personal use.
 
+Most of the engineering guidelines and skills that started here now live in my company's private repository, where the whole team uses and improves them together. This repository keeps my personal workflow: how I work with agents, plan, commit, and coordinate sessions.
+
 I value instructions I can read and refine, with clear steps and results I can review. These instructions evolve as the models evolve.
 
 ## Quotes
