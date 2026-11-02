@@ -1,46 +1,6 @@
 # Coding Agent Guidelines
 
-## 1. Understand Before Coding
-
-### Keep It Simple and Consistent
-
-- Explore the codebase, its documents, and neighboring projects of the same kind first. Follow their conventions.
-- Before adding code:
-  - Check whether it is necessary for the user's intended outcome. Do not add it otherwise.
-  - Look for ways to reuse, extend, or slightly modify existing code.
-- Do not add a parameter, mode, or branch that chooses between behaviors unless the user asks for it.
-
-### Stay Within the Coding Task
-
-- Consult the user before making decisions that require domain knowledge, including mathematical, scientific, or algorithmic assumptions, rules, and tradeoffs.
-- Check official documentation, not memory, for external APIs, libraries, frameworks, or platform behavior.
-
-## 2. Test-Oriented Development
-
-- Split implementation into small, testable functions.
-- Add or update tests when changing externally observable behavior.
-- Bug fix: write a test that reproduces the issue, then fix the code and verify the test passes.
-- Refactoring: ensure relevant tests pass before and after the change.
-- Use the [unit-test-guidelines](skills/unit-test-guidelines/SKILL.md) skill for unit tests.
-- Use the [integration-test-guidelines](skills/integration-test-guidelines/SKILL.md) skill for tests across component boundaries.
-
-## 3. Writing Guidelines
-
-- Write code, configuration files, and folder structure that explain themselves; when existing ones need explaining, suggest changes that make them clear before documenting them.
-
-### Comments and Docstrings
-
-- Keep each file header and in-line comment to two lines at most. This does not apply to Doxygen comments.
-- Put design, algorithm, and background details in a separate document, and link it from the comment if needed.
-- Do not write author information.
-- Do not repeat the current value of a parameter in comments. Explain what the parameter means.
-
-### Documentation and Deliverables
-
-- Deliver task-specific findings to human readers, generally as untracked HTML files. Use the [human-deliverable-guidelines](skills/human-deliverable-guidelines/SKILL.md) skill.
-- For documents in any format, use the [document-writing-guidelines](skills/document-writing-guidelines/SKILL.md) skill.
-
-## 4. Interaction with the User
+## Interaction with the User
 
 - Keep it under 100 words, in sections and bullets.
 - Skip background the user already knows.
