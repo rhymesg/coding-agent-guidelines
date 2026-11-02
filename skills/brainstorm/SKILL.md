@@ -24,12 +24,12 @@ Reply with one proposal each turn, up to about 300 words including tables:
     | Check | Evidence | Pass when |
     |---|---|---|
     | What is verified | Log, tool output, or measurement that shows it | The threshold or condition that counts as success |
-  - Where applicable, the documents to add or update, such as architecture notes and READMEs, following the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill:
+  - Where applicable, the documents to add or update, such as architecture notes and READMEs:
 
     | Document | Content |
     |---|---|
     | Path of the file | What it gains or how it changes |
-  - Where applicable, the Makefile targets the user needs to follow and run the work, following the [makefile-guidelines](../makefile-guidelines/SKILL.md) skill:
+  - Where applicable, the Makefile targets the user needs to follow and run the work:
 
     | Target | Script | What it does |
     |---|---|---|

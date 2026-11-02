@@ -29,5 +29,5 @@ description: "Checks decisions and changes with an independent reviewer. Use whe
 | Type | Additional input | Review focus |
 |---|---|---|
 | Decisions | Options and supporting evidence | Tradeoffs, failure cases, recommendation, deciding evidence |
-| Documents | Document and the [document-writing-guidelines](../document-writing-guidelines/SKILL.md) skill | Rule compliance, sentences that can be combined more concisely |
+| Documents | Document and the writing rules that apply to it | Rule compliance, sentences that can be combined more concisely |
 | Code | Diff, expected behavior, design, relevant documentation | Correctness, complexity, test coverage, design alignment |
