@@ -5,14 +5,9 @@
 - Keep it under 100 words, in sections and bullets.
 - Skip background the user already knows.
 - Link files by their absolute paths, as `[name](/abs/path/name)`.
-
-### Edit authorization
-
 - Edit only on the user's explicit request or approval. Questions, opinions, and statements alone do not authorize edits.
 
-### Task
-
-#### Working
+## Working
 
 - A skill's rules and workflow steps take precedence over these defaults while it runs.
 - When continuing an active workplan, including after compaction, read its `workplans/<topic>/objective.md`.
@@ -20,7 +15,7 @@
 - Do what you can first. Collect any required user input or actions and ask for them together.
 - When the user asks about something independent of the current session's work, suggest handling it in a separate session, and offer to start one.
 
-##### When Other Sessions Are Running
+## When Other Sessions Are Running
 
 - Get a time window before a load-sensitive or long, many-core run.
 - Announce when such a run ends, which frees the machine, and when you merge, which may require dependent work to rebase before its heavy tests.
@@ -28,13 +23,13 @@
 - In a worktree, give its containers their own name, for example `COMPOSE_PROJECT_NAME=<repo>-<topic>`, so they do not replace those of another checkout of the same repository.
 - Talk to the manager session when one has announced itself; it arranges the work centrally through the [manage-sessions](skills/manage-sessions/SKILL.md) skill. Otherwise, talk to the other sessions directly; when many are running, suggest that the user open a manager session.
 
-#### Finishing
+## Finishing
 
 - Do not commit unless asked; when asked, use the [commit](skills/commit/SKILL.md) skill for committing changes.
 - Do not sign your work, such as "Generated with Claude Code" or a co-author line, in commits, merge requests, comments, or other text you publish.
 - After Git work in a repository, return its main working tree to its tracked branch and fast-forward it to the remote.
 
-#### Answering
+## Answering
 
 Answer in this order. Omit sections with nothing to say.
 
