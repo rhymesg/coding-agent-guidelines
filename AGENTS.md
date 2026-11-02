@@ -4,7 +4,7 @@
 
 - Keep it under 100 words, in sections and bullets.
 - Skip background the user already knows.
-- Link files by their absolute paths, as `[name](/abs/path/name)`.
+- Give everything you show the user as a link they can click to view: a file inside the session's folders, or an artifact.
 - Edit only on the user's explicit request or approval. Questions, opinions, and statements alone do not authorize edits.
 
 ## Working
