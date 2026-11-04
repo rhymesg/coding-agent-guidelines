@@ -1,10 +1,16 @@
 # Coding Agent Guidelines
 
-This repository contains general-purpose [guidelines](AGENTS.md) and [skills](skills/) for my personal use.
+This repository keeps my personal [guidelines](AGENTS.md) and [skills](skills/) for working with coding agents: how I plan, commit, and coordinate sessions. I value instructions I can read and refine, with clear steps and results I can review. They evolve as the models evolve.
 
-Most of the engineering guidelines and skills that started here now live in my company's private repository, where the whole team uses and improves them together. This repository keeps my personal workflow: how I work with agents, plan, commit, and coordinate sessions.
+To use them, import [AGENTS.md](AGENTS.md) from your `CLAUDE.md` or `AGENTS.md` and link the [skills](skills/) into your skills folder.
 
-I value instructions I can read and refine, with clear steps and results I can review. These instructions evolve as the models evolve.
+## Company Work
+
+Most of the engineering guidelines and skills that began here now live in my company's private repository, where the whole team uses and improves them. There I am building:
+
+- **Development standards:** common rules for how engineers write and check software across all company repositories.
+- **Coding agent practices and tooling:** a shared plugin that gives every engineer's coding agent the same guidelines and skills, plus automated reviews of the agents' work.
+- **Shared knowledge:** a company wiki maintained with LLMs and a log of solved problems, both searchable by people and agents.
 
 ## Quotes
 
@@ -15,65 +21,3 @@ I value instructions I can read and refine, with clear steps and results I can r
 > Intelligence is the ability to solve a problem. Now, in a world where intelligence has become very cheap and abundant, you can solve anything. What's the bottleneck? The bottleneck becomes the question: "Okay, what do I want to solve?" I can have anything I want. What do I want?
 
 *— Yuval Noah Harari — EDP 50th Anniversary Gala Dinner, July 2026*
-
-## Setup
-
-Symlink the guidelines to follow them as they are. To add your own rules, see [Additional instructions](#additional-instructions).
-
-### All projects
-
-Claude Code:
-
-```bash
-mkdir -p "$HOME/.claude/skills"
-ln -s "$PWD/AGENTS.md" "$HOME/.claude/CLAUDE.md"
-ln -s "$PWD"/skills/* "$HOME/.claude/skills/"
-```
-
-Codex:
-
-```bash
-mkdir -p "$HOME/.codex" "$HOME/.agents/skills"
-ln -s "$PWD/AGENTS.md" "$HOME/.codex/AGENTS.md"
-ln -s "$PWD"/skills/* "$HOME/.agents/skills/"
-```
-
-### One project
-
-Set your project path:
-
-```bash
-project="path/to/project"
-```
-
-Claude Code:
-
-```bash
-mkdir -p "$project/.claude/skills"
-ln -s "$PWD/AGENTS.md" "$project/CLAUDE.md"
-ln -s "$PWD"/skills/* "$project/.claude/skills/"
-```
-
-Codex:
-
-```bash
-mkdir -p "$project/.agents/skills"
-ln -s "$PWD/AGENTS.md" "$project/AGENTS.md"
-ln -s "$PWD"/skills/* "$project/.agents/skills/"
-```
-
-### Additional instructions
-
-Keep your own rules and add the shared guidelines:
-
-Claude Code (`CLAUDE.md`):
-
-```markdown
-@/path/to/coding-agent-guidelines/AGENTS.md
-```
-
-Codex (`AGENTS.md`):
-
-```markdown
-Read and follow /path/to/coding-agent-guidelines/AGENTS.md before starting work.
-```
