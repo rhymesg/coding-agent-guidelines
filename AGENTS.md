@@ -32,7 +32,8 @@
 - Do not commit unless asked; when asked, use the [commit](skills/commit/SKILL.md) skill for committing changes.
 - Do not sign your work, such as "Generated with Claude Code" or a co-author line, in commits, merge requests, comments, or other text you publish.
 - After Git work in a repository, return its main working tree to its tracked branch and fast-forward it to the remote.
-- Keep a workplan folder and its worktrees for 14 days after their last change; the [clean-up-workplans](skills/clean-up-workplans/SKILL.md) skill removes them later.
+- When your work is merged, remove its worktrees outside workplan folders and their local and remote branches. Ask the user first only when the work may continue or a worktree holds uncommitted files worth keeping, such as a new script or dataset.
+- Keep a workplan folder and its worktrees for 14 days after their last change.
 
 ## Answering
 
