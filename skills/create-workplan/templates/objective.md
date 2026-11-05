@@ -51,3 +51,4 @@ Keep Goal, Verification, and Guidelines.
 
 - End only when the goal's verification criteria are met or evidence shows no meaningful path forward within the approved constraints.
 - Record verification evidence, conclusions, and limitations in `report.md`, then set `Status` to `completed`.
+- Then delete what can be regenerated: unpacked bags with a `.zstd` beside them, logs whose results `report.md` records, and build folders.
