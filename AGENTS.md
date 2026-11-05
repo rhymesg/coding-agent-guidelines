@@ -32,7 +32,7 @@
 - Do not commit unless asked; when asked, use the [commit](skills/commit/SKILL.md) skill for committing changes.
 - Do not sign your work, such as "Generated with Claude Code" or a co-author line, in commits, merge requests, comments, or other text you publish.
 - After Git work in a repository, return its main working tree to its tracked branch and fast-forward it to the remote.
-- When your work is merged, remove its worktrees outside workplan folders and their local and remote branches. Ask the user first only when the work may continue or a worktree holds uncommitted files worth keeping, such as a new script or dataset.
+- When your work is merged, remove its worktrees outside workplan folders and their local and remote branches.
 - Keep a workplan folder and its worktrees for 14 days after their last change.
 
 ## Answering
@@ -44,4 +44,4 @@ Answer in this order. Omit sections with nothing to say.
    - When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill.
    - When work performed through a skill produces a potentially reusable script or other artifact, suggest incorporating it into that skill.
 3. Under `Left behind`, list what remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place outside `workplans/`. Omit it when nothing remains.
-4. Under `Questions`, ask the user about any suggestions or approvals needed, and what to do with each item your own work left behind. List more than one question as a numbered list.
+4. Under `Questions`, ask the user about any suggestions or approvals needed. List more than one question as a numbered list.
