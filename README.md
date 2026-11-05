@@ -1,6 +1,6 @@
 # Coding Agent Guidelines
 
-This repository keeps my personal [guidelines](AGENTS.md) and [skills](skills/) for working with coding agents: how I plan, commit, and coordinate sessions. I value instructions I can read and refine, with clear steps and results I can review. They evolve as the models evolve.
+This repository keeps my personal [guidelines](AGENTS.md) and [skills](skills/) for working with coding agents: how I plan work, coordinate parallel sessions, and grasp their reports at a glance. I value instructions I can read and refine, with clear steps and results I can review. They evolve as the models evolve.
 
 To use them, import [AGENTS.md](AGENTS.md) from your `CLAUDE.md` or `AGENTS.md` and link the [skills](skills/) into your skills folder.
 
