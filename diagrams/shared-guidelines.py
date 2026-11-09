@@ -1,5 +1,5 @@
-"""Write shared-guidelines.svg beside this file: a team's shared rule set reaching every project, a lesson learned in one
-coming back through a checked merge request, and the engineers reading each other's results alike."""
+"""Write shared-guidelines.svg beside this file: a team's shared rules and knowledge reaching every project, a lesson or a
+solved problem in one coming back, kept current and used by agents, and the engineers reading each other's results alike."""
 import math
 from pathlib import Path
 
@@ -9,14 +9,15 @@ PAPER, INK, MUTED = "#FBF8F3", "#1E2235", "#6B7280"
 INDIGO, INDIGO_SOFT, CORAL, SAGE = "#2B3A67", "#C9D3EE", "#E07A5F", "#5E9C7F"
 FONTS = "Inter, 'Segoe UI', Helvetica, Arial, sans-serif"
 
-W, H = 900, 760
-HUB = (450, 410)
+W, H = 900, 800
+HUB = (450, 450)
 HUB_R = 84
 PROJECTS = {               # name: (centre, width, height, dashed)
-    "project": ((165, 410), 170, 64, False),
-    "another project": ((735, 410), 190, 64, False),
-    "next project": ((450, 650), 200, 64, True),
+    "project": ((165, 450), 170, 64, False),
+    "another project": ((735, 450), 190, 64, False),
+    "next project": ((450, 690), 200, 64, True),
 }
+KNOWLEDGE = ((450, 150), 210, 60)   # centre, width, height; it sits on the engineers' ring
 NEXT_SUB = "quick setup"   # a new project starts from the guidelines
 RING = (420, 300)          # ellipse radii the engineers sit on
 ENGINEERS = [(150, False), (210, False), (-30, False), (30, False), (90, True)]   # (angle in degrees, faded)
@@ -63,29 +64,48 @@ def bezier(p0, p1, p2, t):
     return tuple((1 - t) ** 2 * a + 2 * (1 - t) * t * b + t ** 2 * c for a, b, c in zip(p0, p1, p2))
 
 
-def loop():
-    """The lesson's way back: a curve from the first project to the hub, with its two steps on it."""
-    (x, y), w, h, _ = PROJECTS["project"]
-    p0 = x - w * 0.1, y - h / 2
-    a = math.radians(236)
-    p2 = HUB[0] + (HUB_R + 22) * math.cos(a), HUB[1] + (HUB_R + 22) * math.sin(a)
-    p1 = 270, 110
+def curve(name, p0, p1, p2, steps, note, note_at):
+    """A dotted way back from a project, with an arrowhead, a moving dot and its steps as labels."""
     before = bezier(p0, p1, p2, 0.97)
     ux, uy = p2[0] - before[0], p2[1] - before[1]
     n = math.hypot(ux, uy)
     ux, uy = ux / n, uy / n
     end = p2[0] - ux * 12, p2[1] - uy * 12
-    out = [f'<path id="loop" class="loop" d="M{p0[0]:.1f},{p0[1]:.1f} Q{p1[0]},{p1[1]} {end[0]:.1f},{end[1]:.1f}"/>',
+    out = [f'<path id="{name}" class="loop" d="M{p0[0]:.1f},{p0[1]:.1f} Q{p1[0]},{p1[1]} {end[0]:.1f},{end[1]:.1f}"/>',
            f'<polygon class="loop-head" points="{head(p2, ux, uy)}"/>',
-           '<circle class="lesson" r="5"><animateMotion dur="3.2s" repeatCount="indefinite">'
-           '<mpath href="#loop"/></animateMotion></circle>']
-    for t, text in ((0.18, "improvement MR"), (0.9, "consistency check")):
+           f'<circle class="lesson" r="5"><animateMotion dur="3.2s" repeatCount="indefinite">'
+           f'<mpath href="#{name}"/></animateMotion></circle>']
+    for t, text in steps:
         px, py = bezier(p0, p1, p2, t)
         pw = len(text) * 7 + 24
         out.append(f'<g class="step"><rect x="{px - pw / 2:.1f}" y="{py - 14:.1f}" width="{pw:.1f}" height="28" rx="6"/>'
                    f'<text x="{px:.1f}" y="{py:.1f}">{text}</text></g>')
-    out.append(f'<text class="note" x="{p0[0] - 52:.1f}" y="{p0[1] - 14:.1f}">lesson learned</text>')
+    out.append(f'<text class="note" x="{note_at[0]:.1f}" y="{note_at[1]:.1f}">{note}</text>')
     return out
+
+
+def loops():
+    """A lesson goes back into the rules; a solved problem goes into the knowledge."""
+    (x, y), w, h, _ = PROJECTS["project"]
+    p0 = x - w * 0.1, y - h / 2
+    a = math.radians(236)
+    p2 = HUB[0] + (HUB_R + 22) * math.cos(a), HUB[1] + (HUB_R + 22) * math.sin(a)
+    out = curve("rules-loop", p0, (270, 150), p2, ((0.18, "improvement MR"), (0.9, "consistency check")),
+                "lesson learned", (p0[0] - 52, p0[1] - 14))
+    (x, y), w, h, _ = PROJECTS["another project"]
+    q0 = x + w * 0.1, y - h / 2
+    (kx, ky), _, kh = KNOWLEDGE
+    out += curve("knowledge-loop", q0, (640, 260), (kx + 60, ky + kh / 2), ((0.5, "added by agents"),),
+                 "problem solved", (q0[0] + 50, q0[1] - 14))
+    return out
+
+
+def knowledge():
+    """The team's shared knowledge on the engineers' ring: every engineer's agents search it and add to it."""
+    (x, y), w, h = KNOWLEDGE
+    return [f'<g class="knowledge"><rect x="{x - w / 2:.1f}" y="{y - h / 2:.1f}" width="{w}" height="{h}" rx="10"/>'
+            f'<text class="name" x="{x}" y="{y - 10}">shared knowledge</text>'
+            f'<text class="sub" x="{x}" y="{y + 13}">wiki · solved problems</text></g>']
 
 
 def report(x, y):
@@ -150,6 +170,9 @@ text {{ font-family: {FONTS}; dominant-baseline: central; text-anchor: middle; }
 .spoke {{ fill: none; stroke: {INDIGO}; stroke-width: 2; opacity: 0.55; }}
 .spoke-head {{ fill: {INDIGO}; opacity: 0.7; }}
 .pulse {{ fill: {CORAL}; }}
+.knowledge rect {{ fill: {SAGE}; }}
+.knowledge .name {{ fill: #FFFFFF; font-size: 18px; font-weight: 600; }}
+.knowledge .sub {{ fill: #FFFFFF; font-size: 13px; opacity: 0.9; }}
 .project > rect {{ fill: #FFFFFF; stroke: {INDIGO}; stroke-width: 1.5; }}
 .project.next > rect {{ fill: none; stroke: {MUTED}; stroke-dasharray: 6 5; }}
 .project .name {{ fill: {INK}; font-size: 19px; font-weight: 600; }}
@@ -172,12 +195,13 @@ text {{ font-family: {FONTS}; dominant-baseline: central; text-anchor: middle; }
 """
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
              f"<style>{style}</style>", f'<rect class="bg" x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="18"/>',
-             '<text class="title" x="48" y="56">One rule set for every project</text>',
-             '<text class="subtitle" x="48" y="90">A lesson learned once makes every agent better</text>']
+             '<text class="title" x="48" y="56">Shared rules and knowledge</text>',
+             '<text class="subtitle" x="48" y="90">Kept current by agents: a lesson learned once helps every project</text>']
     parts += ring()
+    parts += knowledge()
     parts += hub()
     parts += spokes()
-    parts += loop()
+    parts += loops()
     parts += [project(name) for name in PROJECTS]
     parts.append("</svg>")
     return "\n".join(parts) + "\n"

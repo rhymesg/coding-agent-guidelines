@@ -12,7 +12,7 @@ Most of the engineering guidelines and skills that began here now live in my com
 - **Coding agent practices and tooling:** a shared plugin that gives every engineer's coding agent the same guidelines and skills, plus automated reviews of the agents' work.
 - **Shared knowledge:** a company wiki maintained with LLMs and a log of solved problems, both searchable by people and agents.
 
-![One rule set for every project](diagrams/shared-guidelines.svg)
+![Shared rules and knowledge](diagrams/shared-guidelines.svg)
 
 ## Quotes
 
