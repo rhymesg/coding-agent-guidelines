@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760">
+<style>
+text { font-family: Inter, 'Segoe UI', Helvetica, Arial, sans-serif; dominant-baseline: central; text-anchor: middle; }
+.bg { fill: #FBF8F3; stroke: #E8E2D8; stroke-width: 1; }
+.title { fill: #1E2235; font-size: 30px; font-weight: 600; text-anchor: start; }
+.subtitle { fill: #6B7280; font-size: 17px; font-weight: 400; text-anchor: start; }
+.halo { fill: #C9D3EE; }
+.hub-ring { fill: none; stroke: #2B3A67; stroke-width: 1.5; stroke-dasharray: 3 7; opacity: 0.6; }
+.hub { fill: #2B3A67; }
+.hub-name { fill: #FBF8F3; font-size: 26px; font-weight: 600; }
+.hub-sub { fill: #FBF8F3; font-size: 14px; font-weight: 400; opacity: 0.85; }
+.spoke { fill: none; stroke: #2B3A67; stroke-width: 2; opacity: 0.55; }
+.spoke-head { fill: #2B3A67; opacity: 0.7; }
+.pulse { fill: #E07A5F; }
+.project > rect { fill: #FFFFFF; stroke: #2B3A67; stroke-width: 1.5; }
+.project.next > rect { fill: none; stroke: #6B7280; stroke-dasharray: 6 5; }
+.project .name { fill: #1E2235; font-size: 19px; font-weight: 600; }
+.project .sub { fill: #6B7280; font-size: 13px; font-weight: 400; }
+.note { fill: #6B7280; font-size: 13px; font-style: italic; }
+.loop { fill: none; stroke: #E07A5F; stroke-width: 2; stroke-dasharray: 2 6; stroke-linecap: round; }
+.loop-head { fill: #E07A5F; }
+.lesson { fill: #E07A5F; }
+.step rect { fill: #FBF8F3; stroke: #E07A5F; stroke-width: 1.2; }
+.step text { fill: #1E2235; font-size: 13px; }
+.ring-line { fill: none; stroke: #1E2235; stroke-width: 1.5; stroke-dasharray: 4 8; opacity: 0.3; }
+.person .badge { fill: #E07A5F; }
+.person .figure { fill: #FFFFFF; }
+.person.faded { opacity: 0.45; }
+.report .sheet { fill: #FFFFFF; stroke: #D9D3C7; stroke-width: 1; }
+.report .ink { fill: #1E2235; opacity: 0.7; }
+.report .chart { fill: none; stroke: #5E9C7F; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ring-label rect { fill: #FBF8F3; stroke: #6B7280; stroke-width: 1; }
+.ring-label text { fill: #1E2235; font-size: 14px; }
+</style>
+<rect class="bg" x="0.5" y="0.5" width="899" height="759" rx="18"/>
+<text class="title" x="48" y="56">One rule set for every project</text>
+<text class="subtitle" x="48" y="90">A lesson learned once makes every agent better</text>
+<ellipse class="ring-line" cx="450" cy="410" rx="420" ry="300"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.2s" repeatCount="indefinite"/></ellipse>
+<g class="person"><circle class="badge" cx="86.3" cy="560.0" r="21"/><circle class="figure" cx="86.3" cy="554.0" r="6"/><path class="figure" d="M75.3,572.0 a11,9 0 0 1 22,0 Z"/><g class="report"><rect class="sheet" x="31.3" y="543.0" width="26" height="34" rx="3"/><rect class="ink" x="36.3" y="548.0" width="16" height="3" rx="1"/><rect class="ink" x="36.3" y="554.0" width="11" height="2" rx="1"/><polyline class="chart" points="36.3,571.0 41.3,565.0 46.3,568.0 52.3,560.0"/></g></g>
+<g class="person"><circle class="badge" cx="86.3" cy="260.0" r="21"/><circle class="figure" cx="86.3" cy="254.0" r="6"/><path class="figure" d="M75.3,272.0 a11,9 0 0 1 22,0 Z"/><g class="report"><rect class="sheet" x="31.3" y="243.0" width="26" height="34" rx="3"/><rect class="ink" x="36.3" y="248.0" width="16" height="3" rx="1"/><rect class="ink" x="36.3" y="254.0" width="11" height="2" rx="1"/><polyline class="chart" points="36.3,271.0 41.3,265.0 46.3,268.0 52.3,260.0"/></g></g>
+<g class="person"><circle class="badge" cx="813.7" cy="260.0" r="21"/><circle class="figure" cx="813.7" cy="254.0" r="6"/><path class="figure" d="M802.7,272.0 a11,9 0 0 1 22,0 Z"/><g class="report"><rect class="sheet" x="842.7" y="243.0" width="26" height="34" rx="3"/><rect class="ink" x="847.7" y="248.0" width="16" height="3" rx="1"/><rect class="ink" x="847.7" y="254.0" width="11" height="2" rx="1"/><polyline class="chart" points="847.7,271.0 852.7,265.0 857.7,268.0 863.7,260.0"/></g></g>
+<g class="person"><circle class="badge" cx="813.7" cy="560.0" r="21"/><circle class="figure" cx="813.7" cy="554.0" r="6"/><path class="figure" d="M802.7,572.0 a11,9 0 0 1 22,0 Z"/><g class="report"><rect class="sheet" x="842.7" y="543.0" width="26" height="34" rx="3"/><rect class="ink" x="847.7" y="548.0" width="16" height="3" rx="1"/><rect class="ink" x="847.7" y="554.0" width="11" height="2" rx="1"/><polyline class="chart" points="847.7,571.0 852.7,565.0 857.7,568.0 863.7,560.0"/></g></g>
+<g class="person faded"><circle class="badge" cx="450.0" cy="710.0" r="21"/><circle class="figure" cx="450.0" cy="704.0" r="6"/><path class="figure" d="M439.0,722.0 a11,9 0 0 1 22,0 Z"/></g>
+<g class="ring-label"><rect x="594.0" y="624.8" width="252.0" height="30" rx="6"/><text x="720.0" y="639.8">consistent results and reports</text></g>
+<circle class="halo" cx="450" cy="410" r="124"><animate attributeName="r" values="110;130;110" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0.15;0.6" dur="3s" repeatCount="indefinite"/></circle>
+<circle class="hub-ring" cx="450" cy="410" r="96"/>
+<circle class="hub" cx="450" cy="410" r="84"/>
+<text class="hub-name" x="450" y="400">team plugin</text>
+<text class="hub-sub" x="450" y="430">agents · CI · review</text>
+<path id="spoke0" class="spoke" d="M344.0,410.0 L262.0,410.0"/><polygon class="spoke-head" points="250.0,410.0 263.0,403.5 263.0,416.5"/><circle class="pulse" r="4"><animateMotion dur="2.2s" begin="0.0s" repeatCount="indefinite"><mpath href="#spoke0"/></animateMotion></circle>
+<path id="spoke1" class="spoke" d="M556.0,410.0 L628.0,410.0"/><polygon class="spoke-head" points="640.0,410.0 627.0,416.5 627.0,403.5"/><circle class="pulse" r="4"><animateMotion dur="2.2s" begin="0.5s" repeatCount="indefinite"><mpath href="#spoke1"/></animateMotion></circle>
+<path id="spoke2" class="spoke" d="M450.0,516.0 L450.0,606.0" stroke-dasharray="6 6"/><polygon class="spoke-head" points="450.0,618.0 443.5,605.0 456.5,605.0"/><circle class="pulse" r="4"><animateMotion dur="2.2s" begin="1.0s" repeatCount="indefinite"><mpath href="#spoke2"/></animateMotion></circle>
+<path id="loop" class="loop" d="M148.0,378.0 Q270,110 384.6,311.8"/>
+<polygon class="loop-head" points="390.7,322.1 378.5,314.2 389.7,307.6"/>
+<circle class="lesson" r="5"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#loop"/></animateMotion></circle>
+<g class="step"><rect x="130.9" y="283.1" width="122.0" height="28" rx="6"/><text x="191.9" y="297.1">improvement MR</text></g>
+<g class="step"><rect x="295.1" y="270.5" width="143.0" height="28" rx="6"/><text x="366.6" y="284.5">consistency check</text></g>
+<text class="note" x="96.0" y="364.0">lesson learned</text>
+<g class="project"><rect x="80.0" y="378.0" width="170" height="64" rx="10"/><text class="name" x="165" y="410">project</text></g>
+<g class="project"><rect x="640.0" y="378.0" width="190" height="64" rx="10"/><text class="name" x="735" y="410">another project</text></g>
+<g class="project next"><rect x="350.0" y="618.0" width="200" height="64" rx="10"/><text class="name" x="450" y="641">next project</text><text class="sub" x="450" y="663">quick setup</text></g>
+</svg>

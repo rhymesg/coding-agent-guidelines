@@ -6,6 +6,8 @@ To use them, import [AGENTS.md](AGENTS.md) from your `CLAUDE.md` or `AGENTS.md` 
 
 ## Company Work
 
+![One rule set for every project](diagrams/shared-guidelines.svg)
+
 Most of the engineering guidelines and skills that began here now live in my company's private repository, where the whole team uses and improves them. There I am building:
 
 - **Development standards:** common rules for how engineers write and check software across all company repositories.
