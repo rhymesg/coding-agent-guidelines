@@ -23,6 +23,7 @@ description: "Acts as a mid-level manager between the user and the other agent s
 
 - Order steps, not sessions: a step needs a merge, data, or the machine, and a session's independent steps run early.
 - Start with the step that unblocks the most others.
+- Merge one task's merge requests across repositories as one group, in dependency order and close together. In reports and merge orders, treat the group as one step.
 - After a merge, have each session whose work depends on it rebase before its load-sensitive run.
 
 ### Machine
