@@ -2,24 +2,6 @@
 
 This repository keeps my personal [guidelines](AGENTS.md) and [skills](skills/) for working with coding agents: how I plan work, coordinate parallel sessions, and grasp their reports at a glance. I value instructions I can read and refine, with clear steps and results I can review. They evolve as the models evolve.
 
-## Installation
-
-Install Young Agent from this checkout:
-
-```bash
-codex plugin marketplace add .
-```
-
-```bash
-codex plugin add young-agent@young-agent
-```
-
-## Usage
-
-Ask the agent to use a bundled skill, such as `brainstorm` or `commit`. Use `create-workplan` explicitly to start a workplan.
-
-After changing the plugin, refresh or reinstall it from the marketplace and start a new session; installed plugins use a cached copy.
-
 ## Company Work
 
 Most of the engineering guidelines and skills that began here now live in my company's private repository, where the whole team uses and improves them. There I am building:
@@ -29,6 +11,18 @@ Most of the engineering guidelines and skills that began here now live in my com
 - **Shared knowledge:** a company wiki maintained with LLMs and a log of solved problems, both searchable by people and agents.
 
 ![Shared rules and knowledge](diagrams/shared-guidelines.svg)
+
+## Installation
+
+Install young-agent from this checkout:
+
+```bash
+codex plugin marketplace add .
+```
+
+```bash
+codex plugin add young-agent@young-agent
+```
 
 ## Quotes
 
