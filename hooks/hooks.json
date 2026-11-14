@@ -1,0 +1,15 @@
+{
+  "description": "Load personal coding agent guidelines at session start.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '%s\\n' \"Young Agent plugin root: ${CLAUDE_PLUGIN_ROOT}. Resolve relative links in this guidance from that directory.\"; cat \"${CLAUDE_PLUGIN_ROOT}/AGENTS.md\""
+          }
+        ]
+      }
+    ]
+  }
+}

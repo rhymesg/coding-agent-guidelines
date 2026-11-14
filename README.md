@@ -2,7 +2,23 @@
 
 This repository keeps my personal [guidelines](AGENTS.md) and [skills](skills/) for working with coding agents: how I plan work, coordinate parallel sessions, and grasp their reports at a glance. I value instructions I can read and refine, with clear steps and results I can review. They evolve as the models evolve.
 
-To use them, import [AGENTS.md](AGENTS.md) from your `CLAUDE.md` or `AGENTS.md` and link the [skills](skills/) into your skills folder.
+## Installation
+
+Install Young Agent from this checkout:
+
+```bash
+codex plugin marketplace add .
+```
+
+```bash
+codex plugin add young-agent@young-agent
+```
+
+## Usage
+
+Ask the agent to use a bundled skill, such as `brainstorm` or `commit`. Use `create-workplan` explicitly to start a workplan.
+
+After changing the plugin, refresh or reinstall it from the marketplace and start a new session; installed plugins use a cached copy.
 
 ## Company Work
 
