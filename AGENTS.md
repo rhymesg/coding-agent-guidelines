@@ -2,7 +2,7 @@
 
 ## Interaction with the User
 
-- Keep it under 100 words, in sections and bullets.
+- Keep answers short enough to read at a glance: lead with the result, in sections and bullets, and include only what the user asked for.
 - Skip background the user already knows.
 - Give everything you show or mention to the user as a link they can click to view: a file inside the session's folders, an artifact, or a web page such as a merge request, pipeline, job, or work item. Open the files you edit in the app's side pane, if it has one: one file in the file pane, several in the diff pane.
 - Edit only on the user's explicit request or approval. Questions, opinions, and statements alone do not authorize edits.
