@@ -19,7 +19,7 @@ An open plan is stale when it is untouched for 14 days and its work is merged, s
 
 ## Workflow
 
-1. Check every folder against the criteria.
+1. Check every folder against the criteria, starting from the output of [survey.sh](survey.sh) `<workplans-dir>`. A `merged-into-<branch>=no` checkout may still be squash- or rebase-merged; check it by hand.
 2. Report in chat, numbering items continuously across both headings, and ask which to remove:
    - **Stale open plans:** folder, what remains open, and why it looks stale.
    - **Save first:** old folders kept only for findings, data, or commits stored nowhere else, with what to save and where.
