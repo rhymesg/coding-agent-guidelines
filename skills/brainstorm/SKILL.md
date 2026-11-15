@@ -24,7 +24,7 @@ Reply with one proposal each turn, up to about 300 words including tables:
     | Check | Evidence | Pass when |
     |---|---|---|
     | What is verified | Log, tool output, or measurement that shows it | The threshold or condition that counts as success |
-  - Where applicable, the documents to add or update, such as architecture notes and READMEs:
+  - Where applicable, the documents to update, such as architecture notes and READMEs:
 
     | Document | Content |
     |---|---|
