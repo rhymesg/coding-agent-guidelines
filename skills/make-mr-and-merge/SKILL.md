@@ -18,4 +18,5 @@ description: "Takes changes through review, CI, and merge. Use when the user say
 5. Wait for CI on the latest commit. Inspect failures, fix test, lint, and build errors, then commit and push until green.
 6. Address blocking review comments and verify fixes before resolving discussions. Address suggestions when you agree; explain disagreements.
 7. When the latest commit has passing CI, required approvals, no blocking discussions, and no conflicts, merge using the repository's normal method without bypassing protections.
+   - Merge one task's MRs across repositories as one group: once every one of them meets these conditions, merge them in dependency order, back to back.
 8. Verify the MR is merged and report its link and merge commit.
