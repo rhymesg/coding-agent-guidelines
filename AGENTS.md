@@ -1,5 +1,7 @@
 # Coding Agent Guidelines
 
+These guidelines and the skills of this plugin are general-purpose and personal; keep company-specific content out of them.
+
 ## Interaction with the User
 
 - Keep answers short enough to read at a glance: lead with the result, in sections and bullets, and include only what the user asked for.
