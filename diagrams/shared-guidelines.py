@@ -64,8 +64,8 @@ def bezier(p0, p1, p2, t):
     return tuple((1 - t) ** 2 * a + 2 * (1 - t) * t * b + t ** 2 * c for a, b, c in zip(p0, p1, p2))
 
 
-def curve(name, p0, p1, p2, steps, note, note_at):
-    """A dotted way back from a project, with an arrowhead, a moving dot and its steps as labels."""
+def curve(name, p0, p1, p2, steps, note=None, note_at=None):
+    """A dotted path with an arrowhead, a moving dot and its steps as labels."""
     before = bezier(p0, p1, p2, 0.97)
     ux, uy = p2[0] - before[0], p2[1] - before[1]
     n = math.hypot(ux, uy)
@@ -80,12 +80,13 @@ def curve(name, p0, p1, p2, steps, note, note_at):
         pw = len(text) * 7 + 24
         out.append(f'<g class="step"><rect x="{px - pw / 2:.1f}" y="{py - 14:.1f}" width="{pw:.1f}" height="28" rx="6"/>'
                    f'<text x="{px:.1f}" y="{py:.1f}">{text}</text></g>')
-    out.append(f'<text class="note" x="{note_at[0]:.1f}" y="{note_at[1]:.1f}">{note}</text>')
+    if note:
+        out.append(f'<text class="note" x="{note_at[0]:.1f}" y="{note_at[1]:.1f}">{note}</text>')
     return out
 
 
 def loops():
-    """A lesson goes back into the rules; a solved problem goes into the knowledge."""
+    """A lesson goes back into the rules; a solved problem goes into the knowledge, which the plugin draws on."""
     (x, y), w, h, _ = PROJECTS["project"]
     p0 = x - w * 0.1, y - h / 2
     a = math.radians(236)
@@ -95,8 +96,10 @@ def loops():
     (x, y), w, h, _ = PROJECTS["another project"]
     q0 = x + w * 0.1, y - h / 2
     (kx, ky), _, kh = KNOWLEDGE
-    out += curve("knowledge-loop", q0, (640, 260), (kx + 60, ky + kh / 2), ((0.5, "added by agents"),),
-                 "problem solved", (q0[0] + 50, q0[1] - 14))
+    out += curve("knowledge-loop", q0, (640, 260), (kx + 60, ky + kh / 2), ())
+    a = math.radians(-80)
+    hub_top = HUB[0] + (HUB_R + 22) * math.cos(a), HUB[1] + (HUB_R + 22) * math.sin(a)
+    out += curve("knowledge-use", (kx + 10, ky + kh / 2), (kx + 14, (ky + hub_top[1]) / 2), hub_top, ())
     return out
 
 
@@ -153,7 +156,7 @@ def hub():
             f'<circle class="hub-ring" cx="{x}" cy="{y}" r="{HUB_R + 12}"/>',
             f'<circle class="hub" cx="{x}" cy="{y}" r="{HUB_R}"/>',
             f'<text class="hub-name" x="{x}" y="{y - 10}">team plugin</text>',
-            f'<text class="hub-sub" x="{x}" y="{y + 20}">agents · CI · review</text>']
+            f'<text class="hub-sub" x="{x}" y="{y + 20}">rules · skills · CI</text>']
 
 
 def svg():

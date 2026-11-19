@@ -50,7 +50,7 @@ text { font-family: Inter, 'Segoe UI', Helvetica, Arial, sans-serif; dominant-ba
 <circle class="hub-ring" cx="450" cy="450" r="96"/>
 <circle class="hub" cx="450" cy="450" r="84"/>
 <text class="hub-name" x="450" y="440">team plugin</text>
-<text class="hub-sub" x="450" y="470">agents · CI · review</text>
+<text class="hub-sub" x="450" y="470">rules · skills · CI</text>
 <path id="spoke0" class="spoke" d="M344.0,450.0 L262.0,450.0"/><polygon class="spoke-head" points="250.0,450.0 263.0,443.5 263.0,456.5"/><circle class="pulse" r="4"><animateMotion dur="2.2s" begin="0.0s" repeatCount="indefinite"><mpath href="#spoke0"/></animateMotion></circle>
 <path id="spoke1" class="spoke" d="M556.0,450.0 L628.0,450.0"/><polygon class="spoke-head" points="640.0,450.0 627.0,456.5 627.0,443.5"/><circle class="pulse" r="4"><animateMotion dur="2.2s" begin="0.5s" repeatCount="indefinite"><mpath href="#spoke1"/></animateMotion></circle>
 <path id="spoke2" class="spoke" d="M450.0,556.0 L450.0,646.0" stroke-dasharray="6 6"/><polygon class="spoke-head" points="450.0,658.0 443.5,645.0 456.5,645.0"/><circle class="pulse" r="4"><animateMotion dur="2.2s" begin="1.0s" repeatCount="indefinite"><mpath href="#spoke2"/></animateMotion></circle>
@@ -63,8 +63,9 @@ text { font-family: Inter, 'Segoe UI', Helvetica, Arial, sans-serif; dominant-ba
 <path id="knowledge-loop" class="loop" d="M754.0,418.0 Q640,260 520.2,186.4"/>
 <polygon class="loop-head" points="510.0,180.0 524.5,181.4 517.6,192.4"/>
 <circle class="lesson" r="5"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#knowledge-loop"/></animateMotion></circle>
-<g class="step"><rect x="571.5" y="265.5" width="129.0" height="28" rx="6"/><text x="636.0" y="279.5">added by agents</text></g>
-<text class="note" x="804.0" y="404.0">problem solved</text>
+<path id="knowledge-use" class="loop" d="M460.0,180.0 Q464,247.80518909035297 467.9,333.6"/>
+<polygon class="loop-head" points="468.4,345.6 461.3,332.9 474.3,332.3"/>
+<circle class="lesson" r="5"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#knowledge-use"/></animateMotion></circle>
 <g class="project"><rect x="80.0" y="418.0" width="170" height="64" rx="10"/><text class="name" x="165" y="450">project</text></g>
 <g class="project"><rect x="640.0" y="418.0" width="190" height="64" rx="10"/><text class="name" x="735" y="450">another project</text></g>
 <g class="project next"><rect x="350.0" y="658.0" width="200" height="64" rx="10"/><text class="name" x="450" y="681">next project</text><text class="sub" x="450" y="703">quick setup</text></g>
