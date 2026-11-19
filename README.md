@@ -4,7 +4,7 @@ This repository keeps my personal [guidelines](AGENTS.md) and [skills](skills/) 
 
 ## Company Work
 
-Most of the engineering guidelines and skills that began here now live in my company's private repository, where the whole team uses and improves them. There I am building:
+Most of the engineering guidelines and skills that began here now live in my company's private repository, where the whole team uses and improves them. The team's pace is now set by how fast people understand, share, and decide. There I am building:
 
 - **Development standards:** common rules for how engineers write and check software across all company repositories.
 - **Coding agent practices and tooling:** a shared plugin that gives every engineer's coding agent the same guidelines and skills, plus automated reviews of the agents' work.
