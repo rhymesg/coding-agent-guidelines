@@ -40,6 +40,7 @@ Reply with one proposal each turn, up to about 300 words including tables:
 
 1. Show the proposal and wait for the user's answers.
 2. Refine it with each answer until consequential questions are resolved or explicitly deferred.
-3. Suggest the next step:
+3. Before the user approves a plan, have a fresh subagent read the code each change touches, with every caller, and report changes that do not match that code, target states no change produces, phases that need a later phase's work, and inputs only the user can give. Fix the plan and ask for those inputs together.
+4. Suggest the next step:
    - Work that fits one session: the agent's plan mode in the current session.
    - Work spanning several session windows: an explicit `/create-workplan` call.
