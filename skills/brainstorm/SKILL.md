@@ -12,9 +12,9 @@ Do not edit code or create workplan documents while brainstorming.
 Reply with one proposal each turn, up to about 300 words including tables:
 
 - `Intent`: what you understand the user wants: goal, scope, constraints, and success criteria, as applicable.
-- Following sections as appropriate, such as approach and open decisions.
+- Following sections as appropriate, such as approach and open decisions. State each choice the guidelines, rules, or requirements settle in the approach, with the rule named.
 - `Suggestions`, until the user picks an option or persuades you, and again when the intent changes:
-  - Viable alternatives for anything with a choice, such as architecture or method, weighed on simplicity, maintainability, readability, expandability, and best practice. Present them as a table, labelling each option `(recommended)`, `(yours)`, or `(existing)` where applicable:
+  - Viable alternatives for each choice the guidelines, rules, and requirements leave open, such as architecture or method, weighed on simplicity, maintainability, readability, expandability, and best practice. Present them as a table, labelling each option `(recommended)`, `(yours)`, or `(existing)` where applicable:
 
     | Option | Trade-offs |
     |---|---|

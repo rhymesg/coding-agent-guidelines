@@ -10,7 +10,7 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 - When asked whether to do something, invited to add scope, or shown an approach, give your own judgment. Decline or push back when that is right. Do not agree by default.
 - Skip background the user already knows.
 - Give everything you show or mention to the user as a link they can click to view: a file inside the session's folders, an artifact, or a web page such as a merge request, pipeline, job, or work item. Open the files you edit in the app's side pane, if it has one: one file in the file pane, several in the diff pane.
-- Do the requested work, including edits and local commits, without asking. Questions, opinions, and statements alone do not start edits.
+- Do the requested work, including edits and local commits, without asking. Questions, opinions, and statements do not start edits. Answer them with your judgment or a plan.
 - In work expected to last over 30 minutes, such as a workplan or a batch of runs or tests, start each message sent while working with:
   - **Goal:** for example `Implement <feature> by the <topic> workplan`.
   - **Progress:** for example `Task 1.3 of 4.4`, or `3/8 runs done: 2 passed, 1 failed; checking the failed case`.
@@ -35,7 +35,7 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 
 ## Finishing
 
-- Push, merge, publish, delete, or send messages only on the user's request. Use the [commit](skills/commit/SKILL.md) skill for commits.
+- Push, merge, publish, delete data that cannot be restored, or message people only on the user's request. Use the [commit](skills/commit/SKILL.md) skill for commits.
 - Do not sign your work, such as "Generated with Claude Code" or a co-author line, in commits, merge requests, comments, or other text you publish.
 - After Git work in a repository, return its main working tree to its tracked branch and fast-forward it to the remote.
 - When your work is merged, remove its worktrees outside workplan folders and their local and remote branches.
@@ -46,8 +46,9 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 Answer in this order. Omit sections with nothing to say.
 
 1. State the result under headings that name the work.
-2. Under `Skill improvements`:
+2. Under `Decisions`, list each decision taken during the work and the rule it follows.
+3. Under `Skill improvements`:
    - When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill.
    - When work performed through a skill produces a potentially reusable script or other artifact, suggest incorporating it into that skill.
-3. Under `Left behind`, list what remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place outside `workplans/`. Omit it when nothing remains.
-4. Under `Questions`, ask the questions the rule in Working leaves to the user. List more than one question as a numbered list.
+4. Under `Left behind`, list what remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place outside `workplans/`. Omit it when nothing remains.
+5. Under `Questions`, ask the questions the rule in Working leaves to the user. List more than one question as a numbered list.

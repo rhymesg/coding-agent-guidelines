@@ -29,7 +29,7 @@ description: "Prepares clean, focused Git commits. Use when committing changes."
    git diff --cached
    ```
 
-   If the index contains changes outside the intended unit, do not commit or modify their staged state. Ask the user how to proceed.
+   If the index contains changes outside the intended unit, leave their staged state as it is and commit only the unit's paths with `git commit --only <paths>`.
 
 7. For each logical unit, stage and commit in one command line using an unsigned, one-line commit message.
 
@@ -47,7 +47,7 @@ description: "Prepares clean, focused Git commits. Use when committing changes."
 ## Safety
 
 - Never revert or discard user changes to make a commit cleaner.
-- Stage only files or hunks in the intended unit. If a file mixes unrelated changes, stage only the requested hunks when practical; otherwise ask before committing it.
+- Stage only files or hunks in the intended unit. If a file mixes unrelated changes, stage only the unit's hunks; when they cannot be separated, leave the file uncommitted and report it at the end.
 - Never `git add -A`, `git add .` or `git commit -a`; name paths explicitly. Stage broad untracked directories only when the user explicitly includes them.
 - Do not commit secrets, credentials, tokens, private keys, `.env` files, or other security-sensitive local configuration. Add these files to `.gitignore` when they are project-local artifacts that should remain untracked.
 - After each commit, show the commit hash and what remains uncommitted.
