@@ -18,7 +18,7 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 - A skill's rules and workflow steps take precedence over these defaults while it runs.
 - When continuing an active workplan, including after compaction, read its `workplans/<topic>/objective.md`.
 - Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
-- Do what you can first. Collect any required user input or actions and ask for them together.
+- Settle each decision by the guidelines, rules, and requirements that apply, and do what you can first. Ask the user only when none of them applies, the decision is a matter of preference, or the decision they lead to seems wrong in general; collect those questions and ask them together.
 - When the user asks about something independent of the current session's work, suggest handling it in a separate session, and offer to start one.
 
 ## When Other Sessions Are Running
@@ -46,4 +46,4 @@ Answer in this order. Omit sections with nothing to say.
    - When the user requests further edits to a skill's output, suggest adding the reusable instruction to the skill.
    - When work performed through a skill produces a potentially reusable script or other artifact, suggest incorporating it into that skill.
 3. Under `Left behind`, list what remains, as checked just now: uncommitted files, unpushed commits, unmerged branches and merge requests, or worktrees still in place outside `workplans/`. Omit it when nothing remains.
-4. Under `Questions`, ask the user about any suggestions or approvals needed. List more than one question as a numbered list.
+4. Under `Questions`, ask the questions the rule in Working leaves to the user. List more than one question as a numbered list.
