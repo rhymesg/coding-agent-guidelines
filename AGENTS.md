@@ -21,7 +21,8 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 - A skill's rules and workflow steps take precedence over these defaults while it runs.
 - When continuing an active workplan, including after compaction, read its `workplans/<topic>/objective.md`.
 - Run every check you can yourself. Hand the user only checks that need manual UI interaction.
-- Settle each decision by the guidelines, rules, and requirements that apply, and do what you can first. Ask the user only when none of them applies, the decision is a matter of preference, or the decision they lead to seems wrong in general; collect those questions and ask them together.
+- Plan the work before starting it. Settle each decision by the guidelines, rules, and requirements that apply. Ask the user only when none of them applies, the decision is a matter of preference, or the decision they lead to seems wrong in general.
+- Ask all such questions together before starting, then work to the end without pausing. When a new one comes up during the work, decide it by the closest guidelines, rules, and requirements, continue, and report it at the end.
 - When the user asks about something independent of the current session's work, suggest handling it in a separate session, and offer to start one.
 
 ## When Other Sessions Are Running
