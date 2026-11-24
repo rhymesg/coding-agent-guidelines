@@ -1,6 +1,6 @@
 ---
 name: commit
-description: "Prepares clean, focused Git commits. Use when the user asks to commit, or another skill calls for a commit."
+description: "Prepares clean, focused Git commits. Use when committing changes."
 ---
 
 # Commit

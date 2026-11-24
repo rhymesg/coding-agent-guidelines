@@ -4,10 +4,13 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 
 ## Interaction with the User
 
-- Keep answers short enough to read at a glance: lead with the result, in sections and bullets, and include only what the user asked for.
+- Keep answers short enough to read at a glance. Lead with what changes for the user, use sections and bullets, and include only what the user asked for.
+- Write answers in short declarative sentences. Do not use a long dash, or a colon to join clauses.
+- Back each claim with its evidence, or label it measured, inferred, or guess.
+- When asked whether to do something, invited to add scope, or shown an approach, give your own judgment. Decline or push back when that is right. Do not agree by default.
 - Skip background the user already knows.
 - Give everything you show or mention to the user as a link they can click to view: a file inside the session's folders, an artifact, or a web page such as a merge request, pipeline, job, or work item. Open the files you edit in the app's side pane, if it has one: one file in the file pane, several in the diff pane.
-- Edit only on the user's explicit request or approval. Questions, opinions, and statements alone do not authorize edits.
+- Do the requested work, including edits and local commits, without asking. Questions, opinions, and statements alone do not start edits.
 - In work expected to last over 30 minutes, such as a workplan or a batch of runs or tests, start each message sent while working with:
   - **Goal:** for example `Implement <feature> by the <topic> workplan`.
   - **Progress:** for example `Task 1.3 of 4.4`, or `3/8 runs done: 2 passed, 1 failed; checking the failed case`.
@@ -17,7 +20,7 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 
 - A skill's rules and workflow steps take precedence over these defaults while it runs.
 - When continuing an active workplan, including after compaction, read its `workplans/<topic>/objective.md`.
-- Do not run tests or simulations that require manual UI interaction. Report when such verification is needed.
+- Run every check you can yourself. Hand the user only checks that need manual UI interaction.
 - Settle each decision by the guidelines, rules, and requirements that apply, and do what you can first. Ask the user only when none of them applies, the decision is a matter of preference, or the decision they lead to seems wrong in general; collect those questions and ask them together.
 - When the user asks about something independent of the current session's work, suggest handling it in a separate session, and offer to start one.
 
@@ -31,7 +34,7 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 
 ## Finishing
 
-- Do not commit unless asked; when asked, use the [commit](skills/commit/SKILL.md) skill for committing changes.
+- Push, merge, publish, delete, or send messages only on the user's request. Use the [commit](skills/commit/SKILL.md) skill for commits.
 - Do not sign your work, such as "Generated with Claude Code" or a co-author line, in commits, merge requests, comments, or other text you publish.
 - After Git work in a repository, return its main working tree to its tracked branch and fast-forward it to the remote.
 - When your work is merged, remove its worktrees outside workplan folders and their local and remote branches.
