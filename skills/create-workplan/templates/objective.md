@@ -27,7 +27,7 @@ Keep Goal, Verification, and Guidelines.
 ### Execution
 
 - Keep the approved goal and completion criteria unchanged unless the user changes them. Adjust verification methods as needed.
-- Repeat: do the next ready task, verify the result, record its `evidence:` or `skip:` line in `tasks.md`, and adjust `plan.md` as needed.
+- Repeat: do the next ready task, verify it on the real result, update `tasks.md`, and adjust `plan.md` as needed.
 - When blocked, investigate the cause, try meaningful alternatives, and continue independent work.
 
 ### Workspace

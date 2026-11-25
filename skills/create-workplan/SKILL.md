@@ -31,7 +31,7 @@ flowchart LR
 |---|---|---|
 | `objective.md` | Goal, scope, constraints, workspace paths, guidelines, verification | The user changes the goal or adds guidance |
 | `plan.md` | Approach, phases, dependencies, key decisions and reasons | A planning decision changes |
-| `tasks.md` | Concrete tasks in order, links to the plan, status, and each task's `evidence:` or `skip:` line, attempts, and findings | A task starts, finishes, or changes, or something relevant is learned |
+| `tasks.md` | Concrete tasks in order, links to the plan, status, and each task's `skip:` line, attempts, and findings | A task starts, finishes, or changes, or something relevant is learned |
 
 Templates are in `templates/`. Keep their purpose statements and the `Goal`, `Verification`, and `Guidelines` sections in `objective.md`; choose other sections and detail to fit the task.
 
