@@ -5,7 +5,6 @@ description: "Keeps skills and agent instructions short and consistent. Use when
 
 # Skill Writing Guidelines
 
-- Name a young-agent skill of rules applied during other work `guidelines-<topic>`; start the name of every other young-agent skill with a verb.
 - Put a rule in AGENTS.md when most tasks need it and it fits in a few lines; otherwise put it in a skill. Put it in the section whose heading names its topic.
 - Start the description with a short sentence on what the skill helps achieve, then a sentence starting "Use when" that states the trigger.
 - Start the body directly with rules or workflow: rules as one-clause bullets, workflows as numbered top-level steps with expected results.
