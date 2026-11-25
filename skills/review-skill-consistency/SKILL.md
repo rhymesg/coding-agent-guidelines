@@ -9,7 +9,7 @@ description: "Finds skills and instructions that conflict, overlap, or leave gap
 
 1. Take the skills and instructions the user names, or a change to them, as the review target. By default, take those loaded in the current session.
 2. Read every instruction file and skill the session loads, and check the target against them for the problems below.
-3. Develop fixes that keep the whole set consistent, by the skill-writing rules of the target's own plugin or repository.
+3. Develop fixes that keep the whole set consistent, by the skill-writing rules of the target's own plugin or repository. For a conflict, prefer dropping a rule over adding conditions.
 4. When reviewing a change, open the report with one or two lines on what agents do differently because of it.
 5. Report the findings in a table with number, file, problem, and suggested fixes, ordered by importance, at most ten, and only findings that change what an agent does. Do not edit unless asked.
 
