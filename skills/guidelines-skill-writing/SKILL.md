@@ -1,6 +1,6 @@
 ---
 name: guidelines-skill-writing
-description: "Keeps skills and agent instructions short and consistent. Use when creating or editing a skill or an instruction file such as AGENTS.md."
+description: "Keeps skills and agent instructions short and consistent. Use when creating or editing a skill or the AGENTS.md of the young-agent plugin."
 ---
 
 # Skill Writing Guidelines

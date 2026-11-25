@@ -1,6 +1,6 @@
 ---
 name: review-skill-consistency
-description: "Finds skills and instructions that conflict, overlap, or leave gaps across every set an agent loads. Use when the user asks to review the skills or the agent instructions, or before a change to them is pushed or merged to main."
+description: "Finds skills and instructions that conflict, overlap, or leave gaps across every set an agent loads. Use when the user asks to review the skills or instructions of the young-agent plugin, or before a change to them is pushed or merged to main."
 ---
 
 # Review Skill Consistency
