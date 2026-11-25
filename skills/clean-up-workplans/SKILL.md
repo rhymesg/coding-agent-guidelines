@@ -12,7 +12,7 @@ Remove a folder under `workplans/` only when it meets all of these:
 - **Not active:** no file or worktree commit changed in the last 14 days, ignoring folder dates, and no running session, process, or container uses it.
 - **Nothing local:** every Git checkout inside it, at any depth, has a clean `git status --porcelain`, and its `HEAD` is on a remote branch or merged into its tracked branch, which may have changed the commit hashes.
 - **No unique data:** its recordings and logs exist elsewhere or can be regenerated from data that does.
-- **Findings recorded:** the conclusions of its `report.md` are in a tracked document, memory, or a merged change.
+- **Findings recorded:** the findings in its `tasks.md` and any `report.md` are in a tracked document, memory, or a merged change.
 - **Not an open plan:** its `objective.md` and `tasks.md` leave nothing to do.
 
 An open plan is stale when it is untouched for 14 days and its work is merged, superseded, or obsolete; list it separately for the user to decide.
