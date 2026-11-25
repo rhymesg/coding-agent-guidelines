@@ -36,6 +36,7 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 ## Finishing
 
 - Push, merge, publish, delete data that cannot be restored, or message people only on the user's request. Use the [commit](skills/commit/SKILL.md) skill for commits.
+- Before pushing or merging a change to instructions or skills into `main`, run the [review-skill-consistency](skills/review-skill-consistency/SKILL.md) skill on it and settle its findings with the user.
 - Do not sign your work, such as "Generated with Claude Code" or a co-author line, in commits, merge requests, comments, or other text you publish.
 - After Git work in a repository, return its main working tree to its tracked branch and fast-forward it to the remote.
 - When your work is merged, remove its worktrees outside workplan folders and their local and remote branches.
