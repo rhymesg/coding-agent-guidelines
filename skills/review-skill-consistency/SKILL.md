@@ -22,3 +22,4 @@ description: "Finds skills and instructions that conflict, overlap, or leave gap
 - Gaps: work the instructions call for that no skill or rule covers, and references to a missing skill or step.
 - Duplicated rules: the same instruction repeated in several places.
 - Over-constraint: a rule that forbids or mandates more than needed.
+- Placement: a rule in a file or section that does not fit it, by the target's skill-writing rules.
