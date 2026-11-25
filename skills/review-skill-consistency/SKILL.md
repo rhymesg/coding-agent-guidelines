@@ -1,15 +1,15 @@
 ---
 name: review-skill-consistency
-description: "Finds skills and instructions that conflict, overlap, or leave gaps across every set an agent loads. Use when the user asks to review the skills or instructions of the young-agent plugin, or before a change to them is pushed or merged to main."
+description: "Finds skills and instructions that conflict, overlap, or leave gaps across every set an agent loads. Use when the user asks to review skills or agent instructions."
 ---
 
 # Review Skill Consistency
 
 ## Workflow
 
-1. Read every instruction file and skill the agent loads: the instruction files and skills of every enabled plugin, personal skills, and the repository's own instruction files and skills.
-2. Check the whole set, or a change against it, for the problems below.
-3. Use the [guidelines-skill-writing](../guidelines-skill-writing/SKILL.md) skill to develop fixes that keep the whole set consistent.
+1. Take the skills and instructions the user names, or a change to them, as the review target. By default, take those loaded in the current session.
+2. Read every instruction file and skill the session loads, and check the target against them for the problems below.
+3. Develop fixes that keep the whole set consistent, by the skill-writing rules of the target's own plugin or repository.
 4. When reviewing a change, open the report with one or two lines on what agents do differently because of it.
 5. Report the findings in a table with number, file, problem, and suggested fixes, ordered by importance, at most ten, and only findings that change what an agent does. Do not edit unless asked.
 
