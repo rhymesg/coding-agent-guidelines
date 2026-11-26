@@ -23,6 +23,7 @@ These guidelines and the skills of this plugin are general-purpose and personal;
 - Run every check you can yourself. Hand the user only checks that need manual UI interaction.
 - Plan the work before starting it. Settle each decision by the guidelines, rules, and requirements that apply. Ask the user only when none of them applies, the decision is a matter of preference, or the decision they lead to seems wrong in general.
 - Ask all such questions together before starting, then work to the end without pausing. When a new one comes up during the work, decide it by the closest guidelines, rules, and requirements, continue, and report it at the end.
+- Go on to the follow-up steps of the requested work, such as the clean-up after a merge. Do not end a turn on a question while work remains that you can do without the user.
 - When the user asks about something independent of the current session's work, suggest handling it in a separate session, and offer to start one.
 
 ## When Other Sessions Are Running
