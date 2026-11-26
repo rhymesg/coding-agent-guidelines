@@ -1,6 +1,6 @@
 ---
 name: create-workplan
-description: "Sets up workplan documents for tasks spanning several sessions and starts the work. Use only when the user invokes it explicitly; a request to plan or discuss goes to the brainstorm skill."
+description: "Sets up workplan documents for tasks spanning several sessions and starts the work. Use only when the user invokes it explicitly."
 disable-model-invocation: true
 ---
 
