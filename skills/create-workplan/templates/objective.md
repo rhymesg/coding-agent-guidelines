@@ -21,7 +21,7 @@ Keep Goal, Verification, and Guidelines.
 ### Start and Resume
 
 - Check `Status` first: `ongoing`, `paused`, or `completed`. Unless `ongoing`, report it and wait for the user.
-- Start execution after the user approves the initial objective and plan. Then work without user input within the approved goal, constraints, and permissions.
+- Start execution after the user approves the initial objective and plan. The approval covers every phase: work to the end without pausing between phases or waiting for user input, within the approved goal, constraints, and permissions.
 - On resuming, read `objective.md`, `plan.md`, and `tasks.md` in order. Check them against actual files, results, and running work, and update them before continuing.
 
 ### Execution
