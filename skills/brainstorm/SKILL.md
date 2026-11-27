@@ -7,9 +7,17 @@ description: "Clarifies what the user wants and how to build and verify it befor
 
 Do not edit code or create workplan documents while brainstorming.
 
+## Clarify intent
+
+Clarify the user's intent before developing the proposal. When the goal, scope, constraints, or success criteria are unclear, ask focused questions until you reach a shared understanding.
+
+Find facts yourself. Never ask the user for information you can discover from the environment. When clarification requires investigation, dispatch a subagent with a fresh context window. While it investigates, ask any questions that do not depend on its findings.
+
+Once the intent is clear, suggest methods and verification using the proposal format below. Resolve choices through applicable instructions and requirements; present recommendations and alternatives for choices left open.
+
 ## Proposal
 
-Reply with one proposal each turn, up to about 300 words including tables:
+Once the intent is clear, reply with one proposal each turn, up to about 300 words including tables:
 
 - `Intent`: what you understand the user wants: goal, scope, constraints, and success criteria, as applicable.
 - Following sections as appropriate, such as approach and open decisions. State each choice the guidelines, rules, or requirements settle in the approach, with the rule named.
@@ -38,7 +46,7 @@ Reply with one proposal each turn, up to about 300 words including tables:
 
 ## Workflow
 
-1. Show the proposal and wait for the user's answers.
+1. Clarify the intent, then show the proposal and wait for the user's answers.
 2. Refine it with each answer until consequential questions are resolved or explicitly deferred.
 3. Before the user approves a plan, have a fresh subagent read the code each change touches, with every caller, and report changes that do not match that code, target states no change produces, phases that need a later phase's work, and inputs only the user can give. Fix the plan and ask for those inputs together.
 4. Suggest the next step:
